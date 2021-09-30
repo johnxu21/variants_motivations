@@ -1,0 +1,47 @@
+\section{Background and Related Work}
+\label{sec:background}
+We discuss related work on: (i) motivations for creating\,/\,maintaining a variant fork (ii) interaction between variant fork and mainline, and (iii) general studies on variant forking.
+
+\subsection{Motivations for creating\,/\,maintaining a variant fork}
+\label{sec:motivations}
+There are existing studies that have investigated motivations for creating\,/\,maintaining variant forks. However, most of these studies were carried out in the pre-\gh days of \texttt{SourceForge}, before the advent of social coding environment~\cite{Linus:2012Perspectives,Gregorio:2012,Viseur:2012Forks,Linus:2013CodeForking,Laurent:2008,Linus:2011ToFork}. While studies reports controversial perceptions around variant forks in the pre-\gh days~\cite{Chua:Forking:2017,Dixion:2009Forks,Ernst:2010,Linus:2011ToFork,Linus:2014Hackers,Raymond:Cathedral:2001}, Zhou et al.~\cite{Zhou:2020} reports that these perceptions have changed with the advent of \gh. Jiang et al.~\cite{Lo:2017} state that, although forking is controversial in traditional open source software (OSS) community, it is encouraged and is a built-in feature in \gh. Jiang et al. ~\cite{Lo:2017} further report that developers fork repositories to submit pull requests, fix bugs, add new features and keep copies (these of forks are called social forks). Zhou et al.~\cite{Zhou:2020} also report that most variant forks start as social forks. 
+Robles and Gonz{\'a}lez-Barahona~\cite{Gregorio:2012} carried out a comprehensive study on a carefully filtered list of 220 potential forks that were referenced on Wikipedia. The authors assumed that a fork is significant if a reference to it appears in the English Wikipedia.
+Across both these studies, the most commonly identified reasons for creating variant forks were:
+
+\begin{list}{$\circ$}{}
+   \item \textit{Technical reasons.} refer to adding or focusing content---for instance, when a developer wants to include a new feature in the mainline, but the mainline developers are reluctant to do so. An example is \texttt{Poppler} a fork of \texttt{xpdf}~\cite{Gregorio:2012}. \texttt{Poppler} is a customized version of \texttt{xpdf} with the use of the poppler library~\cite{poppler}.
+    
+    
+    \item \textit{Governance disputes.} This may occur when the original leaders (e.g., a company, an institution or an independent group of developers) do not take into account the community. An example is \texttt{GNU XEmacs} as a fork of \texttt{GNU Emacs}.
+    The fork \texttt{GNU XEmacs} (originally Lucid), was created as a result of the significant delays occurred in bringing out a new version of \texttt{GNU Emacs}~\cite{XEmacs}. Lucid Inc. was faced a requirement to ship \texttt{GNU Emacs} to support the Energize \texttt{C++} IDE. So Lucid recruited a team to improve and extend \texttt{GNU Emacs} and to-date \texttt{GNU XEmacs} is still being maintained. Another example The developer team disagrees on fundamental issues (beyond mere technical matters) related to the software development and the project, causing the team to split into different projects. The \texttt{OpenBSD} fork from \texttt{NetBSD} is an example of such a type of fork~\cite{openbsd}.
+
+
+    \item \textit{Reviving an abandoned project}. When the original project is not maintained and a new developer community wishes to take over its maintenance. For example, \texttt{NCSA httpd} project to \texttt{Apache Web server} project. NCSA abandoned its web server \texttt{httpd}, then some of its users banded together to maintain it. This resulted into the world’s most popular web server, \texttt{Apache Web server}~\cite{Wheeler:2015Forking}.
+
+   % \item \textit{Commercial strategy}. When a company forks an existing project to meet some commercial strategy. 
+
+\item \textit{Legal issues}. A project might consider different licenses, a trademark dispute may arise, or changes in laws (e.g., regarding encryption) require technical changes. Variant forks can be used to split development for different jurisdictions. Legal issues may also relate to commercial strategy. Commercial strategy forks include those where a software is released as free software by the company, or when the company creates a proprietary version of a free software. An example of such a fork is \texttt{OpenOffice} from \texttt{StarOffice}. In 1999, Star Division owned \texttt{StarOffice}, then the latter was acquired by Sun Microsystem for 59.5 million US dollars as it was supposedly cheaper than licensing Microsoft Office for 42,000 staff members. \texttt{OpenOffice} was forked from as \texttt{StarOffice} in 2000. After the fork, subsequent versions of \texttt{StarOffice} were based on additional proprietary components~\cite{Openoffice}.
+
+\item \textit{Personal}: Interpersonal disputes and irreconcilable differences of a non-technical nature lead to a rift between various parties, hence the project forks. OpenBSD is a classic example~\cite{Zhou:2020}.
+
+%The variant was created because some of the contributors felt that their feedback was not heard or maintainers were accepting patches too slowly in the mainline project.
+
+% \item \textit{Experimental}: Creating a fork to try out and test new features that will be integrated into the mainline. This category can be seen as a subcategory of technical reasons.
+\end{list}
+
+The work in this study compliments the studies of Businge et al.~\cite{businge2018appfamilies} and  Zhou et al.~\cite{Zhou:2020} who have so far investigated variant forking in \gh. Businge et al.~\cite{businge2018appfamilies} studied forking motivations for only 11 variant forks from the Android ecosystem. The authors reported motivations for creating a variant fork of an Android app that includes: re-branding and simple customizations, feature extension and implementation of different but related features.  
+Zhou et al.~\cite{Zhou:2020} interviewed 18 developers of hard forks on \gh to understand reasons for forking in more modern social coding environments that explicitly support forking. The authors reported that the motivations they observed align with the findings of prior (mentioned above ) studies. 
+
+Another recent study that has investigated variant forks is that of Sung et al.~\cite{sung:ICSE:2020}. The authors conducted an industrial case study of the implications of frequent merges from mainline and the resulting merge conflicts in a variant fork. They implemented a tool that can automatically resolve up-to 40\% of the list of eight mainline induced build breaks. 
+
+While the pre-\gh studies reported controversial perceptions around variant forks, Zhou et al.~\cite{Zhou:2020} report that these perceptions have changed with the advent of \gh. Jiang et al.~\cite{Lo:2017} state that, although forking is controversial in traditional open source software (OSS) communities, it is actually encouraged as a built-in feature in \gh. The authors further report that developers fork repositories to submit pull requests, fix bugs, add new features and keep copies (social forks).
+Zhou et al.~\cite{Zhou:2020} also report that many variant forks actually start as social forks. 
+
+\subsection{Interaction between variant fork and mainline}
+We have only come across the study of Zhou et al.~\cite{Zhou:2020} that has investigated interaction between variant fork and mainline.
+\az{I think we need to define the mainline here first. Maybe also define the used terms in a subsection "terminology". For example mainline} \jb{The only terminologies we have are variants and mainline. I plan to define them in the introduction section}
+In a study the authors conducted 18 semi-structured interviews with developers. They reported that many interviewees indicate that they are interested in coordinating across repositories, either for merging some or all changes back mainline eventually or to monitor activity in the mainline repository to incorporate select or all changes. Another study that has investigated interaction between mainline and variant is that of Businge et al.~\cite{businge:emse:2021}. The authors quantitatively investigated code propagation among variants and mainline from three software ecosystems. They found that only about 11\% of the 10,979 mainline--variant pairs had integrated code between themselves. Like Zhou et al.~\cite{Zhou:2020}, in this study we carry out a qualitative study to find out if variant developers integrate code to and from the mainline repositories.
+
+\subsection{General studies on variant forking}
+% Like the between variant fork and mainline, we did not find many studies that relate to general studies on variant forking.
+% One recent study that we came across investigated variant forks is that of Sung et al.~\cite{sung:ICSE:2020}. The authors conduct an industrial case study of the implications of frequent merges from mainline and the resulting merge conflicts in a variant fork. They implemented a tool that can automatically resolve up-to 40\% of the list of eight mainline induced build breaks. \az{the last two paper mentioned are already discussed above.}
