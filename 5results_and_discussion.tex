@@ -31,13 +31,10 @@ For both $RQ_{1.1}$ and $RQ_{1.2}$ we provided multiple choice answers to the qu
 This implies that the most of developers that are involved in the creation and maintenance of the variants are outside the core maintainers of the original project where the variant was forked. This finding is in agreement with the findings of Businge et al.~\cite{businge:2018icsme,businge:emse:2021}.
 The difference in the numbers of participants who selected  \dashuline{none} for $RQ_{1.1}$ and \dashuline{no} for $RQ_{1.2}$ can be visualized in Fig.~\ref{fig:sankey_motivation}. 
 We look at how responses of $RQ_{1.1}$--\dashuline{original developers?} and $RQ_{1.2}$--\dashuline{common active maintainers?} are associated, we can see that the majority of the respondents that selected the option \dashuline{none} in $RQ_{1.2}$ went ahead to select the option \dashuline{no} in $RQ_{1.2}$. We can also see other associations between all responses of $RQ_{1.1}$ and $RQ_{1.1}$.
-For example, in $RQ_{1.1}$, the participant [R1-36] who selected the answer option \dashuline{6 -- 10} developers from the mainline were involved in creation of the variant, also selected the option \dashuline{yes \textit{\&} no}--\emph{``They used to have common maintainers in the early stages of the variant, but now the projects have technically diverged away from each other, there are no more common maintainers"} in $RQ_{1.2}$.\az{maybe we should use ``quotes" for all text that is quoted from the responses}
+For example, in $RQ_{1.1}$, the participant [R1-36] who selected the answer option \dashuline{6 -- 10} developers from the mainline were involved in creation of the variant, also selected the option \dashuline{yes \textit{\&} no}--\emph{``They used to have common maintainers in the early stages of the variant, but now the projects have technically diverged away from each other, there are no more common maintainers"} in $RQ_{1.2}$.
 We also observed that respondents [R1-51] and [R1-57] who selected the option \dashuline{6 -- 10} and \dashuline{2 -- 5}, respectively, for $RQ_{1.1}$ also selected the option \dashuline{no} for $RQ_{1.2}$. This implies that there were at least two maintainers involved in the creation of the fork, but none of those maintainers is currently contributing to both repositories. 
 
-\begin{framed}
-\noindent
-\emph{Summary of $RQ_{1}$}
-\end{framed}
+\nd \textbf{Discussion and Implications RQ1}
 
 \begin{figure*}[t!]
 \centering
@@ -89,67 +86,67 @@ The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the v
 
 %\item \emph{The fork was created because that is how you contribute changes back to a project on github, then the original maintainer of the project abandoned it making my fork the main actively developed one} [R1-38]. %This motivation detail can be related to the findings of Robles and Gonz{\'a}lez-Barahona~\cite{Gregorio:2012} who reported that one of the outcomes of forking is 
 
-\item \emph{The PR to merge the fork's new capabilities into the mainline code was too large, resulting in a long review time, and my attempts to incorporate feedback into the PR (using force-pushes that disrupted the review process) ended upsetting the primary maintainer who has been studiously ignoring the pull request for three years \frownie{}} [R-59].
+\item ``\emph{The PR to merge the fork's new capabilities into the mainline code was too large, resulting in a long review time, and my attempts to incorporate feedback into the PR (using force-pushes that disrupted the review process) ended upsetting the primary maintainer who has been studiously ignoring the pull request for three years \frownie{}}'' [R-59].
 
-\item \emph{I forked the original project in order to fix a bug. However, the way the original was architected made this very challenging, so I ended up rewriting it instead of submitting a patch to the original} [R1-79].
+\item ``\emph{I forked the original project in order to fix a bug. However, the way the original was architected made this very challenging, so I ended up rewriting it instead of submitting a patch to the original}'' [R1-79].
 
-\item \emph{The original project did not take WCAG accesibility guidelines into account. We first tried to make improvements on it, but they were broken soon after. So we finally decided to fork the project with the explicit aim to focus on accessibility.} [R1-88].
+\item ``\emph{The original project did not take WCAG accesibility guidelines into account. We first tried to make improvements on it, but they were broken soon after. So we finally decided to fork the project with the explicit aim to focus on accessibility}'' [R1-88].
 
 \end{itemize}
 
 \nd The next prominent \dashuline{technical} motivation detail was \dashuline{different goals}. 17 of the 105 survey participants who selected \dashuline{technical},  mentioned phrases related to \emph{variants present different goals\,/\,content\,/\,communities\,/\,directions}.
 
 \begin{itemize}[leftmargin=*]
-\item \emph{Difference in content - list websites that accept Bitcoin Cash cryptocurrency, as opposed to the mainline that lists websites with 2 factor authentication} [R1-1].
-\item \emph{The original goal of the mainline is completely different from the fork variant. While the projects are related in the sense that they share a similar code base, they are very different pieces of software} [R1-4].
-\item \emph{This is a cryptocurrency, which introduced a completely different monetary policy, and consensus, while keeping many of the original features of the main-line. It is worth noting that, for the same principle, the mainline itself is a variant of another project (bitcoin/bitcoin)} [R1-70].
-\item  \emph{We wanted to take the project in a different direction} [R2-6].
+\item ``\emph{Difference in content - list websites that accept Bitcoin Cash cryptocurrency, as opposed to the mainline that lists websites with 2 factor authentication}'' [R1-1].
+\item ``\emph{The original goal of the mainline is completely different from the fork variant. While the projects are related in the sense that they share a similar code base, they are very different pieces of software}'' [R1-4].
+\item ``\emph{This is a cryptocurrency, which introduced a completely different monetary policy, and consensus, while keeping many of the original features of the main-line. It is worth noting that, for the same principle, the mainline itself is a variant of another project (bitcoin/bitcoin)}'' [R1-70].
+\item  ``\emph{We wanted to take the project in a different direction}'' [R2-6].
 \end{itemize}
 
 \nd The next prominent \dashuline{technical} motivation detail was \dashuline{new features}.
 17 of the 105 survey participants who selected \dashuline{technical}, mentioned phrases related to \emph{introduction of new features not in the mainline}.
 
 \begin{itemize}[leftmargin=*]
-\item \emph{Wanted to add support for a feature I knew would not get merged into the main project} [R1-53].
-\item \emph{Mainline developer only does bugfixes and eventual underlying runtime/SDK upgrades to stay current. He did not add new features nor build targets due to lack of interest \ldots} [R1-67]
-\item \emph{Our variant introduces new experimental functionality that is not yet ready for use in the mainline} [R1-80].
+\item ``\emph{Wanted to add support for a feature I knew would not get merged into the main project}'' [R1-53].
+\item ``\emph{Mainline developer only does bugfixes and eventual underlying runtime/SDK upgrades to stay current. He did not add new features nor build targets due to lack of interest \ldots}'' [R1-67]
+\item ``\emph{Our variant introduces new experimental functionality that is not yet ready for use in the mainline}'' [R1-80].
 \end{itemize}
   
 \nd The next prominent \dashuline{technical} motivation detail was \dashuline{customization}.
 8 of the 105 survey participants who selected \dashuline{technical}, mentioned phrases related to \emph{variant customizes the mainline features}.
 
 \begin{itemize}[leftmargin=*]
-\item \emph{The ``bones'' were good, but I wanted to add some aesthetics. Given the original prided itself on minimalism, it didn't feel right to contribute it into mainline. So, I forked it to make it pretty and my own.} [R1-10].
-\item \emph{The new version is a vectorized, accelerated version of the original, but used some common code. It's not so much a fork as ``inspired by'', but we wanted to give due credit.} [R1-37]
-\item \emph{The fork then added some syntactic sugar and some improvements by itself. The original project was revived after a while and both variants coexist.} [R1-42].
+\item ``\emph{The ``bones'' were good, but I wanted to add some aesthetics. Given the original prided itself on minimalism, it didn't feel right to contribute it into mainline. So, I forked it to make it pretty and my own}'' [R1-10].
+\item ``\emph{The new version is a vectorized, accelerated version of the original, but used some common code. It's not so much a fork as ``inspired by'', but we wanted to give due credit}'' [R1-37].
+\item ``\emph{The fork then added some syntactic sugar and some improvements by itself. The original project was revived after a while and both variants coexist}'' [R1-42].
 \end{itemize}
 
 \nd The next prominent \dashuline{technical} motivation detail was \dashuline{feature frozen}.
 8 of the 105 survey participants who selected \dashuline{technical}, mentioned phrases related to \emph{one of the mainline feature used by the variant is no longer maintained}.
 
 \begin{itemize}[leftmargin=*]
-\item \emph{Part of the original repo was an unmaintained tool, and I updated to support new platforms and keep alive} [R1-2].
-\item \emph{The mainline project had made a radical shift from providing one set of features (pip-review + pip-dump) to a different, disjoint set of features (pip-compile + pip-sync). The maintainer had thought about it very well, but some users (including myself) had built their workflows around one of the old features. For this reason, I lifted that particular feature (pip-review) into a separate project that was also published under a different name to the package index. For these historical reasons, the mainline and the variant are not really alternatives to each other; rather, they are complementary.} [R1-23]. The respondent also provided us a link, \gh \texttt{issue}, discussing the details. The \texttt{issue} was opened by the variant maintainer on July 2018 and was eventually closed on April 2018. The \texttt{issue} had 33 comments involving 17 participants. \jb{need to link with other qns}
-\item \emph{Mainline dropped support for a small subset of the code and asked for community support to create a fork to support that subset} [R1-66].
+\item ``\emph{Part of the original repo was an unmaintained tool, and I updated to support new platforms and keep alive}'' [R1-2].
+\item ``\emph{The mainline project had made a radical shift from providing one set of features (pip-review + pip-dump) to a different, disjoint set of features (pip-compile + pip-sync). The maintainer had thought about it very well, but some users (including myself) had built their workflows around one of the old features. For this reason, I lifted that particular feature (pip-review) into a separate project that was also published under a different name to the package index. For these historical reasons, the mainline and the variant are not really alternatives to each other; rather, they are complementary}'' [R1-23]. The respondent also provided us a link, \gh \texttt{issue}, discussing the details. The \texttt{issue} was opened by the variant maintainer on July 2018 and was eventually closed on April 2018. The \texttt{issue} had 33 comments involving 17 participants. \jb{need to link with other qns}
+\item ``\emph{Mainline dropped support for a small subset of the code and asked for community support to create a fork to support that subset}'' [R1-66].
 \end{itemize}
 
 \nd The next prominent \dashuline{technical} motivation detail was \dashuline{technology}.
 7 of the 105 survey participants who selected \dashuline{technical}, mentioned phrases related to \emph{variant created to depend on a different technology}.
 
 \begin{itemize}[leftmargin=*]
-\item \emph{TECHNICAL: added support for OSM (open street maps) as an available map provider. \ldots} [R1-8].
-\item \emph{The mainline wasn't updated to use .NET Core which I was using in my project, so I updated it.} [R1-29].
-\item \emph{[\dots] (TECHNICAL) was to keep the source code compatible with the language/compiler version that we use (Swift / Xcode). Sometimes new versions of Swift break source compatibility, if we update (or not update when there is a new one) the compiler but the maintainer of the mainline is supporting a different one, then we could not compile our dependency anymore.} [R1-54].
+\item ``\emph{TECHNICAL: added support for OSM (open street maps) as an available map provider. \ldots}'' [R1-8].
+\item ``\emph{The mainline wasn't updated to use .NET Core which I was using in my project, so I updated it}'' [R1-29].
+\item ``\emph{[\dots] (TECHNICAL) was to keep the source code compatible with the language/compiler version that we use (Swift / Xcode). Sometimes new versions of Swift break source compatibility, if we update (or not update when there is a new one) the compiler but the maintainer of the mainline is supporting a different one, then we could not compile our dependency anymore}'' [R1-54].
 \end{itemize}
 
 \nd \textbf{Governance}. The motivation of \dashuline{governance} is connected to the second most motivation details mentions, with the most prominent being \dashuline{responsiveness}. 18 of the 105 survey participants who selected \dashuline{governance}, mentioned phrases related to \emph{mainline was unresponsive to pull requests or issues for a long time}. Most of the respondents that ranked highly \dashuline{governance} as the motivation, also ranked highly other options of motivations. Only 4 of the 34 ranked only \dashuline{governance}. 
 
 \begin{itemize}[leftmargin=*]
-\item \emph{The parent repo (mdmsoft/yii2-admin) had a series of commits that fixed functionality for newer PHP versions, but never made into a release. The library was being used in an enterprise app using Composer/Packagist, which requires a new GitHub release to update the published library. After waiting for more than a year for a release, a fork was done just to push a newer release into Composer/Packagist (and update the enterprise app to be compatible with a newer PHP version)} [R1-21].
+\item ``\emph{The parent repo (mdmsoft/yii2-admin) had a series of commits that fixed functionality for newer PHP versions, but never made into a release. The library was being used in an enterprise app using Composer/Packagist, which requires a new GitHub release to update the published library. After waiting for more than a year for a release, a fork was done just to push a newer release into Composer/Packagist (and update the enterprise app to be compatible with a newer PHP version)}'' [R1-21].
 
-\item \emph{We submitted some bugfixes to the original repo, but didn't hear back from the maintainer for a while and needed to progress to meet our own goals so we forked. I followed up over email with the maintainer and he merged the patches about a month later, at which point we closed down and archived our fork and returned to using the mainline} [R1-15].
+\item ``\emph{We submitted some bugfixes to the original repo, but didn't hear back from the maintainer for a while and needed to progress to meet our own goals so we forked. I followed up over email with the maintainer and he merged the patches about a month later, at which point we closed down and archived our fork and returned to using the mainline}'' [R1-15].
 
-\item \emph{\ldots created in order to submit PR into mainline. Its purpose has changed due to lack of response from mainline maintainer (more than month) and need of release. This lead to release of a new variant. [\ldots] there is not intention to submit changes to mainline anymore (even when the first PR was merged into mainline after more than year) } [R1-56].
+\item ``\emph{\ldots created in order to submit PR into mainline. Its purpose has changed due to lack of response from mainline maintainer (more than month) and need of release. This lead to release of a new variant. [\ldots] there is not intention to submit changes to mainline anymore (even when the first PR was merged into mainline after more than year)}'' [R1-56].
 \end{itemize}
 
 \nd The next prominent \dashuline{governance} motivation detail was \dashuline{feature acceptance}.
@@ -158,9 +155,9 @@ The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the v
 \begin{itemize}[leftmargin=*]
 \item \emph{TECHNICAL: added support for OSM (open street maps) as an available map provider. GOVERNANCE: not exactly governance, but mainline was not willing to accept this kind of contribution} [R1-8]. This respondent ranked highly both \dashuline{technical} and \dashuline{governance}. For \dashuline{technical} the theme was coded as \dashuline{technology}. The respondent also provided a \gh pull request link that contains extra motivation details, that we examined. The pull request contained 45 conversations and 15 participants between June 2018 until March 2021 when it was closed.
 
-\item \emph{\ldots Mainline was not ready to accept those changes in part because the maintainers were not responsive. Since that time all of the issues have been dealt with and my variant is no longer needed, though the infrastructure for creating a new release of the variant remains in place in the event that it might be needed in the future} [R1-44].
+\item ``\emph{\ldots Mainline was not ready to accept those changes in part because the maintainers were not responsive. Since that time all of the issues have been dealt with and my variant is no longer needed, though the infrastructure for creating a new release of the variant remains in place in the event that it might be needed in the future}'' [R1-44].
 
-\item \emph{Yes, there were attempts, but at then end even main repo maintainer was saying he is busy and please use our fork for thing X and Y. We don't exact reason why he stopped maintain it and also did not allow us to maintain his repo.} [R1-89]. \jb{I need to talk more about it from the links}
+\item ``\emph{Yes, there were attempts, but at then end even main repo maintainer was saying he is busy and please use our fork for thing X and Y. We don't exact reason why he stopped maintain it and also did not allow us to maintain his repo}'' [R1-89]. \jb{I need to talk more about it from the links}
 
 
 \end{itemize}
@@ -171,11 +168,11 @@ The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the v
 
 \begin{itemize}[leftmargin=*]
 
-\item \emph{Fairly boring as it's a very small library. Maintainer of the ``mother'' repo was not interested in an MR that added functionality needed by a project I'm developing. Was considerably easier to add the logic into the library than bolt it on, so I forked the library} [R1-18]. This participant ranked highly the motivations of \dashuline{technical}, \dashuline{governance}, and \dashuline{others}. As we can see in the participant response we have phrases like ``\textit{adding logic'}' (\dashuline{new features, technical}), ``\textit{was not interested in an MR}'' (\dashuline{feature acceptance, governance}), and ``\textit{functionality needed by a project I'm developing}'' (\dashuline{supporting personal projects, others}).
+\item ``\emph{Fairly boring as it's a very small library. Maintainer of the ``mother'' repo was not interested in an MR that added functionality needed by a project I'm developing. Was considerably easier to add the logic into the library than bolt it on, so I forked the library}'' [R1-18]. This participant ranked highly the motivations of \dashuline{technical}, \dashuline{governance}, and \dashuline{others}. As we can see in the participant response we have phrases like ``\textit{adding logic'}' (\dashuline{new features, technical}), ``\textit{was not interested in an MR}'' (\dashuline{feature acceptance, governance}), and ``\textit{functionality needed by a project I'm developing}'' (\dashuline{supporting personal projects, others}).
 
-\item \emph{In Oct 2017 Twitch.TV has changed its API and these changes broke the mainline project. I used this project daily and needed to fix it ASAP. After quick fix I started to add my own features such [\ldots] the mainline project has been fixed and refactored, but my other projects were already depending on my own fork} [R1-56].
+\item ``\emph{In Oct 2017 Twitch.TV has changed its API and these changes broke the mainline project. I used this project daily and needed to fix it ASAP. After quick fix I started to add my own features such [\ldots] the mainline project has been fixed and refactored, but my other projects were already depending on my own fork}'' [R1-56].
 
-\item \emph{The main reason for forking (OTHER) is to make sure that no matter what happen to the mainline repository, we can maintain source access to this library, which is an essential dependency of our project. \ldots} [R1-54].
+\item ``\emph{The main reason for forking (OTHER) is to make sure that no matter what happen to the mainline repository, we can maintain source access to this library, which is an essential dependency of our project. \ldots}'' [R1-54].
 
 \end{itemize}
 
@@ -183,36 +180,34 @@ The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the v
 7 of the 105 survey participants who selected \dashuline{others}, mentioned phrases related to \emph{mainline hesitant to or not willing to accept feature}.
 
 \begin{itemize}[leftmargin=*]
-\item \emph{We have a fork that is the ``main fork'', which is eclipse, and the ``development fork'' is OpenTOSCA. In this case, our modling tool [\ldots] is only maintained as the fork [\ldots] we synchronize everything between both forks while the OpenTOSCA one is mainly used to develop new features, which are then pushed as PRs to the main fork.} [R1-61].
+\item ``\emph{We have a fork that is the ``main fork'', which is eclipse, and the ``development fork'' is OpenTOSCA. In this case, our modling tool [\ldots] is only maintained as the fork [\ldots] we synchronize everything between both forks while the OpenTOSCA one is mainly used to develop new features, which are then pushed as PRs to the main fork}'' [R1-61].
 
-\item \emph{Preparation of mainline pull requests. mainline repo should not be spammed by WIP PRs by students. Supervisors do coaching and try to improve the quality by the initial mainline pull request. [\dots] Keeping the PR open on the fork, reduces the number of PRs at eclipse/winery.} [R1-73].
+\item ``\emph{Preparation of mainline pull requests. mainline repo should not be spammed by WIP PRs by students. Supervisors do coaching and try to improve the quality by the initial mainline pull request. [\dots] Keeping the PR open on the fork, reduces the number of PRs at eclipse/winery}'' [R1-73].
 
-\item \emph{We needed a repository for tracking our ideas to keep the number of issues of the main repository low.} [R1-83]. The respondent provided an extra link which that gave more information\footnote{https://github.com/koppor/jabref/blob/about/README.md}. The mainline and variant are owned by the same developer. We found this information on the extra link; \emph{this repository is used by @koppor to make his ideas transparent. He collects the issues here to avoid flooding the "official" issue tracker. - Refined issues will be migrated to the official issue tracker}.
+\item ``\emph{We needed a repository for tracking our ideas to keep the number of issues of the main repository low}'' [R1-83]. The respondent provided an extra link which that gave more information\footnote{https://github.com/koppor/jabref/blob/about/README.md}. The mainline and variant are owned by the same developer. We found this information on the extra link; \emph{this repository is used by @koppor to make his ideas transparent. He collects the issues here to avoid flooding the "official" issue tracker. - Refined issues will be migrated to the official issue tracker}.
 \end{itemize}
 
 \nd The next prominent \dashuline{others} motivation detail was \dashuline{code quality}.
 3 of the 105 survey participants who selected \dashuline{others}, mentioned phrases related to \emph{mainline low code quality}.
 
 \begin{itemize}[leftmargin=*]
-\item \emph{The main reason I forked was code-quality. The mainline library works, but was clearly written by someone who isn't a professional software engineer. Also: mainline was not properly packaged (and still isnt AFAIK). [\ldots]} [R1-63].
+\item ``\emph{The main reason I forked was code-quality. The mainline library works, but was clearly written by someone who isn't a professional software engineer. Also: mainline was not properly packaged (and still isnt AFAIK). [\ldots]}'' [R1-63].
 
-\item \emph{I forked the original project in order to fix a bug. However, the way the original was architected made this very challenging, so I ended up rewriting it instead of submitting a patch to the original} [R1-79].
+\item ``\emph{I forked the original project in order to fix a bug. However, the way the original was architected made this very challenging, so I ended up rewriting it instead of submitting a patch to the original} [R1-79].
 \end{itemize}
 
 
 \nd \textbf{Legal}. The motivation of \dashuline{legal} is connected to the least number of motivation details mentions, with the most prominent being \dashuline{responsiveness}. It had only 3 of the 105 survey participants. Below we present two of the most interesting responses.
 
 \begin{itemize}[leftmargin=*]
-\item \dashuline{commercial variant}. \emph{Main reason is creating open source and commercial product which has much more features and we just collect open source components and use them. Red5 server is one of the component of the product.} [R1-7]. This motivation detail is also categorised as: \dashuline{new features, technical} and \dashuline{supporting personal projects, others}.
+\item ``\dashuline{commercial variant}. \emph{Main reason is creating open source and commercial product which has much more features and we just collect open source components and use them. Red5 server is one of the component of the product}'' [R1-7]. This motivation detail is also categorised as: \dashuline{new features, technical} and \dashuline{supporting personal projects, others}.
 
-\item \dashuline{closed source}. \emph{The founders of the mainline had been absent from the project for several years, but came back and booted the maintainers off and shifted the project to a closed source, [\ldots]. There was an attempt to reconcile differences [\ldots], but the these issues were resolved (at least from the point of view of the maintainers, in reality the founders just pretended to be fine with it and secretly plotted for the next year to remove the maintainers from the project and ban them from every community to minimize a potential fork when they announced their plans to change the license.} The respondent provided a link for extra details that can be found here\footnote{https://wintercms.com/blog/post/october-cms-you-know-it-dead} [R1-7].
+\item ``\dashuline{closed source}. \emph{The founders of the mainline had been absent from the project for several years, but came back and booted the maintainers off and shifted the project to a closed source, [\ldots]. There was an attempt to reconcile differences [\ldots], but the these issues were resolved (at least from the point of view of the maintainers, in reality the founders just pretended to be fine with it and secretly plotted for the next year to remove the maintainers from the project and ban them from every community to minimize a potential fork when they announced their plans to change the license.} The respondent provided a link for extra details that can be found here\footnote{https://wintercms.com/blog/post/october-cms-you-know-it-dead}'' [R1-7].
 
 \end{itemize}
 
-\begin{framed}
-\noindent
-\emph{Summary of $RQ_{2}$}
-\end{framed}
+
+\nd \textbf{Discussion and Implications RQ2}
 
 \begin{figure}[ht]
 \begin{center}
@@ -227,10 +222,10 @@ The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the v
 \nd \textbf{\rqThree}
 Recall that in Section~\ref{sec:rqs} we stated two detailed questions for $RQ_{3}$: \textit{\rqThreeOne} and \textit{\rqThreeTwo}
 
-\nd For $RQ_{3.1}$ we presented four multiple choice answer options. From Fig.~\ref{fig:discussions}, the four answer options we provided for $RQ_{3.1}$ are those with the highest number of responses. We also provided an option of open-ended answer for participants who feel that their choice is not among the options, that we coded into themes (in Fig.~\ref{fig:discussions} the coded themes are \dashuline{variant follows mainline}\ra to \dashuline{variant is a mirror of the mainline}). 
-The results in Fig.~\ref{fig:discussions} show that more than 51\% of the responses chose the option of \dashuline{never}--\textit{no, there has never been any discussion since the creation of the variant}. In addition to the participants who selected \dashuline{never}, there are other variants that do not discuss the directions of the project, like \dashuline{mainline hostile} to variant,  \dashuline{mainline not very active},  \dashuline{in contact but rarely discuss}, \dashuline{only once}, and \dashuline{technically diverged}--\emph{They used to discuss but not anymore since the projects have technically diverged from each other}. 
-An explanation for the high number of variants that do not discuss with the mainline the direction of the projects can be derived from the findings of $RQ_{1}$ where we observed that the majority of the variants are created and maintained by developers outside the code developers of the mainline. Also most of the \emph{motivation details} in $RQ_{2}$ could also explain the high numbers of \dashuline{never}. For example we have observed that the majority of the variants in the \emph{motivation details} category of \dashuline{different goals}, \dashuline{frozen features} in the mainline, those having issues with the mainline \dashuline{responsiveness}, those whose features will not be accepted by the mainline (\dashuline{feature acceptance}), selected  \dashuline{never} in $RQ_{3.1}$. To this end, we can conclude that the reasons for the majority of the variants not discussing the directions of the project with the mainlines could be attributed to the range of motivation details for creating the variant as well as the creators of the variants not being part of the core developers of the mainline.
-We found that 5 of the responses indicated phrases related to \dashuline{variant follows mainline}. For example respondent [R1-77] indicated that \emph{in the crypto world, the mainline inherits changes from BITCOIN, for example, security commits, and the variant merges those changes in. So the variant is very interested in every change in the Mainline. However, the variant must maintain the specific new features that we added separately, and the Mainline is not interested in helping the Variant do this.}
+\nd For $RQ_{3.1}$ we presented four multiple choice answer options. From Fig.~\ref{fig:discussions}, the four answer options we provided for $RQ_{3.1}$ are those with the highest number of responses. We also provided an option of an open-ended answer for participants who felt that their choice is not among the options. The open-ended answers were coded into themes (in Fig.~\ref{fig:discussions} the coded themes are \dashuline{variant follows mainline}\ra to \dashuline{variant is a mirror of the mainline}). 
+The results in Fig.~\ref{fig:discussions} show that more than 51\% of the responses chose the option of \dashuline{never}--\textit{no, there has never been any discussion since the creation of the variant}. In addition to the participants who selected \dashuline{never}, there are other variants that do not discuss the directions of the project, like \dashuline{mainline hostile} to variant,  \dashuline{mainline not very active},  \dashuline{in contact but rarely discuss}, \dashuline{only once}, and \dashuline{technically diverged}--``\emph{They used to discuss but not anymore since the projects have technically diverged from each other}''. 
+An explanation for the high number of variants that do not discuss with the mainline the direction of the projects can be derived from the findings of $RQ_{1}$ where we observed that the majority of the variants are created and maintained by developers outside the code developers of the mainline. Also most of the \emph{motivation details} in $RQ_{2}$ could also explain the high numbers of \dashuline{never}. For example we have observed that the majority of the variants in the \emph{motivation details} category of \dashuline{different goals}, \dashuline{frozen features} in the mainline, those having issues with the mainline \dashuline{responsiveness}, those whose features will not be accepted by the mainline (\dashuline{feature acceptance}), selected  \dashuline{never} in $RQ_{3.1}$. \textbf{To this end, we can conclude that the reasons for the majority of the variants not discussing the directions of the project with the mainlines could be attributed to the range of motivation details for creating the variant as well as the creators of the variants not being part of the core developers of the mainline.}
+We found that 5 of the responses indicated phrases related to \dashuline{variant follows mainline}. For example respondent [R1-77] indicated that ``\emph{in the crypto world, the mainline inherits changes from BITCOIN, for example, security commits, and the variant merges those changes in. So the variant is very interested in every change in the Mainline. However, the variant must maintain the specific new features that we added separately, and the Mainline is not interested in helping the Variant do this.}''
 We also observe two interesting cases where the variants merged back to the mainline. This is inline with the findings of Robles and Gonz{\'a}lez-Barahona~\cite{Gregorio:2012} who reported that one of the outcomes of forking is the fork merging back. 
 
 \begin{figure*}[t!]
@@ -256,17 +251,17 @@ We also observe two interesting cases where the variants merged back to the main
 
 
 
-\nd In $RQ_{3.2}$, we presented two questions with Likert scale answers as well as two optional open-ended answer questions as follow \az{reformulate} questions for each of the two Likert scale answer options. In Fig.~\ref{fig:interactions} we present the results of $RQ_{3.2}$. In Fig.~\ref{fig:from_mainline} we present the results from the respondent answers on what they value most when integrating changes from the mainline. We can see that the highly scored changes are the \dashuline{bug fixes} and the \dashuline{security fixes}. Comparing the positive and negative sides of Fig.~\ref{fig:from_mainline}, we can see that most of the respondents were leaning towards the negative side compared to the positive side. 
+\nd In $RQ_{3.2}$, we asked respondents two closed-ended questions: \textit{1) How often do the maintainers of the variant integrate the following types of changes from the mainline?} and\textit{ 2) How often do the maintainers of the variant integrate the following types of changes into the mainline?} We provided Likert scale answers options for the two questions. We also asked the respondents optional follow-up questions with open-ended answers, for each of the two questions, to provide us with extra information.
+%In Fig.~\ref{fig:interactions} we present the results of $RQ_{3.2}$. 
+In Fig.~\ref{fig:from_mainline} we present the results from the respondent answers on what they value most when integrating changes from the mainline. We can see that the highly scored changes are the \dashuline{bug fixes} and the \dashuline{security fixes}. Comparing the positive and negative sides of Fig.~\ref{fig:from_mainline}, we can see that most of the respondents were leaning towards the negative side compared to the positive side. 
+This implies that most variants are not interested in integrating changes from the mainline.
 In Fig.~\ref{fig:to_mainline} we see a similar trend observed in Fig.~\ref{fig:from_mainline}, however, the lean towards the negative side is much more pronounced in Fig.~\ref{fig:to_mainline}.
-In Fig.~\ref{fig:from_mainline-coded} and Fig.~\ref{fig:to_mainline-coded} we present the coded themes of the extra information the survey participants provided in the open-ended answer questions corresponding to the results in Fig.~\ref{fig:from_mainline} and Fig.~\ref{fig:to_mainline}, respectively. In Fig.~\ref{fig:from_mainline-coded} we present the results of 28 of the 105 participants who provided extra information, while in Fig.~\ref{fig:to_mainline-coded} we present the results of 17 of the 105 participants. In Fig.~\ref{fig:from_mainline-coded} we can see that the most prominent response was related to \dashuline{kept in sync} implying that the variants always keep in sync with the the changes made in the mainline. The next prominent response was related to \dashuline{occasionally pull from mainline} implying that variants from time to time they pull changes made in the mainline. Some respondents mentioned phrases related to \dashuline{specific changes are pulled}; for example, [R-63] indicated that \emph{It's mostly changes that make the library for specific iRobot Roomba models (new ones for example)}. Other respondents mentioned phrases related to \dashuline{everything except specific changes}; for example, [R-48] mentioned that \emph{All non-compiler specific changes are pulled}.
+In Fig.~\ref{fig:from_mainline-coded} and Fig.~\ref{fig:to_mainline-coded} we present the coded themes of the extra information of the open-ended answer questions corresponding to the results in Fig.~\ref{fig:from_mainline} and Fig.~\ref{fig:to_mainline}, respectively. In Fig.~\ref{fig:from_mainline-coded} we present the results of 28 of the 105 participants who provided the extra information, while in Fig.~\ref{fig:to_mainline-coded} we present the results of 17 of the 105 participants. 
+This implies that most variants do not submit changes to the mainline.
+In Fig.~\ref{fig:from_mainline-coded} we can see that the most prominent response was related to \dashuline{kept in sync} implying that the variants always keep in sync with the the changes made in the mainline. The next prominent response was related to \dashuline{occasionally pull from mainline} implying that variants from time to time pull changes made in the mainline. Some respondents mentioned phrases related to \dashuline{specific changes are pulled}; for example, [R-63] indicated that ``\emph{It's mostly changes that make the library for specific iRobot Roomba models (new ones for example)}''. Other respondents mentioned phrases related to \dashuline{everything except specific changes}; for example, [R-48] mentioned that \emph{All non-compiler specific changes are pulled}.
+In Fig.~\ref{fig:to_mainline-coded} there were two most prominent answers: \dashuline{PRs are suggested}, for example, ``Made PRs with changes but those have just been ignored. They're still ``open'' with 0 comments from the mainline dev'' [R1-67]. The other prominent answer is  \dashuline{changes are out of scope}, for example, ``\emph{We use this as a dependency in another project [\ldots] which is often diverging from the language version of the mainline, so there is little reason for us to push this to mainline}'' [R1-54]. Another interesting theme is ``\emph{Only compiler non-specific that are discovered \ldots before they are discovered in upstream. [\ldots]}'' [R1-48].
 
-\begin{framed}
-\noindent
-\emph{Summary of $RQ_{3}$}
-\end{framed}
-
-
-
-
-
-\section{Discussion and Recommendations}
+\nd \textbf{Discussion and Implications RQ3.}
+The results of this study have revealed that there is limited interaction between the mainline and variant.
+Although we find there is little code integration, the integration from mainline\ra variant is more than that from variant\ra mainline. 
+Our study confirms the findings of Businge et al.~\cite{businge:emse:2021} who carried out a large scale empirical study of code integration among mainline and variants from three ecosystem. Our study also extends the work of Businge et al.~\cite{businge:emse:2021} by providing some reasons why there is little integration between the mainline and variants that include: 1)
