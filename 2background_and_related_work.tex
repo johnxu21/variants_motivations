@@ -1,12 +1,12 @@
 \section{Background and Related Work}
 \label{sec:background}
-We discuss related work on: (i) motivations for creating\,/\,maintaining a variant fork (ii) interaction between variant fork and mainline, and (iii) general studies on variant forking.
+We discuss related work on: (i) motivations for creating\,/\,maintaining a variant fork and (ii) interaction between variant fork and mainline%, and (iii) general studies on variant forking.
 
 \subsection{Motivations for creating\,/\,maintaining a variant fork}
 \label{sec:motivations}
 There are existing studies that have investigated motivations for creating\,/\,maintaining variant forks. However, most of these studies were carried out in the pre-\gh days of \texttt{SourceForge}, before the advent of social coding environment~\cite{Linus:2012Perspectives,Gregorio:2012,Viseur:2012Forks,Linus:2013CodeForking,Laurent:2008,Linus:2011ToFork}. While studies reports controversial perceptions around variant forks in the pre-\gh days~\cite{Chua:Forking:2017,Dixion:2009Forks,Ernst:2010,Linus:2011ToFork,Linus:2014Hackers,Raymond:Cathedral:2001}, Zhou et al.~\cite{Zhou:2020} reports that these perceptions have changed with the advent of \gh. Jiang et al.~\cite{Lo:2017} state that, although forking is controversial in traditional open source software (OSS) community, it is encouraged and is a built-in feature in \gh. Jiang et al. ~\cite{Lo:2017} further report that developers fork repositories to submit pull requests, fix bugs, add new features and keep copies (these of forks are called social forks). Zhou et al.~\cite{Zhou:2020} also report that most variant forks start as social forks. 
 Robles and Gonz{\'a}lez-Barahona~\cite{Gregorio:2012} carried out a comprehensive study on a carefully filtered list of 220 potential forks that were referenced on Wikipedia. The authors assumed that a fork is significant if a reference to it appears in the English Wikipedia.
-Across both these studies, the most commonly identified reasons for creating variant forks were:
+There are quite a number of identified reasons for creating variant in literature, however in this study we are only interested in those where both the mainline and variant co-evolve together. Below we present the reported reasons. 
 
 \begin{list}{$\circ$}{}
    \item \textit{Technical reasons.} refer to adding or focusing content---for instance, when a developer wants to include a new feature in the mainline, but the mainline developers are reluctant to do so. An example is \texttt{Poppler} a fork of \texttt{xpdf}~\cite{Gregorio:2012}. \texttt{Poppler} is a customized version of \texttt{xpdf} with the use of the poppler library~\cite{poppler}.
@@ -39,9 +39,9 @@ Zhou et al.~\cite{Zhou:2020} also report that many variant forks actually start 
 
 \subsection{Interaction between variant fork and mainline}
 We have only come across the study of Zhou et al.~\cite{Zhou:2020} that has investigated interaction between variant fork and mainline.
-\az{I think we need to define the mainline here first. Maybe also define the used terms in a subsection "terminology". For example mainline} \jb{The only terminologies we have are variants and mainline. I plan to define them in the introduction section}
+%\az{I think we need to define the mainline here first. Maybe also define the used terms in a subsection "terminology". For example mainline} \jb{The only terminologies we have are variants and mainline. I plan to define them in the introduction section}
 In a study the authors conducted 18 semi-structured interviews with developers. They reported that many interviewees indicate that they are interested in coordinating across repositories, either for merging some or all changes back mainline eventually or to monitor activity in the mainline repository to incorporate select or all changes. Another study that has investigated interaction between mainline and variant is that of Businge et al.~\cite{businge:emse:2021}. The authors quantitatively investigated code propagation among variants and mainline from three software ecosystems. They found that only about 11\% of the 10,979 mainline--variant pairs had integrated code between themselves. Like Zhou et al.~\cite{Zhou:2020}, in this study we carry out a qualitative study to find out if variant developers integrate code to and from the mainline repositories.
 
-\subsection{General studies on variant forking}
+%\subsection{General studies on variant forking}
 % Like the between variant fork and mainline, we did not find many studies that relate to general studies on variant forking.
 % One recent study that we came across investigated variant forks is that of Sung et al.~\cite{sung:ICSE:2020}. The authors conduct an industrial case study of the implications of frequent merges from mainline and the resulting merge conflicts in a variant fork. They implemented a tool that can automatically resolve up-to 40\% of the list of eight mainline induced build breaks. \az{the last two paper mentioned are already discussed above.}
