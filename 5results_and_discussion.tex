@@ -223,9 +223,10 @@ The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the v
 
 \nd \textbf{Discussion and Implications--$RQ_2$.}
 In this study we were mainly interested in finding out the motivations for creating and maintaining variants especially those that actively being maintained in parallel with their mainline counterparts.
+We have identified that the decision to create the variants is mostly initiated by individuals and less by community.
 Our findings in this RQ confirm the findings in the literature. 
 % The survey participants revealed that they created variants for technical, governance, legal reasons that are reported in literature. 
-Our study also extends the findings in literature by providing fine grained reasons for creating and maintaining variants relating to the previously reported reasons.
+Our study also extends the findings in literature by providing fine-grained reasons for creating and maintaining variants relating to the previously reported reasons.
 Furthermore, our study has also revealed other reasons not listed in literature that respondents categorised as \dashuline{others}, that include: 1) supporting the mainline, 2) variant supporting other personal projects, 3) localization purposes and 4) variants developers not trusting the code quality of the mainline. 
 The findings of this RQ will be very useful in follow-up studies in investigating the co-evolution of mainline and variants. 
 
@@ -288,4 +289,11 @@ Although we find there is little code integration, the integration from mainline
 Our study confirms the findings of Businge et al.~\cite{businge:emse:2021} who carried out a large scale empirical study of code integration among mainline and variants from three ecosystem. Our study also extends the work of Businge et al.~\cite{businge:emse:2021} by providing some concrete reasons relating to little integration between the mainline and variants that include: 1) \textit{technical divergency}: where variants and mainlines are offering different goals, implementing different technologies, variant is maintaining a part of the mainline that is frozen. 2) \textit{Governance disputes}: mainlines are unresponsive to pull requests and issues from the variants and  mainlines not willing or hesitant to accept some features from the variants. One respondent also reported that mainline is actively very hostile to variant as a result of mainline changing licence to proprietary.
 Another possible reason why the is little code integration is because most of the variants are created and maintained by developers outside the core developers of the mainline.
 Furthermore, we have observed that a few mainline--variant pairs that integrate code between themselves are mostly interested in patch sets (security fixes and bug fixes). 
-\textit{Our findings can be very useful to code integration tool builders between mainline and variants to prioritise certain categories of mainline--variant pairs to build tools for as well as the type of changes to target}. 
+Although collaboration and maintenance has on social coding platforms like \gh have improved through the tooling like \git tools and PRs, these tools are not adequate are only idea for social forks which aim to sync all the changes between repositories.
+For example, code integration using pull requests and \texttt{git merge\,/\,rebase} may not be the best when integrating changes in between mainline and variant forks since they involve syncing upstream\,/\,downstream all the changes missing in the current branch.
+Alternatively, cherry picking is probably more suitable for bug fixes since the developer can choose the exact commits they want to integrate. However, \gh's current setup does not make it easy to identify commits to cherry-pick with out digging through the branch's history to identify relevant changes since the last code integration.
+Even though the variants have diverged from the mainlines, we do believe that since they share common code, some of this common code may go through maintenance to perform some bug and security fixing. These mainline--variant repository pairs being maintained uncommon developers, chances are that these fixes could be missed or they could be fixed at different times by different developers and hence effort duplication. 
+Our findings can be very useful to code integration tool builders between mainline and variants to prioritise certain categories of mainline--variant pairs by targeting specific changes to target. 
+Ideally, a tooling would help identify possibly important fixes in commits and recommend these commits to mainline or variant developers to support a more efficient reuse.  
+
+
