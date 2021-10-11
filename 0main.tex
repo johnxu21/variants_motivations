@@ -35,17 +35,17 @@
 \usepackage{listings}
 \usepackage{caption}
 
-\usepackage{minted}
+%\usepackage{minted}
 \usepackage{color, soul}
 
 \definecolor{dark_green)}{rgb}{0.0, 0.5, 0.0}
 
-\newcommand{\tm}[1]{{\textsf{TM}[\smaller\sffamily\color{blue} #1}]}
-\newcommand{\az}[1]{{\textsf{AZ}[\smaller\sffamily\color{orange} #1}]}
-\newcommand{\jb}[1]{{\textsf{JB}[\smaller\sffamily\color{red} #1}]}
-\newcommand{\sd}[1]{{\textsf{SD}[\smaller\sffamily\color{magenta} #1}]}
-\newcommand{\ad}[1]{{\textsf{AD}[\smaller\sffamily\color{violet} #1}]}
-\newcommand{\cd}[1]{{\textsf{CR}[\smaller\sffamily\color{cyan} #1}]}
+\newcommand{\tm}[1]{\color{blue}{\textsf{TM}[\smaller\sffamily #1}]}
+\newcommand{\az}[1]{\color{orange}{\textsf{AZ}[\smaller\sffamily #1}]}
+\newcommand{\jb}[1]{\color{red}{\textsf{JB}[\smaller\sffamily #1}]}
+\newcommand{\sd}[1]{\color{magenta}{\textsf{SD}[\smaller\sffamily\color{magenta} #1}]}
+\newcommand{\ad}[1]{\color{violet}{\textsf{AD}[\smaller\sffamily #1}]}
+\newcommand{\cd}[1]{\color{cyan}{\textsf{CR}[\smaller\sffamily #1}]}
 
 \newcommand{\java}{\textsf{Java}\xspace}
 \newcommand{\cp}{\textsf{C}\xspace}
@@ -54,7 +54,7 @@
 \newcommand{\py}{\textsf{Python}\xspace}
 \newcommand{\rb}{\textsf{Ruby}\xspace}
 \newcommand{\go}{\textsf{Go}\xspace}
-
+\newcommand{\librariesio}{\textsf{Libraries.io}\xspace}
 
 \newcommand{\git}{\textit{git}\xspace}
 \newcommand{\rqOne}{$RQ_1$ Do the variant forks and their upstream counterparts have common maintainers?}
