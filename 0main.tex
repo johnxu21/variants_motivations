@@ -40,12 +40,12 @@
 
 \definecolor{dark_green)}{rgb}{0.0, 0.5, 0.0}
 
-\newcommand{\tm}[1]{{\textsf{TM}[\smaller\sffamily\color{blue} #1}]}
-\newcommand{\az}[1]{{\textsf{AZ}[\smaller\sffamily\color{orange} #1}]}
-\newcommand{\jb}[1]{{\textsf{JB}[\smaller\sffamily\color{red} #1}]}
-\newcommand{\sd}[1]{{\textsf{SD}[\smaller\sffamily\color{magenta} #1}]}
-\newcommand{\ad}[1]{{\textsf{AD}[\smaller\sffamily\color{violet} #1}]}
-\newcommand{\cd}[1]{{\textsf{CR}[\smaller\sffamily\color{cyan} #1}]}
+\newcommand{\tm}[1]{{\color{blue}\textsf{TM}[\smaller\sffamily #1}]}
+\newcommand{\az}[1]{{\color{orange}\textsf{AZ}[\smaller\sffamily #1}]}
+\newcommand{\jb}[1]{{\color{red}\textsf{JB}[\smaller\sffamily #1}]}
+\newcommand{\sd}[1]{{\color{magenta}\textsf{SD}[\smaller\sffamily\color{magenta} #1}]}
+\newcommand{\ad}[1]{{\color{violet}\textsf{AD}[\smaller\sffamily #1}]}
+\newcommand{\cd}[1]{{\color{cyan}\textsf{CR}[\smaller\sffamily #1}]}
 
 \newcommand{\java}{\textsf{Java}\xspace}
 \newcommand{\cp}{\textsf{C}\xspace}
@@ -54,7 +54,7 @@
 \newcommand{\py}{\textsf{Python}\xspace}
 \newcommand{\rb}{\textsf{Ruby}\xspace}
 \newcommand{\go}{\textsf{Go}\xspace}
-
+\newcommand{\librariesio}{\textsf{Libraries.io}\xspace}
 
 \newcommand{\git}{\textit{git}\xspace}
 \newcommand{\rqOne}{$RQ_1$ Do the variant forks and their upstream counterparts have common maintainers?}
@@ -116,6 +116,10 @@ Upstream, Variant Forks, GitHub, Software ecosystems, Maintenance, Variability
 \input{6threats_and_conclusion}
 
 
+%TOM: FORCE NEW PAGE FOR REFERENCES (since we have 10+1page)
+\newpage
+\tm{John, clean up references, for example, make sure that all titles of papers properly use capitalisation. There are many places where this is not the case because by default latex puts all words in titles of a citation in lowercase. So you have to force words that you need to uppercase by putting them between curly braces.}
+\tm{There are other things that can be reduced, e.g. no need to put "Proceedings of", no need to put the conference number (e.g. 19th) or conference year as part of the conference title. Otherwise the year will be shown twice. Be consistent in using DOI or URL for citations. Either use it everywhere or nowhere. Preferably consistently use the DOI instead of some publisher-specific URL if the DOI is available.}
 \bibliographystyle{IEEEtran}
 \typeout{}
 \bibliography{biblio}
