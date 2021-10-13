@@ -9,7 +9,6 @@ To understand the motivations behind the creation and maintenance of variant for
 Like we discussed in Section~\ref{sec:intro} we stated that a variant fork of an mainline project is also a real product developed in parallel with the mainline, while providing a solution different from the mainline.
 We extract our dataset variant forks from two main sources: the first dataset is extracted from \librariesio\footnote{https://libraries.io} and and the second dataset is extracted directly from \gh. We further classify the second dataset into two types: ones where the variant fork is still attached to the mainline (a direct traceability link between mainline and fork still exists that can be used for exchanging pull requests), and variant forks which are detached from the mainline (no direct traceablity link exists).
 
-
 \subsubsection{Libraries.io}
 \label{sec:library.io}
 We extracted the mainline--variant fork pairs from the most popular package managers for different programming language ecosystems that can be found on one central location \librariesio, which is a platform that periodically collects all data from different package managers, that include, \texttt{npm}, \texttt{Go}, \texttt{Maven}, \texttt{Plpy}, \texttt{Packagist}, etc. We extract the mainline--variant fork pairs from the latest \texttt{Libraries.io} data dump release 1.6.0 that was released on January 12, 2020. The meta-model for the data on the \texttt{Libraries.io} data dump can be found online.\footnote{https://libraries.io/data}
@@ -39,7 +38,7 @@ iv) We manually verify that the mainline and fork are indeed in two different pr
 
 \subsubsection{Directly from \gh (detached)}
 \label{sec:github-detached}
-For these pairs of mainline--variant forks, the variant forks are themselves mainline repositories on \gh. 
+For these pairs of mainline--variant forks, the variants are themselves mainline repositories on \gh. 
 We searched for mainline repositories that have the key word ``\texttt{fork of}'' in the description and\,/\,or in the \texttt{readme.md} file. In some of the cases, the link or name of the mainline is not mentioned explicitly and therefore a manual search has to be conducted to identify the mainline repositories where they were forked from. Next, we also follow Steps~(\ref{sec:active})\ra (\ref{sec:email}) in Section~\ref{sec:library.io}.
 Finally, we also use the same criteria to extract the survey participants like we described in Section~\ref{sec:library.io} and~\ref{sec:github-attached}. \textbf{Until this step, we discovered a total of 40 mainline--variant fork pairs having a total of 84 maintainers with a public-facing email address.}
 
@@ -48,7 +47,7 @@ Finally, we also use the same criteria to extract the survey participants like w
 \subsection{Survey Protocol Development \textit{\&} Participant Recruitment}
 \label{sec:protocal}
 Since our aim was to learn from a large number of participants, we opted to use surveys scale well as compared to interviews.
-We used the knowledge gained from literature and designed a 12-question survey that would last at most 15 minutes. The 12 questions that were asked covered the three key research questions in this study of exploring motivation of creating and maintaining variant forks:
+We used the knowledge gained from literature, especially the motivations we discussed in Section~\ref{sec:motivations} and designed a 12-question survey that would last at most 15 minutes. The 12 questions that were asked covered the three key research questions in this study of exploring motivation of creating and maintaining variant forks:
 
 \begin{itemize}
 \item Are there common developers between the variants and the mainline repositories? (RQ1)
@@ -56,8 +55,9 @@ We used the knowledge gained from literature and designed a 12-question survey t
 \item Is there any interaction between the fork and the mainline repository during their co-evolution? (RQ3)
 \end{itemize}
 
-In Section~\ref{sec:motivations} we discussed five motivations for forking studied in literature: technical, governance disputes, reviving an abandoned project, personal, legal issues and experimental. 
-Since in this study we are only interested in variant forks that co-evolve with their mainline counterparts, we chose to further explore motivations of technical, governance disputes, legal, and personal. We designed the questions in such a way that the participants can choose the most appropriate reason from the provided options that best suits their motivations for forking. 8 of the 12 questions were closed-ended that included both multiple choice response questions and Likert-scale response questions to allow for more quantitative analysis. For 3 of the 8 closed-ended questions, we asked a total of 4 optional open-ended questions to provide respondents with an opportunity to share additional thoughts and feedback.
+%In Section~\ref{sec:motivations} we discussed four motivations for forking studied in literature: technical, governance disputes, personal, legal issues and experimental. 
+%Since in this study we are only interested in variant forks that co-evolve with their mainline counterparts, we chose to further explore motivations of technical, governance disputes, legal, and personal. 
+We designed the questions in such a way that the participants can choose the most appropriate reason from the provided options that best suits their motivations for forking. 8 of the 12 questions were closed-ended that included both multiple choice response questions and Likert-scale response questions to allow for more quantitative analysis. For 3 of the 8 closed-ended questions, we asked a total of 4 optional open-ended questions to provide respondents with an opportunity to share additional thoughts and feedback.
 
 \nd \textbf{Participant Recruitment.} Before recruiting the participants, we developed ``informed consent form'', which the participants had to read and agree with the contents before taking part in the survey. 
 To recruit participants, we used the 491 variants along side the 762 public-facing email addresses we collected in Section~\ref{sec:forks_and_participants}. Before inviting the participants to participate in our online survey, we customized each of the \textit{email message content} using the respondents personal information. For example the email title was customized as follows\footnote{Academic Research on motivation of creating forks - \texttt{[fork\_name]}}. The body of the email message was also customized as follows\footnote{[\ldots] we have identified your \gh repository \texttt{[fork\_name]} as a variant fork of the mainline \texttt{[mainline\_name]}.}.
