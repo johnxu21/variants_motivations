@@ -1,11 +1,17 @@
 \section{Study Design}
 \label{sec:study_design}
 To understand the motivations behind the creation and maintenance of variant forks we performed the following activities: first, we collected mainline--variant fork pairs from \gh and then extracted the participants from the variant forks. Next, we designed and developed a survey protocol that we used to recruit the participants.
- %The survey was run in April 2021 with the goal of understanding why developers create and maintain variant forks. 
+ %The survey was run in April 2021 with the goal of understanding why developers create and maintain variant forks.
+
+
+ \ad{@John: I suggest to first explain how you designed the survey, then how you found/selected participants, then how you analyzed their answers.}
 
 
 \subsection{Identifying variant Forks and Participants}
 \label{sec:forks_and_participants}
+
+\ad{I think there are too many (technical and practical) details in this section. This is likely to confuse the readers. I propose to focus on the main steps only, and to better motivate what we did. I propose the following outline: to conduct the survey, we need developers involved in the creation and maintenance of variant projects; to identify potentially competing variant projects; we distinguish between \emph{attached} and \emph{detached} projects; we relied on two data sources, namely Libraries.io and \gh; Libraries.io contains metadata for distributed packages on various package registries; we extracted the metadata and filtered those projects that are forks of another one using \gh API; we also used \gh search feature to find popular repositories and their forks; we manually filtered repositories corresponding to mainline projects and their variant projects; at the end of this step, we have XX \emph{attached} mainline-variant pairs; we also used \gh search feature looking for repositories that are not referred as ``forks'' but that do contain ``fork of'' in their description; at the end of this process, we have XX \emph{detached} mainline-variant pairs we manually checked; then we looked at the project history to find appropriate respondent candidates (how?); we contacted them, and got XX responses.}
+
 Like we discussed in Section~\ref{sec:intro} we stated that a variant fork of an mainline project is also a real product developed in parallel with the mainline, while providing a solution different from the mainline.
 We extract our dataset variant forks from two main sources: the first dataset is extracted from \librariesio\footnote{https://libraries.io} and and the second dataset is extracted directly from \gh. We further classify the second dataset into two types: ones where the variant fork is still attached to the mainline (a direct traceability link between mainline and fork still exists that can be used for exchanging pull requests), and variant forks which are detached from the mainline (no direct traceablity link exists).
 
@@ -19,13 +25,13 @@ We follow the following steps:
 
 \item Next, we use the field \texttt{Forkboolean} to identify repositories that are forks, and use the field \texttt{Fork Source Name with Owner} to identify the fork repository name as well as the parent repository (mainline).
 
-\item Next, we merge the sets of packages from Step 1 and Step 2 to identify only packages that make an mainline--fork pair (i.e., where the fork repository and its corresponding mainline in the set in Step 2 have their packages present in the set in Step 1. Using the \gh API, we then verify that indeed the mainline is a parent of the variant fork and they are still existing on \gh so as to eliminate wrong pairs (e.g., those that have been deleted from \gh). 
+\item Next, we merge the sets of packages from Step 1 and Step 2 to identify only packages that make an mainline--fork pair (i.e., where the fork repository and its corresponding mainline in the set in Step 2 have their packages present in the set in Step 1. Using the \gh API, we then verify that indeed the mainline is a parent of the variant fork and they are still existing on \gh so as to eliminate wrong pairs (e.g., those that have been deleted from \gh).
 
 \item Using the \gh API, we then verify that indeed the mainline parent and the fork variant are still existing on \gh. We also extract the latest commit dates using the \gh API.
 
-\item \label{sec:active} Since we are not interested in pairs where both mainline and variant fork are relatively ``active'', we selected only pairs where of the repos last $commit\_date \leq 1$ year, from the time we collected the dataset (\texttt{2021-04-01}). 
+\item \label{sec:active} Since we are not interested in pairs where both mainline and variant fork are relatively ``active'', we selected only pairs where of the repos last $commit\_date \leq 1$ year, from the time we collected the dataset (\texttt{2021-04-01}).
 
-\item \label{sec:pr} We also ensured that at least both the mainline and variant fork have merged at least one pull request after the fork date which signifies some level of maintenance on the repository.  %Until this step, we discovered a total of 545 mainline--variant fork pairs.% having their packages published in 18 package managers that are listed on \texttt{Libraries.io}. 
+\item \label{sec:pr} We also ensured that at least both the mainline and variant fork have merged at least one pull request after the fork date which signifies some level of maintenance on the repository.  %Until this step, we discovered a total of 545 mainline--variant fork pairs.% having their packages published in 18 package managers that are listed on \texttt{Libraries.io}.
 
 \item \label{sec:email} Next, to determine the survey participants, we extracted all the maintainers from the variant fork repositories using the \gh API. We define a repository maintainer as one who has merged at least one pull request in a repository (code integrator). Using the maintainer login ID, we select all maintainers having their email address that are \textit{public-facing according to ``\gh Privacy Statement''}. \textbf{Until this step, we discovered a total of 227 mainline--variant fork pairs all together having a total of 308 maintainers with a public-facing email address.}
 
@@ -38,11 +44,11 @@ iv) We manually verify that the mainline and fork are indeed in two different pr
 
 \subsubsection{Directly from \gh (detached)}
 \label{sec:github-detached}
-For these pairs of mainline--variant forks, the variants are themselves mainline repositories on \gh. 
+For these pairs of mainline--variant forks, the variants are themselves mainline repositories on \gh.
 We searched for mainline repositories that have the key word ``\texttt{fork of}'' in the description and\,/\,or in the \texttt{readme.md} file. In some of the cases, the link or name of the mainline is not mentioned explicitly and therefore a manual search has to be conducted to identify the mainline repositories where they were forked from. Next, we also follow Steps~(\ref{sec:active})\ra (\ref{sec:email}) in Section~\ref{sec:library.io}.
 Finally, we also use the same criteria to extract the survey participants like we described in Section~\ref{sec:library.io} and~\ref{sec:github-attached}. \textbf{Until this step, we discovered a total of 40 mainline--variant fork pairs having a total of 84 maintainers with a public-facing email address.}
 
-\nd Overall from the three dataset extraction methods used, we collected \textbf{a total of 491 mainline--variant fork pairs having a total of 762 maintainers of the variant forks with public-facing email address}. 
+\nd Overall from the three dataset extraction methods used, we collected \textbf{a total of 491 mainline--variant fork pairs having a total of 762 maintainers of the variant forks with public-facing email address}.
 
 \subsection{Survey Protocol Development \textit{\&} Participant Recruitment}
 \label{sec:protocal}
@@ -55,14 +61,15 @@ We used the knowledge gained from literature, especially the motivations we disc
 \item Is there any interaction between the fork and the mainline repository during their co-evolution? (RQ3)
 \end{itemize}
 
-%In Section~\ref{sec:motivations} we discussed four motivations for forking studied in literature: technical, governance disputes, personal, legal issues and experimental. 
-%Since in this study we are only interested in variant forks that co-evolve with their mainline counterparts, we chose to further explore motivations of technical, governance disputes, legal, and personal. 
+%In Section~\ref{sec:motivations} we discussed four motivations for forking studied in literature: technical, governance disputes, personal, legal issues and experimental.
+%Since in this study we are only interested in variant forks that co-evolve with their mainline counterparts, we chose to further explore motivations of technical, governance disputes, legal, and personal.
 We designed the questions in such a way that the participants can choose the most appropriate reason from the provided options that best suits their motivations for forking. 8 of the 12 questions were closed-ended that included both multiple choice response questions and Likert-scale response questions to allow for more quantitative analysis. For 3 of the 8 closed-ended questions, we asked a total of 4 optional open-ended questions to provide respondents with an opportunity to share additional thoughts and feedback.
 
-\nd \textbf{Participant Recruitment.} Before recruiting the participants, we developed ``informed consent form'', which the participants had to read and agree with the contents before taking part in the survey. 
+\nd \textbf{Participant Recruitment.} Before recruiting the participants, we developed ``informed consent form'', which the participants had to read and agree with the contents before taking part in the survey.
 To recruit participants, we used the 491 variants along side the 762 public-facing email addresses we collected in Section~\ref{sec:forks_and_participants}. Before inviting the participants to participate in our online survey, we customized each of the \textit{email message content} using the respondents personal information. For example the email title was customized as follows\footnote{Academic Research on motivation of creating forks - \texttt{[fork\_name]}}. The body of the email message was also customized as follows\footnote{[\ldots] we have identified your \gh repository \texttt{[fork\_name]} as a variant fork of the mainline \texttt{[mainline\_name]}.}.
 To recruit the participants, we follow the \textit{\gh Privacy Statement}\footnote{https://docs.github.com/en/github/site-policy/github-privacy-statement} particularly, we found the following close very useful to us\footnote{``[\ldots] you must comply with our Terms of Service regarding scraping and privacy, [\ldots]. For example, where a GitHub user has made an email address public-facing for the purpose of identification and attribution, do not use that email address for commercial advertising. We expect you to reasonably secure any User Personal Information you have gathered from GitHub, and to respond promptly to complaints, removal requests, and ``do not contact’’ requests from GitHub or GitHub users''.}. We managed to attract \textbf{a total of 112 respondents (response rate of 15\%) representing a total of 105 variant fork repositories (response rate of 21\%)}.
 
+\ad{I don't think we need the above paragraph. We can simply say (when talking about how we selected participants) that we made sure to follow \gh Privacy Statement closely; and (when talking about the survey design) that participants were asked to read and agree an informed consent form before taking part in the survey.}
 
 
 \subsection{Analysis}
