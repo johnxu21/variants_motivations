@@ -1,23 +1,25 @@
 
 
-\begin{figure}[ht]
-\begin{center}
-    \centering
-    \includegraphics[width=\columnwidth]{pdfs/stats.pdf}
-    \caption{Distribution of selected metrics. PRs, issues and commits are counted after the fork date for both mainline and variant.}
-    \label{fig:stats}
-\end{center}
-\vspace{-.3cm}
-\end{figure}
+
+
+
 \section{Results}
 \label{sec:results}
-
-
 This section presents the results of our investigation.
 We present the results of the analysis of the survey and in some cases we shall quote the survey respondents by referring to them using a [R1-X] or [R2-X]
 notation, where X is the respondent’s ID, R1 and R2 represent the \textit{attached} and the \textit{detached} variants, respectively. Codes resulting from coding open-ended answers are \dashuline{underlined}.
 Open ended responses from the participants will be presented in \emph{italics}.
 Where applicable, we integrate and compare our findings with related research findings.
+
+
+\nd \textbf{\rqOne}
+Recall that in Section~\ref{sec:rqs} this RQ was divided into two: \rqOneOne and \rqOneTwo.
+For both $RQ_{1.1}$ and $RQ_{1.2}$ we provided multiple choice answers to the questions. We present the results of $RQ_{1.1}$ and $RQ_{1.2}$ in Fig.~\ref{fig:original_common}. Looking at both Fig.~\ref{fig:original} and Fig.~\ref{fig:common} for both question respectively, we can see that the majority of the participants chose the options of \dashuline{none} (none of the creators of the variant were part of the mainline) and \dashuline{no} (they do not have common active maintainers).
+This implies that the most of developers that are involved in the creation and maintenance of the variants are outside the core maintainers of the original project where the variant was forked.
+The difference in the numbers of participants who selected  \dashuline{none} for $RQ_{1.1}$ and \dashuline{no} for $RQ_{1.2}$ can be visualized in Fig.~\ref{fig:sankey_motivation}.
+We look at how responses of $RQ_{1.1}$--\dashuline{original developers?} and $RQ_{1.2}$--\dashuline{common active maintainers?} are associated, we can see that the majority of the respondents that selected the option \dashuline{none} in $RQ_{1.2}$ went ahead to select the option \dashuline{no} in $RQ_{1.2}$. We can also see other associations between all responses of $RQ_{1.1}$ and $RQ_{1.1}$.
+For example, in $RQ_{1.1}$, the participant [R1-36] who selected the answer option \dashuline{6 -- 10} developers from the mainline were involved in creation of the variant, also selected the option \dashuline{yes \emph{\&} no}--\emph{``They used to have common maintainers in the early stages of the variant, but now the projects have technically diverged away from each other, there are no more common maintainers"} in $RQ_{1.2}$.
+We also observed that respondents [R1-51] and [R1-57] who selected the option \dashuline{6 -- 10} and \dashuline{2 -- 5}, respectively, for $RQ_{1.1}$ also selected the option \dashuline{no} for $RQ_{1.2}$. This implies that there were at least two maintainers involved in the creation of the fork, but none of those maintainers is currently contributing to both repositories.
 
 \begin{figure*}[ht]
 \centering
@@ -33,20 +35,6 @@ Where applicable, we integrate and compare our findings with related research fi
      \label{fig:original_common}
      \vspace{-.3cm}
 \end{figure*}
-
-First, we present the distributions of selected popularity metrics in Fig.~\ref{fig:stats} of stars, PRs, issues and commits for the 105 mainline--variant pair repositories we investigated. For PRs and issues (closed + open) we consider for all and for commits we count commits in the main branch. While it is not surprising that the counts for mainline metrics are always higher than those of the variants, it is interesting that most variants are also popular in stars, pull requests and issues counts. This gives us confidence that we are studying real variants as opposed to social forks.
-\ad{I propose to move Fig.~\ref{fig:stats} and the corresponding text to previous section.}
-
-
-
-\nd \textbf{\rqOne}
-Recall that in Section~\ref{sec:rqs} this RQ was divided into two: \rqOneOne and \rqOneTwo.
-For both $RQ_{1.1}$ and $RQ_{1.2}$ we provided multiple choice answers to the questions. We present the results of $RQ_{1.1}$ and $RQ_{1.2}$ in Fig.~\ref{fig:original_common}. Looking at both Fig.~\ref{fig:original} and Fig.~\ref{fig:common} for both question respectively, we can see that the majority of the participants chose the options of \dashuline{none} (none of the creators of the variant were part of the mainline) and \dashuline{no} (they do not have common active maintainers).
-This implies that the most of developers that are involved in the creation and maintenance of the variants are outside the core maintainers of the original project where the variant was forked.
-The difference in the numbers of participants who selected  \dashuline{none} for $RQ_{1.1}$ and \dashuline{no} for $RQ_{1.2}$ can be visualized in Fig.~\ref{fig:sankey_motivation}.
-We look at how responses of $RQ_{1.1}$--\dashuline{original developers?} and $RQ_{1.2}$--\dashuline{common active maintainers?} are associated, we can see that the majority of the respondents that selected the option \dashuline{none} in $RQ_{1.2}$ went ahead to select the option \dashuline{no} in $RQ_{1.2}$. We can also see other associations between all responses of $RQ_{1.1}$ and $RQ_{1.1}$.
-For example, in $RQ_{1.1}$, the participant [R1-36] who selected the answer option \dashuline{6 -- 10} developers from the mainline were involved in creation of the variant, also selected the option \dashuline{yes \emph{\&} no}--\emph{``They used to have common maintainers in the early stages of the variant, but now the projects have technically diverged away from each other, there are no more common maintainers"} in $RQ_{1.2}$.
-We also observed that respondents [R1-51] and [R1-57] who selected the option \dashuline{6 -- 10} and \dashuline{2 -- 5}, respectively, for $RQ_{1.1}$ also selected the option \dashuline{no} for $RQ_{1.2}$. This implies that there were at least two maintainers involved in the creation of the fork, but none of those maintainers is currently contributing to both repositories.
 
 \nd \textbf{Discussion and Implications RQ1}
 Our findings on this RQ conquer with the finding of Businge et al.~\cite{businge:emse:2021}. As opposed to our exploratory study surveying maintainers of variants, the study of Businge et al.~\cite{businge:emse:2021} was a large scale empirical study on mainline--variant pairs from three software ecosystems. They reported that over 82\% of the 10,979 mainline--variant are owned by different developers. In our study we have also found 82\% of variants are maintained by developers different from those in the mainline.
