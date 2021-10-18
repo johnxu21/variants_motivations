@@ -1,7 +1,7 @@
 \section{Introduction}
 \label{sec:intro}
 
-The collaborative nature of open source software development has led to the advent of social coding platforms such as \gh, BitBucket, and GitLab.
+The collaborative nature of open source software development has led to the advent of social coding platforms centred around the git version control system, such as \gh, BitBucket, and GitLab.
 These platforms bring the collaborative nature and code reuse of open source software development to another level, through forking, pull requests and many other integrated mechanisms.
 Developers may fork a \textit{mainline repository} into a new \textit{forked repository} and take governance over the latter while preserving the full revision history.
 Before the advent of social coding platforms, forking was rare and was typically intended to compete with the original project~\cite{Linus:2012Perspectives,Gregorio:2012,Viseur:2012Forks,Linus:2013CodeForking,Linus:2011ToFork,Gamalielsson:2014Sustainability}.
@@ -12,7 +12,7 @@ On the other hand, \textit{variant forks} are created by splitting off a new dev
 These forks allow to steer the development into another direction, while leveraging the mainline project that defines or adheres to some standards~\cite{sung:ICSE:2020}.
 
 Many studies have already investigated the motivations behind variant forks in the context of open source projects~\cite{Linus:2012Perspectives,Gregorio:2012,Viseur:2012Forks,Linus:2013CodeForking,Linus:2011ToFork,Gamalielsson:2014Sustainability}.
-However, most of them have been conducted before the rise of social coding platforms and it is known that the \gh era significantly changed the perception and practices of forking~\cite{Zhou:2020}.
+However, most of them have been conducted before the rise of social coding platforms and it is known that \gh has significantly changed the perception and practices of forking~\cite{Zhou:2020}.
 Developers frequently perceive social forks as alternatives to the original mainline project, and variant forks often evolve out of them rather than being planned deliberately.
 
 In this paper, we investigate the rationale and impediments behind the creation and maintenance of variant forks on \gh, based on an online survey we conducted with 112 maintainers of variant forks.
@@ -21,8 +21,8 @@ In this paper, we investigate the rationale and impediments behind the creation 
 Our contributions are manifold:
 we identify a number of new reasons for creating and maintaining variant forks;
 we identify and categorize different code reuse and change propagation practices between a variant and its mainline;
-we observe that little code integration occurs between a variant and its mainline, and provide concrete reasons for that;
-and finally, we discuss the implications on these findings and how tools can help to achieve an efficient code integration and collaboration between mainlines and diverging variant forks.
+we observe that little code integration occurs between a variant and its mainline, and uncover concrete reasons for that;
+and finally, we discuss the implications of these findings and how tools can help to achieve an efficient code integration and collaboration between mainlines and diverging variant forks.
 
 % \nd \textbf{We report a number of findings}: 1) Our study identifies a number of common fine-grained motivations for creating and maintaining variants that include: different goals\,/content\,/communities, customization, supporting personal projects, supporting the upstream, localization, up-taking a frozen feature.
 % 2) Our study has identified a number of categories relating to different reuse practices of variants that include: integrating only bug\,/security fixes, updates only on specific features, all updates excluding specific features, and only updates that pass CI. For example, we have discovered software reuse of a family of applications from the ``cryptocurrency world'', which is dedicated project software ecosystem~\cite{tommens:2020}.
