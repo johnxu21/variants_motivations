@@ -8,24 +8,23 @@ To understand the motivations behind the creation and maintenance of variant for
 
 \subsection{Survey Protocol Design}
 \label{sec:protocal}
-Since our aim was to learn from a large number of participants, we opted to use surveys scale well as compared to interviews.
-\tm{I do not understand the sentence "we opted to use surveys scale well", something is incorrect in this sentence.}
-Relying on the knowledge gained from literature, especially the motivations  presented in Section~\ref{sec:motivations}, we designed a 12-question survey that would last at most 15 minutes. The survey questions covered the three key research questions in this study related to the motivation of creating and maintaining variant forks:
-
-\begin{itemize}
-\item Are there common contributors between the variants and the mainline repositories? ($RQ_1$)
-\item What were the motivations behind creating and maintaining a variant fork? ($RQ_2$)
-\item Is there any interaction between the fork and the mainline repository during their co-evolution? ($RQ_3$)
-\end{itemize}
-
-We designed the questions in such a way that the participants could choose the  reason from the provided options that best suited their motivations for forking. 8 of the 12 questions were close-ended, including both multiple choice response questions and Likert-scale response questions to allow for more quantitative analysis. For 3 of the 8 close-ended questions, we provided a total of 4 optional open-ended questions to give respondents the opportunity to share additional thoughts and feedback.
+Since our aim was to learn from a large number of participants, we opted to use surveys that scales well as compared to interviews.
+%\tm{I do not understand the sentence "we opted to use surveys scale well", something is incorrect in this sentence.}
+Relying on the knowledge gained from literature, especially the motivations  presented in Section~\ref{sec:motivations}, we designed a 12-question survey that would last at most 15 minutes. 
+% \begin{itemize}
+% \item Are there common contributors between the variants and the mainline repositories? ($RQ_1$)
+% \item What were the motivations behind creating and maintaining a variant fork? ($RQ_2$)
+% \item Is there any interaction between the fork and the mainline repository during their co-evolution? ($RQ_3$)
+% \end{itemize}
+We designed the questions in such a way that the participants could choose the  reason from the provided options that best suited their motivations for forking. 8 of the 12 questions were close-ended, including both multiple choice response questions and Likert-scale response questions to allow for more quantitative analysis. For 3 of the 8 close-ended questions, we provided a total of 4 optional open-ended questions to give respondents the opportunity to share additional thoughts and feedback. The survey questions covered the two key research questions in this study.
 
  %\ad{@John: I suggest to first explain how you designed the survey, then how you found/selected participants, then how you analyzed their answers.}
 
 
 \subsection{Identifying variant projects and participants}
 \label{sec:forks_and_participants}
-To conduct the survey, we required developers involved in the creation and maintenance of variant projects and possibly potentially competing.\tm{The "and possibly potentially competing" is unclear: what is possibly and potentially competing with what?} We distinguish between two variant projects: (i) \emph{attached forks} are still attached to the mainline in the sense that a direct traceability link exists between mainline and fork that can be used for exchanging pull requests); and (ii) \emph{detached forks} are cloned and re-uploaded with no existing link between the mainline and the fork.
+To conduct the survey, we required developers involved in the creation and maintenance of variant projects.% and possibly potentially competing.\tm{The "and possibly potentially competing" is unclear: what is possibly and potentially competing with what?} 
+We distinguish between two variant projects: (i) \emph{attached forks} are still attached to the mainline in the sense that a direct traceability link exists between mainline and fork that can be used for exchanging pull requests); and (ii) \emph{detached forks} are cloned and re-uploaded with no existing link between the mainline and the fork.
 To identify such forks we relied on two data sources, \librariesio\footnote{https://libraries.io} and \gh, as follows:
 \begin{itemize}
 \item \librariesio contains metadata about packages distributed through various package registries; we used this metadata to determine those projects that are forks of another one. We follow the variant identification method discussed in the previous studies~\cite{businge:emse:2021,businge:benevol:2020}. We searched popular package registries of npm, Go, Maven, PyPI and Packagist.
@@ -33,7 +32,8 @@ To identify such forks we relied on two data sources, \librariesio\footnote{http
 We only considered those variants that were actively maintained in parallel with their mainline counterparts. We extracted variants where the mainline--variant pairs were created before 2019-04-01 and updated after 2020-04-01.\tm{The choice of this start and end date is not motivated.}
 This process lead us to \textit{227 mainline–variant project pairs}.
 
-\item Since we wanted to increase the number of respondents to our survey, we  collected additional variant projects from \gh that were not among the 227 extracted from \librariesio. We searched popular mainline repositories (having $\geq 50$ forks) written in the 17 popular programming languages on \gh that include: JavaScript, Java, Go, Python, Ruby, C. \tm{The threshold of 50 forks is not justified, possible threat to validity.} For each mainline, we extracted forks that were created before 2019-04-01 and updated after 2020-04-01, having $\geq 10$ stargazers, having $\geq 10$ commits ahead of the mainline (unique commits), having $\geq 5$ closed pull requests, and where the fork and mainline differ in the contents of the \texttt{readme.md} file for description.\tm{Again many magic numbers (10 and 5) that are not justified.}
+\item Since we wanted to increase the number of respondents to our survey, we  collected additional variant projects from \gh that were not among the 227 extracted from \librariesio. We searched popular mainline repositories (having $\geq 50$ forks) written in the 17 popular programming languages on \gh that include: JavaScript, Java, Go, Python, Ruby, C. \tm{The threshold of 50 forks is not justified, possible threat to validity.} 
+For each mainline, we extracted forks that were created before 2019-04-01 and updated after 2020-04-01, having $\geq 10$ stargazers, having $\geq 10$ commits ahead of the mainline (unique commits), having $\geq 5$ closed pull requests, and where the fork and mainline differ in the contents of the \texttt{readme.md} file for description.\tm{Again many magic numbers (10 and 5) that are not justified.}
  We manually verified that the mainline and fork indeed belonged to two different projects by reading and comparing the contents of their \texttt{readme.md}. Using this process, \textit{we obtained an additional 225 mainline–variant project pairs}.
 \end{itemize}
 
@@ -95,6 +95,7 @@ Overall from the three dataset extraction methods used, \textbf{we collected a t
 %To recruit participants, we used the 491 variants along side the 762 public-facing email addresses we collected in Section~\ref{sec:forks_and_participants}. Before inviting the participants to participate in our online survey, we customized each of the \textit{email message content} using the respondents personal information. For example the email title was customized as follows\footnote{Academic Research on motivation of creating forks - \texttt{[fork\_name]}}. The body of the email message was also customized as follows\footnote{[\ldots] we have identified your \gh repository \texttt{[fork\_name]} as a variant fork of the mainline \texttt{[mainline\_name]}.}.
 %To recruit the participants, we follow the \textit{\gh Privacy Statement}\footnote{https://docs.github.com/en/github/site-policy/github-privacy-statement} particularly, we found the following close very useful to us\footnote{``[\ldots] you must comply with our Terms of Service regarding scraping and privacy, [\ldots]. For example, where a GitHub user has made an email address public-facing for the purpose of identification and attribution, do not use that email address for commercial advertising. We expect you to reasonably secure any User Personal Information you have gathered from GitHub, and to respond promptly to complaints, removal requests, and ``do not contact’’ requests from GitHub or GitHub users''.}. We managed to attract \textbf{a total of 112 respondents (response rate of 15\%) representing a total of 105 variant fork repositories (response rate of 21\%)}.
 When selecting the participants, we followed the \gh Privacy Statement\footnote{https://docs.github.com/en/github/site-policy/github-privacy-statement} closely, by selecting only those with public-facing emails. 
+Using the \gh API, we searched each variant repository for contributors with public-facing emails that had integrated at least one pull requests into the variant.
 At end of this process, we collected \textbf{a total of 762 variant maintainers from the 491 variant project having public-facing email address}.
 When distributing the survey protocol, we customized each of the \textit{email message content} using the respondents personal information. For example the email title was customized as follows\footnote{Academic Research on motivation of creating forks - \texttt{[fork\_name]}}. The body of the email message was also customized as follows\footnote{[\ldots] we have identified your \gh repository \texttt{[fork\_name]} as a variant fork of the mainline \texttt{[mainline\_name]}}.
 We also asked the participants to read and accept the informed consent form before taking part in our survey.
