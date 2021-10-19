@@ -15,38 +15,33 @@ Zhou et al.~\cite{Zhou:2020} concludes that most variant forks start as social f
 and that perceptions of forks have changed with the advent of \gh.
 Robles and Gonz{\'a}lez-Barahona~\cite{Gregorio:2012} carried out a comprehensive study on a carefully filtered list of 220 potential forks that were referenced on Wikipedia. %The authors assumed that a fork is significant if a reference to it appears in the English Wikipedia.\ad{@John: I missing the point of this last sentence. What are the findings of \cite{Gregorio:2012}?}
 
-There are quite a number of known motivations for creating variant in literature. Below, we present some of the reported reasons, focusing on those where both the mainline and variant co-evolve together.\ad{@John: Where do the following reasons come from? Is this from \cite{Gregorio:2012} or from additional references (and in that case, which ones?)}
+There are quite a number of known motivations for creating variant in literature. Below, we present some of the reported reasons, focusing on those where both the mainline and variant co-evolve together.
+% \ad{@John: Where do the following reasons come from? Is this from \cite{Gregorio:2012} or from additional references (and in that case, which ones?)}
 
-\sd{@John: I would like to see a better motivation on where these 4 categories come from.
-Is this your own (ad hoc) classification?
-Does it stem from another paper?
-Is this a result of a (shallow) literature survey?
-Is this what came out of your analysis of the survey responses?}
+% \sd{@John: I would like to see a better motivation on where these 4 categories come from.
+% Is this your own (ad hoc) classification?
+% Does it stem from another paper?
+% Is this a result of a (shallow) literature survey?
+% Is this what came out of your analysis of the survey responses?}
 
 \begin{list}{$\circ$}{}
-   \item \textit{Technical reasons} refer to adding or focusing content---for instance, when a developer wants to include a new feature in the mainline, but the mainline developers are reluctant to do so. An example is \textsf{Poppler}, a fork of \textsf{xpdf} relying on the \textsf{poppler} library~\cite{Gregorio:2012}.
+   \item \textit{Technical reasons} refer to adding or focusing content---for instance, when a developer wants to include a new feature in the mainline, but the mainline developers are reluctant to do so. An example is \textsf{Poppler}, a fork of \textsf{xpdf} relying on the \textsf{poppler} library~\cite{Gregorio:2012,Wheeler:2015Forking}.
 
-    \item \textit{Governance disputes.} This may occur when the original leaders (e.g., a company, an institution or a group of developers) do not take into account the community. A well-known example is a fork of \textsf{GNU Emacs} (originally \textsf{Lucid}) that was created as a result of the significant delays in bringing out a new version to support the Energize C++ IDE. The \textsf{OpenBSD} fork of \textsf{NetBSD} is another example, where the developer team disagreed on fundamental issues (beyond mere technical matters) related to the software development and the project, causing the team to split into different projects. %The \textsf{OpenBSD} fork from \textsf{NetBSD} is an example of such a type of fork~\cite{openbsd}.
+    \item \textit{Governance disputes.} This is when some contributors from the community create a variant project when they feel that their feedback is not heard or the maintainers of the original are unresponsive or very slow at accepting their patches. A well-known example is a fork of \textsf{GNU Emacs} (originally \textsf{Lucid}) that was created as a result of the significant delays in bringing out a new version to support the Energize C++ IDE~\cite{Wheeler:2015Forking}.
 
+\item \textit{Legal issues}: Legal aspects such as disagreements on the license, trademarks or changes to conform laws (encryption) are included here. An example of such a fork is \textsf{X.Org}, that originated from \textsf{XFree}~\cite{Gregorio:2012,Wheeler:2015Forking}.
 
-   % \item \textit{Reviving an abandoned project}. When the original project is not maintained and a new developer community wishes to take over its maintenance. For example, \textsf{NCSA httpd} project to \textsf{Apache Web server} project. NCSA abandoned its web server \textsf{httpd}, then some of its users banded together to maintain it. This resulted into the world’s most popular web server, \textsf{Apache Web server}~\cite{Wheeler:2015Forking}.
-
-   % \item \textit{Commercial strategy}. When a company forks an existing project to meet some commercial strategy.
-
-\item \textit{Legal issues} (e.g., a new license, a trademark dispute or a change in laws) may drive projects to split into multiple variant forks, for different jurisdictions. %A project might adopt a new license, a trademark dispute may arise, or changes in laws (e.g., regarding encryption) require technical changes. Variant forks can be used to split development for different jurisdictions.
-Legal issues may also relate to forks emerging after a change in a commercial strategy. Consider for example \textsf{OpenOffice}, a fork of \textsf{StarOffice}. In 1999, Sun Microsystem acquired \textsf{StarOffice} from Star Division. In 2000, the community decided to create and maintain \textsf{OpenOffice} so as to keep a clean, proprietary-free open source version of \textsf{StarOffice}. %An example of such a fork is \textsf{OpenOffice} from \textsf{StarOffice}. In 1999, Star Division owned \textsf{StarOffice}, then the latter was acquired by Sun Microsystem for 59.5 million US dollars as it was supposedly cheaper than licensing Microsoft Office for 42,000 staff members. \textsf{OpenOffice} was forked from as \textsf{StarOffice} in 2000. After the fork, subsequent versions of \textsf{StarOffice} were based on additional proprietary components~\cite{Openoffice}.
-
-\item \textit{Personal}: Interpersonal disputes and irreconcilable differences of a non-technical nature lead to a rift between various parties, hence the project forks. OpenBSD is a classic example~\cite{Zhou:2020}.\ad{@John: I'm a bit lost with the last one, esp. because OpenBSD was alreayd given as example for ``Governance disputes''.}
+\item \textit{Personal}: The developer team disagrees on fundamental issues (beyond mere technical matters) related to the software development and the project. An example of such a fork is the \textsf{OpenBSD} fork from \textsf{NetBSD}~\cite{Gregorio:2012}.
 
 %The variant was created because some of the contributors felt that their feedback was not heard or maintainers were accepting patches too slowly in the mainline project.
 
 % \item \textit{Experimental}: Creating a fork to try out and test new features that will be integrated into the mainline. This category can be seen as a subcategory of technical reasons.
 \end{list}
 
-\ad{@John: I tried to iterate on this section, but it's very difficult because it's pretty messy currently. Since I don't know the content of each paper, I don't know how to organise these references in a more structured and smooth way. Consider for example \cite{Zhou:2020} being used in 7 different places, with different ``reported findings''.}
+% \ad{@John: I tried to iterate on this section, but it's very difficult because it's pretty messy currently. Since I don't know the content of each paper, I don't know how to organise these references in a more structured and smooth way. Consider for example \cite{Zhou:2020} being used in 7 different places, with different ``reported findings''.}
 
 Focusing on variant forks in the Android ecosystem, Businge et al.~\cite{businge2018appfamilies} found that re-branding, simple customizations, feature extension and implementation of different but related features are the main motivations to create a fork of an Android App.
-Zhou et al.~\cite{Zhou:2020} interviewed 18 developers of hard forks on \gh to understand reasons for forking in more modern social coding environments that explicitly support forking. The authors reported that the motivations they observed align with the findings of prior (mentioned above ) studies.
+Zhou et al.~\cite{Zhou:2020} interviewed 18 developers of hard forks on \gh to understand reasons for forking in more modern social coding environments that explicitly support forking. The authors reported that the motivations they observed align with the findings of prior (mentioned above) studies.
 
 Another recent study that has investigated variant forks is that of Sung et al.~\cite{sung:ICSE:2020}. The authors conducted an industrial case study of the implications of frequent merges from mainline and the resulting merge conflicts in a variant fork. They implemented a tool that can automatically resolve up-to 40\% of the list of eight mainline induced build breaks.
 
