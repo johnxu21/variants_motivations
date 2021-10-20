@@ -53,6 +53,7 @@ To identify these details, we asked two additional optional open-ended questions
 In Fig~\ref{fig:sankey_motivation} we present the details of the choice of motivation by the respondents. We discuss what the coded themes represent in the next paragraphs.
 In Fig~\ref{fig:sankey_motivation} we also present how the distribution of the responses across all the five questions relating to motivation and how they relate to each other. The thickness of the edge represents the frequency of respondents between two entities.
 The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the variants that are attached to- or detached from the mainline repository as discussed in Section~\ref{sec:forks_and_participants}. We can see that in both the \dashuline{attached} and \dashuline{detached} variants the majority of respondents that answered the question \dashuline{\# original developers} selected \dashuline{none} implying that the majority of the variants were started by different developers.
+Since the answers to $SQ1_{c}$ were presented on a Likert scale, participants were allowed to rank the appropriate motivation(s) that suits why they created the variant. While coding the motivations details, we identified respondents who ranked highly more than one motivation category and also provided a response in the open-ended question to support each of the highly ranked motivation category. In this scenario, each of the ranked highly motivation category would have a motivation detail for the same respondent.  
 
 \begin{figure*}[ht]
 \begin{center}
@@ -75,7 +76,7 @@ The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the v
 \item ``\emph{The PR to merge the fork's new capabilities into the mainline code was too large, [...] %resulting in a long review time,
 and my attempts to incorporate feedback into the PR [...] %(using force-pushes that disrupted the review process)
 ended upsetting the primary maintainer who has been studiously ignoring the pull request for three years \frownie{}}'' [R1-59].
-\ad{@John: This seems to be more ``dispute'' than ``technical'' to me.}
+This respondent ranked highly both \dashuline{technical} and \dashuline{governance}.
 
 \item ``\emph{I forked the original project in order to fix a bug. However, the way the original was architected made this very challenging, so I ended up rewriting it instead of submitting a patch to the original}'' [R1-79].
 
@@ -116,13 +117,13 @@ so, I forked it to make it pretty and my own}'' [R1-10].
 \ad{Check the above quote. I removed an interesting part (``it didn't feel right to contribute it into mainline''). If you decide to keep it, then I suggest to move this quote to the ``different goals'' category.}
 \item ``\emph{The new version is a vectorized, accelerated version of the original.%, but used some common code. It's not so much a fork as ``inspired by'', but we wanted to give due credit
 }'' [R1-37].
-\item ``\emph{[We] added some syntactic sugar and some improvements by itself. The original project was revived after a while and both variants coexist}'' [R1-42].
-\ad{This last one would better fit in ``no longer maintained''.}
+\item ``\emph{[We] added some syntactic sugar and some improvements by itself \ldots}'' [R1-42].
+%\ad{This last one would better fit in ``no longer maintained''.}
 \end{itemize}
 
-\nd The next prominent \dashuline{technical} motivation detail was \dashuline{feature frozen}.
+\nd The next prominent \dashuline{technical} motivation detail was \dashuline{unmaintained feature}.
 8 of the 105 survey participants who selected \dashuline{technical}, mentioned phrases related to \emph{one of the mainline feature used by the variant is no longer maintained}.
-\ad{I don't get the link between ``feature frozen'' and ``feature no longer maintained''. You can freeze a feature while maintaining it (e.g. by providing patches or improvements to it). I suggest to rephrase it to ``unmaintained feature''.}
+%\ad{I don't get the link between ``feature frozen'' and ``feature no longer maintained''. You can freeze a feature while maintaining it (e.g. by providing patches or improvements to it). I suggest to rephrase it to ``unmaintained feature''.}
 
 \begin{itemize}[leftmargin=*]
 \item ``\emph{Part of the original repo was an unmaintained tool, and I updated to support new platforms and keep alive}'' [R1-2].
@@ -130,11 +131,11 @@ so, I forked it to make it pretty and my own}'' [R1-10].
 \item ``\emph{The mainline project had made a radical shift from providing one set of features %(pip-review + pip-dump)
 to a different, disjoint set of features. % (pip-compile + pip-sync).
 The maintainer had thought about it very well, but some users (including myself) had built their workflows around one of the old features. For this reason, I lifted that particular feature into a separate project that was also published under a different name to the package index.%For these historical reasons, the mainline and the variant are not really alternatives to each other; rather, they are complementary
-}'' [R1-23]. The respondent also provided us a link, \gh \texttt{issue}, discussing the details. The \texttt{issue} was opened by the variant maintainer on July 2018 and was eventually closed on April 2018. The \texttt{issue} had 33 comments involving 17 participants. %\jb{need to link with other qns}.
-\ad{@John: I like this kind of ``anecdotal evidences'', but I'm missing how it contributes to the point. Also, there should be something wrong about the dates, since it means the issue was closed before its opening.}
+}'' [R1-23]. The respondent also provided us a link, \gh \texttt{issue}, discussing the details. The \texttt{issue} was opened by the variant maintainer on July 2015 and was eventually closed on April 2018. The \texttt{issue} had 33 comments involving 17 participants. %\jb{need to link with other qns}.
+%\ad{@John: I like this kind of ``anecdotal evidences'', but I'm missing how it contributes to the point. Also, there should be something wrong about the dates, since it means the issue was closed before its opening.}
 
 \item ``\textit{Mainline dropped support for a small subset of the code and asked for community support to create a fork to support that subset}'' [R1-66].
-\ad{If a set of features is dropped, doesn't that mean the projects went into different directions? It's not only ``we do no want to maintain this feature'' but rather ``we removed it, if you need it, do your own project''. If I'm right, this means it better fits in the ``different goals'' or in ``new features'' category.}
+\ad{If a set of features is dropped, doesn't that mean the projects went into different directions? It's not only ``we do no want to maintain this feature'' but rather ``we removed it, if you need it, do your own project''. If I'm right, this means it better fits in the ``different goals'' or in ``new features'' category.} \jb{a feature ``drop'' also means ``unmaintained''}
 \end{itemize}
 
 \nd The next prominent \dashuline{technical} motivation detail was \dashuline{technology}.
@@ -149,7 +150,7 @@ the maintainer of the mainline is supporting a different one, then we could not 
 
 \nd \textbf{Governance}. The motivation of \dashuline{governance} is connected to the second most motivation details mentions, with the most prominent being \dashuline{responsiveness}. 18 of the 105 survey participants who selected \dashuline{governance}, mentioned phrases related to \emph{mainline was unresponsive to pull requests or issues for a long time}. Most of the respondents that ranked highly \dashuline{governance} as the motivation, also ranked highly other options of motivations. Only 4 of the 34 ranked only \dashuline{governance}.
 
-\ad{Very first quote seems to belong to this category}
+%\ad{Very first quote seems to belong to this category}
 
 \begin{itemize}[leftmargin=*]
 \item ``\emph{[They] %The parent repo
@@ -158,7 +159,8 @@ After waiting for more than a year for a release, a fork was done just to push a
 
 \item ``\emph{We submitted some bug fixes [...], %to the original repo
 but didn't hear back from the maintainer for a while and needed to progress to meet our own goals so we forked. I followed up over email with the maintainer and he merged the patches about a month later, at which point we closed down and archived our fork and returned to using the mainline}'' [R1-15].
-\ad{That one suggests we wrongly identified the variant fork (since it has been active for only one month). I suggest to remove this quote.}
+Merging back to the original corresponds to one the outcomes of variant forking reported by Robles and Gonz{\'a}lez-Barahona~\cite{Gregorio:2012}.
+%\ad{That one suggests we wrongly identified the variant fork (since it has been active for only one month). I suggest to remove this quote.}
 
 \item ``\emph{%\ldots created in order to submit PR into mainline. Its purpose has changed
 [...] due to lack of response from mainline maintainer (more than months) and need of release. This lead to release of a new variant. [...] there is not intention to submit changes to mainline anymore (even when the first PR was merged into mainline after more than year)}'' [R1-56].
@@ -169,7 +171,7 @@ but didn't hear back from the maintainer for a while and needed to progress to m
 
 \begin{itemize}[leftmargin=*]
 \item \emph{TECHNICAL: Added support for OSM (open street maps) as an available map provider. GOVERNANCE: not exactly governance, but mainline was not willing to accept this kind of contribution} [R1-8]. This respondent ranked highly both \dashuline{technical} and \dashuline{governance}. For \dashuline{technical} the theme was coded as \dashuline{technology}. The respondent also provided a \gh pull request link that contains extra motivation details, that we examined. The pull request contained 45 conversations and 15 participants between June 2018 until March 2021 when it was closed.
-\ad{I suggest to remove this quote since it combines two distinct reasons, and we do not explain that a respondent could select more than one reason (and what we did when they did).}
+%\ad{I suggest to remove this quote since it combines two distinct reasons, and we do not explain that a respondent could select more than one reason (and what we did when they did).}
 
 \item ``\emph{Mainline was not ready to accept those changes in part because the maintainers were not responsive. Since that time all of the issues have been dealt with and my variant is no longer needed, though the infrastructure for creating a new release of the variant remains in place in the event that it might be needed in the future}'' [R1-44].
 
