@@ -142,7 +142,8 @@ The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the v
 
 \item ``\emph{\ldots Mainline was not ready to accept those changes in part because the maintainers were not responsive. Since that time all of the issues have been dealt with and my variant is no longer needed, though the infrastructure for creating a new release of the variant remains in place in the event that it might be needed in the future}'' [R1-44].
 
-\item ``\emph{Yes, there were attempts, but at then end even main repo maintainer was saying he is busy and please use our fork for thing X and Y. We don't exact reason why he stopped maintain it and also did not allow us to maintain his repo}'' [R1-89]. \jb{I need to talk more about it from the links}
+\item ``\emph{Yes, there were attempts, but at then end even main repo maintainer was saying he is busy and please use our fork for thing X and Y. We don't exact reason why he stopped maintain it and also did not allow us to maintain his repo}'' [R1-89]. The respondent also provided extra links (two issues on the mainline) relating to the motivation of creating\,/\,maintaining the variant. We also observe that the variant was created through a \dashuline{community decision}.
+In the issues the extra links, three contributors from community were interested in a couple of new features that were missing in mainline, but the mainline maintainer seems indeed busy. In the end two members of the community took over the fork maintenance and introduced the missing features and advertised the additions in the \textsf{readme.md} file of the fork as well as in the issue.
 
 \end{itemize}
 
@@ -186,7 +187,7 @@ The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the v
 \begin{itemize}[leftmargin=*]
 \item \emph{Main reason is creating open source and commercial product which has much more features and we just collect open source components and use them. Red5 server is one of the component of the product}'' [R1-7]. This motivation detail is also categorised as: \dashuline{new features, technical} and \dashuline{supporting personal projects, others}.
 
-\item \emph{\ldots 5 years ago the permissions model for GitHub and Travis is not what it is today. \ldots I wanted to use Travis for CI/CD but if I granted Travis access to my primary github account, it would have read access to all the github repos \ldots, which would expose private customer code \ldots I forked the repo \ldots, the permissions model has evolved \ldots I have a pending task to switch to github actions for CI/CD on the main repo, and to delete the fork, \ldots}
+\item \emph{\ldots 5 years ago the permissions model for GitHub and Travis is not what it is today. \ldots I wanted to use Travis for CI/CD but if I granted Travis access to my primary github account, it would have read access to all the github repos \ldots, which would expose private customer code \ldots I forked the repo \ldots, the permissions model has evolved \ldots I have a pending task to switch to github actions for CI/CD on the main repo, and to delete the fork, \ldots} [R1-24].
 
 \item \emph{The founders of the mainline had been absent from the project for several years, but came back and booted the maintainers off and shifted the project to a closed source, [\ldots]. There was an attempt to reconcile differences [\ldots], but the these issues were resolved (at least from the point of view of the maintainers, in reality the founders just pretended to be fine with it and secretly plotted for the next year to remove the maintainers from the project and ban them from every community to minimize a potential fork when they announced their plans to change the license} [R1-36]. The respondent provided a link for extra details that can be found here\footnote{https://wintercms.com/blog/post/october-cms-you-know-it-dead}''.
 
@@ -202,13 +203,16 @@ Our study also extends the findings in literature by providing fine-grained reas
 Furthermore, our study has also revealed other reasons not listed in literature that respondents categorised as \dashuline{others}, that include: 1) supporting the mainline, 2) variant supporting other personal projects, 3) localization purposes and 4) variants developers not trusting the code quality of the mainline.
 The findings of this RQ will be very useful in follow-up studies in investigating the co-evolution of mainline and variants.
 
+In Fig.~\ref{fig:sankey_motivation} we also presented a detailed overview of how the detailed motivations relate to who is involved in creating and maintaining the variants. We can see that the motivations majorly relate to developers outside (82\%) the core contributors of the mainlines. We also observe quite a significant (24\%) number of respondents indicating that the decision to create the variant was initiated by the community. We have also observed from the open-ended responses, that before the transition from social to variant fork, some variant maintainers engage with the mainline maintainers through discussions in issues and pull requests. This is inline with the findings of Zhou et al. who reported that many variant forks start as social forks~\cite{Zhou:2020}
+
 Besides the motivations for creating and maintaining of variants, the respondents have reported some interesting software reuse practices by the variants, like those categorized in the themes of: \dashuline{different goals}, \dashuline{new features}, \dashuline{customization}, \dashuline{technology}, \dashuline{supporting personal projects}, \dashuline{supporting upstream}, \dashuline{localization}. A specific example of [R1-70] categorized in the \dashuline{different goals} theme, stated that in the cryptocurrency world, all applications inherit code from the mother project \texttt{bitcoin/bitcoin}. Downstream applications also monitor their immediate upstream and other in the hierarchy for important updates like bug and security fixes as well as other specific updates. These cryptocurrency applications can be considered as a \textit{software family}~\cite{businge:2018icsme,businge:emse:2021}), that are part of dedicated project ecosystem~\cite{tommens:2020}, continuously reuse code among themselves.
-There are other dedicated software ecosystems that exist like, \textsf{Eclipse}, \textsf{Atom}, and \textsf{Emacs}, programming language ecosystems like:  \java, \cp, \cpp, \py, \go, \rb, operating system ecosystems like: \textsf{macOS}, \textsf{Linux} \textsf{Windows}, and \textsf{iOS}~\cite{tommens:2020} can contain variants.
+There are other dedicated software ecosystems that exist like, \textsf{Eclipse}, \textsf{Atom}, and \textsf{Emacs}, programming language ecosystems like:  \java, \cp, \cpp, \py, \go, \rb, operating system ecosystems like: \textsf{macOS}, \textsf{Linux}, \textsf{Windows}, and \textsf{iOS}~\cite{tommens:2020} can contain variants.
 To this end, our study opens up different research directions that can be aimed at deeply investigating these different reuse practices in \textit{software family} and software variants in general. A deeper understanding of these reuse practices can aid the development of tools that can support more efficient software reuse.
 
 \begin{framed}
 \noindent
 \emph{\textbf{Takeaway--RQ1}:
+We have observed that many variant forks start as social forks. The decision to create\,/\,maintain the forks is either from community (contributing up to 24\%) or as individual (76\%). We have also observed that the majority (82\%) of the developers creating the forks are outside the maintainers of the mainlines. We have presented 18 variant creation\,/\,maintenance motivation details categorized in the motivations of \dashuline{technical} (accounting 58\% of the responses), \dashuline{governance} (24\%), \dashuline{others} (16\%) and \dashuline{legal} (2\%). The detailed motivations in the \dashuline{others} category are newly introduced in the social coding era. We have also discussed some interesting software reuse classifications among variants.
 }
 \end{framed}
 
@@ -235,8 +239,8 @@ In the design of this RQ in the survey was further divided into two sub-question
 With the first question, we asked the survey participants the following questions:
 
 \begin{itemize}
-\item  \textbf{\rqTwoOne} 
-\item \textbf{\rqTwoTwo}
+\item  \rqTwoOne
+\item \rqTwoTwo
 \end{itemize}
 
 
@@ -253,7 +257,7 @@ We also observed that respondents [R1-51] and [R1-57] who selected the option \d
 
 
 
-From the results of $RQ_{2.1}$ and $RQ_{2.1}$, answers to our question on who is creating and maintaining these variants? Our observation is that the variants are created and maintained by developers different from those in the mainline counterparts. This observation conquer with the findings of an earlier study Businge et al.~\cite{businge:emse:2021}.
+From the results of $RQ_{2.1}$ and $RQ_{2.1}$, answers to our question on \textit{who is creating and maintaining these variants?} Our observation is that the variants are created and maintained by developers different from those in the mainline counterparts. This observation conquers with the findings of an earlier study by Businge et al.~\cite{businge:emse:2021}.
 
 %As opposed to our exploratory study surveying maintainers of variants, the study of Businge et al.~\cite{businge:emse:2021} was a large scale empirical study on mainline--variant pairs from three software ecosystems. They reported that over 82\% of the 10,979 mainline--variant are owned by different developers. In our study we have also found 82\% of variants are maintained by developers different from those in the mainline.
 
@@ -317,7 +321,8 @@ In Fig.~\ref{fig:to_mainline-coded} there were two most prominent answers: \dash
 
 \nd \textbf{Discussion and Implications--$RQ_2$.}
 
-The results of this study have revealed variants are created and maintained my developers outside the core developers of the mainlines. We have also observed that there is limited interaction between the mainline and variant.
+The results of this study have revealed variants are created and maintained my developers outside the core developers of the mainlines. 
+We have also observed that there is limited interaction between the mainline and variant.
 Although we find there is little code integration, the integration from mainline\ra variant is more than that from variant\ra mainline.
 Our study confirms the findings of Businge et al.~\cite{businge:emse:2021} who carried out a large scale empirical study of code integration among mainline and variants from three ecosystem. Our study also extends the work of Businge et al.~\cite{businge:emse:2021} by providing some concrete reasons relating to little integration between the mainline and variants that include: 1) \textit{technical divergency}: where variants and mainlines are offering different goals, implementing different technologies, variant is maintaining a part of the mainline that is frozen. 2) \textit{Governance disputes}: mainlines are unresponsive to pull requests and issues from the variants and  mainlines not willing or hesitant to accept some features from the variants. One respondent also reported that mainline is actively very hostile to variant as a result of mainline changing licence to proprietary.
 Another possible reason why the is little code integration is because most of the variants are created and maintained by developers outside the core developers of the mainline.
@@ -336,6 +341,8 @@ Some promising studies in this direction have focused on providing the mainline 
 
 \begin{framed}
 \noindent
-\emph{\textbf{Takeaway--RQ2}:
+\emph{\textbf{Takeaway--RQ2}: We have observed that there is very little interaction between the mainline and variants during their co-evolution. The lack of interaction could be attributed to a number of reasons that include: (i) technical (i.e., diverging features), where variants and mainlines are offering different goals or implementing different technologies having nothing to share; (ii) governance (i.e., diverging interests), where mainlines are unresponsive to the requests from community and also uninterested in some features suggested by the community; (iii) legal (e.g., diverging licences), where the mainline variant has changed the licence and integration is no longer possible. 
+(iv) As a result of the divergence and since the majority of the variants are maintained by developers outside the core developers of the mainline, we report that its possible that some important updates (like patches) could be missed or are duplicated.  
+We also report interesting interactions that include: integration of only patches, integration of only specific changes, integration that exclude some specific changes and integration only changes that pass CI.
 }
 \end{framed}
