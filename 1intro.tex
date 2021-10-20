@@ -3,7 +3,11 @@
 \label{sec:intro}
 
 The collaborative nature of open source software development has led to the advent of social coding platforms centred around the git version control system, such as \gh, BitBucket, and GitLab.
+<<<<<<< HEAD
 These platforms bring the collaborative nature and code reuse of open source software development to another level, via facilities like forking, pull requests, cherry-picking, \ldots.
+=======
+These platforms bring the collaborative nature and code reuse of open source software development to another level, via facilities like forking, pull requests, backports, cherry-picking, \ldots.
+>>>>>>> 77ed0f33aafe391db224eadf75571f0506dd66e1
 Developers may fork a \textit{mainline repository} into a new \textit{forked repository} and take governance over the latter while preserving the full revision history.
 Before the advent of social coding platforms, forking was rare and was typically intended to compete with the original project~\cite{Linus:2012Perspectives,Gregorio:2012,Viseur:2012Forks,Linus:2013CodeForking,Linus:2011ToFork,Gamalielsson:2014Sustainability}.
 
@@ -17,12 +21,20 @@ However, most of them have been conducted before the rise of social coding platf
 Developers frequently perceive social forks as alternatives to the original mainline project, and variant forks often evolve out of them rather than being planned deliberately.
 Variant forks in the \gh era allows different projects to peacefully co-exist rather than compete, so in that sense it is worthwhile to revisit the motivation for creating variant forks (\textit{why?}).
 
+<<<<<<< HEAD
 Social coding platforms in the \gh era offer many facilities for code sharing (i.e., pull requests, cherry-picking, \ldots).
+=======
+Social coding platforms in the \gh era offer many facilities for code sharing (i.e., pull requests, backports, cherry-picking, \ldots).
+>>>>>>> 77ed0f33aafe391db224eadf75571f0506dd66e1
 So if projects co-exist, one would expect that variant forks take advantage of this common ancestry, and frequently exchange code snippets with one another.
 Despite advanced code-sharing facilities, Businge et al. observed very limited code integration between the mainline and the variant projects~\cite{businge:emse:2021}.
 This suggests that the code sharing facilities in themselves are not enough for graceful co-evolution, so in that sense it is worthwhile to investigate impediments for co-evolution (\textit{how?}).
 
+<<<<<<< HEAD
 \sd{Be careful: I massaged the RQ slightly. If you copy them in the experimental set-up use the commands I created for them.}
+=======
+\jb{Be careful: I massaged the RQ slightly. If you copy them in the experimental set-up use the commands I created for them.}
+>>>>>>> 77ed0f33aafe391db224eadf75571f0506dd66e1
 
 \newcommand*{\RQOne} [1] {Why do developers create and maintain variants on \gh?}
 \newcommand*{\RQTwo} [1] {How do variant projects evolve with respect to the mainline?}
@@ -32,12 +44,21 @@ This suggests that the code sharing facilities in themselves are not enough for 
 Consequently, we define the following research questions:
 \begin{itemize}
 \item $RQ_1$ --- \textit{\RQOne}
+<<<<<<< HEAD
 The literature pre-dating git reported three categories of motivations for creating variant forks: technical (e.g., diverging features), governance (e.g., diverging interests), legal (e.g., diverging licences), or personal (e.g., diverging principles)?
 With this research question, we aim to investigate if the motivations for variant forks reported in literature still hold or whether there are new factors coming into play?
 
 \item $RQ_2$ --- \textit{\RQTwo}
 \git offers advanced code-sharing facilities, yet at least one paper reported very limited code integration between the mainline and the variant projects~\cite{businge:emse:2021}
 With this research question we investigate the overlap between the teams maintaining the mainlines and variant forks and how they communicate with one another.
+=======
+The literature pre-dating git reported three categories of motivations for creating variant forks: technical (e.g., diverging features), governance (e.g., diverging interests), legal (e.g., diverging licences), or personal (e.g. diverging principles)?
+With this research question, we aim to investigate if the motivations for variant forks reported in literature still hold or are whether there are new factors coming into play? 
+
+\item $RQ_2$ --- \textit{\RQTwo}
+Git offers advanced code-sharing facilities, yet at least one paper reported very limited code integration between the mainline and the variant projects~\cite{businge:emse:2021}
+With this research question we investigate the overlap between the teams maintaining the variants forks and how they communicate with one another.
+>>>>>>> 77ed0f33aafe391db224eadf75571f0506dd66e1
 As such we hope to identify impediments for co-evolution.
 \end{itemize}
 
@@ -48,7 +69,11 @@ The investigations are based on an online survey we conducted with 112 maintaine
 Our contributions are manifold:
 we identify a new reasons for creating and maintaining variant forks;
 we identify and categorize different code reuse and change propagation practices between a variant and its mainline;
+<<<<<<< HEAD
 we confirm that little code integration occurs between a variant and its mainline, and uncover concrete reasons for this phenomenon;
+=======
+we confirm that little code integration occurs between a variant and its mainline, and uncover concrete reasons for this phenomeno;
+>>>>>>> 77ed0f33aafe391db224eadf75571f0506dd66e1
 and finally, we discuss the implications of these findings and how tools can help to achieve an efficient code integration and collaboration between mainlines and diverging variant forks.
 
 \sd{Need to squeeze this so it fits on a single page}
