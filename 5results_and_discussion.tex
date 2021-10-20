@@ -5,12 +5,14 @@
 
 \section{Results}
 \label{sec:results}
+
 This section presents the results of our investigation.
 We present the results of the analysis of the survey and in some cases we shall quote the survey respondents by referring to them using a [R1-X] or [R2-X]
-notation, where X is the respondent’s ID, R1 and R2 represent the \textit{attached} and the \textit{detached} variants, respectively. Codes resulting from coding open-ended answers are \dashuline{underlined}.
+notation, where X is the respondent’s ID, R1 and R2 represent the \textit{attached} and the \textit{detached} variants, respectively.
+\ad{Do we really need to make this distinction in the notation? I mean: I only see one example of R2-X, and if it matters, we can still make it explicit in the text. If we decide to ignore the difference between attached and detached variants, I even suggest to remove it from the Method section.}
+Codes resulting from coding open-ended answers are \dashuline{underlined}.
 Open ended responses from the participants will be presented in \emph{italics}.
 Where applicable, we integrate and compare our findings with related research findings.
-
 
 \begin{figure*}[ht]
 \centering
@@ -45,7 +47,7 @@ In Fig.~\ref{fig:decision_motivations} we present the results for responses for 
 % Like we presented in Section~\ref{sec:protocal}, th
 % is question had Likert scale answer options we identified in the literature. 2) \emph{Was the motivation for creating the variant an individual decision or a community decision?} This survey question had two multiple choice answers of: \emph{individual} or \emph{community} decision.
 
-\nd \textbf{Motivation Details ($RQ_{1.3}$).} While previous studies have investigated the motivations for creating variants, no study has investigated the details of those motivations. 
+\nd \textbf{Motivation Details ($RQ_{1.3}$).} While previous studies have investigated the motivations for creating variants, no study has investigated the details of those motivations.
 To identify these details, we asked two additional optional open-ended questions to allow the respondents provide us with details on their choice of Likert scale answer on the motivation. The two questions were: \emph{Kindly provide details for your selected answer(s) on the motivation} and 2) \emph{If there are any links that are documented relating to your choice of answers on motivation detail, kindly point us there}. 100 of the 105 respondents that attempted the survey gave us a the details of the motivation of creating the variant and 30 of the 100 provided us with extra links. Luckily, while we were coding the open-ended question using card sorting, as discussed in Section~\ref{sec:card_sorting}, we were able to identify the five missing details of the choice of motivation by looking at selected response as well as comparing contents of the mainline and variant repositories on \gh.
 
 In Fig~\ref{fig:sankey_motivation} we present the details of the choice of motivation by the respondents. We discuss what the coded themes represent in the next paragraphs.
@@ -245,7 +247,7 @@ With the first question, we asked the survey participants the following question
 
 
 % \nd \textbf{\rqOne}
-% Recall that in Section~\ref{sec:rqs} this RQ was divided into two: 
+% Recall that in Section~\ref{sec:rqs} this RQ was divided into two:
 % \rqOneOne and \rqOneTwo.
 For both $RQ_{2.1}$ and $RQ_{2.2}$ we provided multiple choice answers to the questions. We present the results of $RQ_{2.1}$ and $RQ_{2.2}$ in Fig.~\ref{fig:original_common}. Looking at both Fig.~\ref{fig:original} and Fig.~\ref{fig:common} for both question respectively, we can see that the majority of the participants chose the options of \dashuline{none} (none of the creators of the variant were part of the mainline) and \dashuline{no} (they do not have common active maintainers).
 This implies that the most of developers that are involved in the creation and maintenance of the variants are outside the core maintainers of the original project where the variant was forked.
@@ -308,7 +310,7 @@ We also observe two interesting cases where the variants merged back to the main
 
 
 
-\nd In $RQ_{2.4}$, we asked respondents two closed-ended questions: \textit{1) How often do the maintainers of the variant integrate the following types of changes from the mainline?} and\textit{ 2) How often do the maintainers of the variant integrate the following types of changes into the mainline?} 
+\nd In $RQ_{2.4}$, we asked respondents two closed-ended questions: \textit{1) How often do the maintainers of the variant integrate the following types of changes from the mainline?} and\textit{ 2) How often do the maintainers of the variant integrate the following types of changes into the mainline?}
 We provided Likert scale answers options for the two questions. We also asked the respondents optional follow-up questions with open-ended answers, for each of the two questions, to provide us with extra information.
 %In Fig.~\ref{fig:interactions} we present the results of $RQ_{3.2}$.
 In Fig.~\ref{fig:from_mainline} we present the results from the respondent answers on what they value most when integrating changes from the mainline. We can see that the highly scored changes are the \dashuline{bug fixes} and the \dashuline{security fixes}. In Fig.~\ref{fig:from_mainline} we can see that most of the respondents were leaning towards the negative side compared to the positive side of the plot.
@@ -321,7 +323,7 @@ In Fig.~\ref{fig:to_mainline-coded} there were two most prominent answers: \dash
 
 \nd \textbf{Discussion and Implications--$RQ_2$.}
 
-The results of this study have revealed variants are created and maintained my developers outside the core developers of the mainlines. 
+The results of this study have revealed variants are created and maintained my developers outside the core developers of the mainlines.
 We have also observed that there is limited interaction between the mainline and variant.
 Although we find there is little code integration, the integration from mainline\ra variant is more than that from variant\ra mainline.
 Our study confirms the findings of Businge et al.~\cite{businge:emse:2021} who carried out a large scale empirical study of code integration among mainline and variants from three ecosystem. Our study also extends the work of Businge et al.~\cite{businge:emse:2021} by providing some concrete reasons relating to little integration between the mainline and variants that include: 1) \textit{technical divergency}: where variants and mainlines are offering different goals, implementing different technologies, variant is maintaining a part of the mainline that is frozen. 2) \textit{Governance disputes}: mainlines are unresponsive to pull requests and issues from the variants and  mainlines not willing or hesitant to accept some features from the variants. One respondent also reported that mainline is actively very hostile to variant as a result of mainline changing licence to proprietary.
@@ -341,8 +343,8 @@ Some promising studies in this direction have focused on providing the mainline 
 
 \begin{framed}
 \noindent
-\emph{\textbf{Takeaway--RQ2}: We have observed that there is very little interaction between the mainline and variants during their co-evolution. The lack of interaction could be attributed to a number of reasons that include: (i) technical (i.e., diverging features), where variants and mainlines are offering different goals or implementing different technologies having nothing to share; (ii) governance (i.e., diverging interests), where mainlines are unresponsive to the requests from community and also uninterested in some features suggested by the community; (iii) legal (e.g., diverging licences), where the mainline variant has changed the licence and integration is no longer possible. 
-(iv) As a result of the divergence and since the majority of the variants are maintained by developers outside the core developers of the mainline, we report that its possible that some important updates (like patches) could be missed or are duplicated.  
+\emph{\textbf{Takeaway--RQ2}: We have observed that there is very little interaction between the mainline and variants during their co-evolution. The lack of interaction could be attributed to a number of reasons that include: (i) technical (i.e., diverging features), where variants and mainlines are offering different goals or implementing different technologies having nothing to share; (ii) governance (i.e., diverging interests), where mainlines are unresponsive to the requests from community and also uninterested in some features suggested by the community; (iii) legal (e.g., diverging licences), where the mainline variant has changed the licence and integration is no longer possible.
+(iv) As a result of the divergence and since the majority of the variants are maintained by developers outside the core developers of the mainline, we report that its possible that some important updates (like patches) could be missed or are duplicated.
 We also report interesting interactions that include: integration of only patches, integration of only specific changes, integration that exclude some specific changes and integration only changes that pass CI.
 }
 \end{framed}
