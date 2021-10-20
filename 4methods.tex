@@ -29,7 +29,7 @@ To identify them we relied on two data sources, namely \librariesio and \gh.
 
 \librariesio contains metadata about projects distributed through various package registries. We collected the metadata for all projects of some of the largest package registries (\textsf{npm, Go, Maven, PyPI} and \textsf{Packagist}) and we relied on these metadata to determine those projects that are variants of another one, following the variant identification method proposed by  Businge et al.~\cite{businge:emse:2021,businge:benevol:2020}. %The authors argue that, if a fork has distributed its package releases on a package registries, then one can be certain that it is a variant fork and very unlikely to be social fork.
 We only considered those variants that were actively maintained in parallel with their mainline counterparts. We extracted variants where the mainline--variant pairs were created before 2019-04-01 and updated after 2020-04-01. We wanted variants that have existed for at least one year and are not more than one old since the last commit from the time we collected the dataset, since we are interested in active projects.
-\tm{The choice of this start and end date is not motivated.}
+%\tm{The choice of this start and end date is not motivated.}
 At the end of this process, we have \textit{227 mainline–variant project pairs}.
 
 In addition to these mainline-variant pairs distributed through package registries, we also collected pairs of projects from \gh.
@@ -38,7 +38,7 @@ Using \gh search endpoint, we looked for \emph{popular} (i.e., $>50$ stars and f
 Then, for all the mainline projects we found, we looked at their forks to identify variant forks. Collecting variant forks from \gh is subject to many threats. Previous studies have shown that the majority of forks on \gh are inactive~\cite{Businge:Android:2019,Businge:2017} or are social forks~\cite{businge:2018icsme}.
 To accommodate with these threats, we first filtered out forks based on a set of heuristics (e.g., $\geq 10$ stars, $\geq 10$ commits ahead of the mainline, $\geq 5$ closed pull requests, diverging \textsf{README} files, etc.).
 Then, we manually verify all the remaining forks to make sure they correspond to variant forks of the corresponding mainline projects.
-At the end of this process, we obtained \textit{225 additional mainline-variant project pairs}.
+At the end of this process, we obtained \textit{224 additional mainline-variant project pairs}.
 % Furthermore, since we had to manually verify the final dataset as well as reduce the number of false positives, we came up with restrictive magic numbers to achieve our goal.
 % We searched mainline repositories written in the 17 popular programming languages on \gh that include: \textsf{JavaScript}, \textsf{Java}, \textsf{Go}, \textsf{Python}, \textsf{Ruby}, \textsf{C}, having $>50$ forks and and also having a long development history (created before 2018-04-01 and updated after 2020-04-01).
 % For each mainline, we extracted forks that were created before 2019-04-01 and updated after 2020-04-01, having $\geq 10$ stargazers, having $\geq 10$ commits ahead of the mainline (unique commits), having $\geq 5$ closed pull requests, and where the fork and mainline differ in the contents of the \textsf{readme.md} file for description.
@@ -54,7 +54,8 @@ To identify such detached forks, we relied again on \gh search endpoint. We sear
 %\nd \textit{Identifying detached variant projects}. We used \gh search feature looking for repositories that are not referred as ``forks'' but that do contain ``fork of'' in their description and both the mainline and variant projects are actively maintained (i.e., were forked before \texttt{2019-04-01} and updated after \texttt{2020-04-01}; the mainline and variant have at least 100 commits after the fork date). We also manually verified that indeed the mainline and variant are indeed different projects being maintained in parallel by reading their \texttt{readme.md} pages. Using this process,
 This lead us with \textit{40 additional mainline–variant project pairs}.
 
-Overall from the three methods we followed, we collected \textbf{a total of 491 mainline--variant pairs}.\ad{@John: 225 + 227 + 40 = 492.}
+Overall from the three methods we followed, we collected \textbf{a total of 491 mainline--variant pairs}.
+%\ad{@John: 225 + 227 + 40 = 492.}
 
 
 
@@ -87,14 +88,7 @@ A part from the stars where we consider all in the mainline, we count all (close
 
 \subsection{Analysis}
 \label{sec:card_sorting}
-<<<<<<< HEAD
 
 \ad{@John: I'm not really used to card sorting, but I couldn't really understand the whole process you followed after having read the following paragraph. Please add some sentences to explain why card sorting is needed and which ``issue(s)'' it solves.}
-
-We used card sorting~\cite{zimmermann2016card}, on the 3 open-ended questions which provides a framework to ascertain the meaning and summarize overarching themes of responses within the context of the research question. In the analysis, we grouped similar responses to the open-ended questions into codes. We did not start with any pre-defined codes in mind, but instead derived the codes from the data, iterating as many times as needed until reaching a saturation point. The first iterations of coding was performed by the first author of the paper, and any responses the first author was unsure of were decided by discussion with another author. Once the first two authors agreed on the codes, a virtual meeting was agreed upon where all the other authors joined and discussed the resulting codes and themes and through negotiated agreement~\cite{Garrison:2006}. This approach allowed us to remove duplicates and, in some cases, to generalize or specialize themes, which we will discuss in the later sections of this paper.
-=======
-
-\ad{@John: I'm not really used to card sorting, but I couldn't really understand the whole process you followed after having read the following paragraph. Please add some sentences to explain why card sorting is needed and which ``issue(s)'' it solves.}
->>>>>>> 77ed0f33aafe391db224eadf75571f0506dd66e1
 
 We used card sorting~\cite{zimmermann2016card}, on the 3 open-ended questions which provides a framework to ascertain the meaning and summarize overarching themes of responses within the context of the research question. In the analysis, we grouped similar responses to the open-ended questions into codes. We did not start with any pre-defined codes in mind, but instead derived the codes from the data, iterating as many times as needed until reaching a saturation point. The first iterations of coding was performed by the first author of the paper, and any responses the first author was unsure of were decided by discussion with another author. Once the first two authors agreed on the codes, a virtual meeting was agreed upon where all the other authors joined and discussed the resulting codes and themes and through negotiated agreement~\cite{Garrison:2006}. This approach allowed us to remove duplicates and, in some cases, to generalize or specialize themes, which we will discuss in the later sections of this paper.
