@@ -41,8 +41,14 @@ For $SQ1_{a}$ we presented a multiple choice question, $SQ1_{b}$ we presented Li
 % Like we presented in Section~\ref{sec:protocal}, th
 % is question had Likert scale answer options we identified in the literature. 2) \emph{Was the motivation for creating the variant an individual decision or a community decision?} This survey question had two multiple choice answers of: \emph{individual} or \emph{community} decision.
 
-\nd \textbf{Motivation Details ($SQ1_{c}$).} While previous studies have investigated the motivations for creating variants, no study has investigated the details of those motivations.
-To identify these details, we asked two additional optional open-ended questions to allow the respondents provide us with details on their choice of Likert scale answer on the motivation. The two questions were: \emph{Kindly provide details for your selected answer(s) on the motivation} and 2) \emph{If there are any links that are documented relating to your choice of answers on motivation detail, kindly point us there}. 100 of the 105 respondents that attempted the survey gave us a the details of the motivation of creating the variant and 30 of the 100 provided us with extra links. Luckily, while we were coding the open-ended question using card sorting, as discussed in Section~\ref{sec:card_sorting}, we were able to identify the five missing details of the choice of motivation by looking at selected response as well as comparing contents of the mainline and variant repositories on \gh.
+While previous studies have investigated the motivations for creating variants, no study has investigated the details of those motivations ($SQ1_{c}$) .
+To identify these details, we asked two additional optional open-ended questions to allow the respondents provide us with details on their choice of Likert scale answer on the motivation. The two questions were: 
+\begin{enumerate}
+	\item \emph{Kindly provide details for your selected answer(s) on the motivation; }
+	\item \emph{If there are any links that are documented relating to your choice of answers on motivation detail, kindly point us there}
+\end{enumerate}
+
+100 of the 105 respondents that attempted the survey gave us a the details of the motivation of creating the variant and 30 of the 100 provided us with extra links. Luckily, while we were coding the open-ended question (Cf. Section~\ref{sec:card_sorting}), we were able to identify the five missing details of the choice of motivation by looking at selected response as well as comparing contents of the mainline and variant repositories on \gh.
 
 In Fig~\ref{fig:sankey_motivation} we present the details of the choice of motivation by the respondents. We discuss what the coded themes represent in the next paragraphs.
 Fig~\ref{fig:sankey_motivation} also presents how the distribution of the responses across all the five questions relating to motivation and how they relate to each other. The thickness of the edge represents the frequency of respondents between two entities.
@@ -64,7 +70,6 @@ At the end we found that 105 of the survey participants chose 145 motivation cat
 \vspace{-.3cm}
 \end{figure*}
 
-
 \nd \textbf{Technical.} The motivation of \dashuline{technical} is connected to the most of the motivation details with the most prominent being \dashuline{maintenance}. 19 of the 84 survey participants who selected \dashuline{technical}, mentioned phrases related to \emph{performing bug/security fixes}.
 
 \begin{itemize}[leftmargin=*]
@@ -79,8 +84,7 @@ This respondent ranked highly both \dashuline{technical} and \dashuline{governan
 \item ``\emph{I forked the original project in order to fix a bug. However, the way the original was architected made this very challenging, so I ended up rewriting it instead of submitting a patch to the original}'' [R79].
 
 \item ``\emph{The original project did not take WCAG accessibility guidelines into account. We first tried to make improvements on it, but they were broken soon after. So we finally decided to fork the project with the explicit aim to focus on accessibility}'' [R88]. A \gh issue link provided by the respondent showed that the question ``\textit{Did this start as an experiment or an intentional hard fork?}" was explicitly asked to the variant maintainers. The latter responded by mentioning that at first their intention was to improve the mainline and not maintain a different project, but later, some of their merged fixes were removed from the mainline. This led them continue maintaining their fork in a different way.
-\ad{That one seems more a ``different goal''.}
-\jb{I agree}\az{I am not sure if it different goals. Check my text above and https://github.com/KIProtect/klaro/pull/39}
+%\ad{That one seems more a ``different goal''.}\jb{I agree}\az{I am not sure if it different goals. Check my text above and https://github.com/KIProtect/klaro/pull/39}
 
 \end{itemize}
 
@@ -100,7 +104,7 @@ list websites that accept Bitcoin Cash cryptocurrency, as opposed to the mainlin
 
 \begin{itemize}[leftmargin=*]
 \item ``\emph{[...] to add support for a feature I knew would not get merged into the main project}'' [R53].
-\item ``\emph{Mainline developer only does bugfixes and eventual underlying runtime/SDK upgrades to stay current. He did not add new features nor build targets due to lack of interest \ldots}'' [R67]
+\item ``\emph{Mainline developer only does bugfixes and eventual underlying runtime/SDK upgrades to stay current. He did not add new features due to lack of interest \ldots}'' [R67]
 %\ad{This one better fits in ``feature frozen''}
 %\jb{}
 \item ``\emph{Our variant introduces new experimental functionality that is not yet ready for use in the mainline}'' [R80].
@@ -110,7 +114,7 @@ list websites that accept Bitcoin Cash cryptocurrency, as opposed to the mainlin
 8 of the participants who selected \dashuline{technical}, mentioned phrases related to \emph{variant customizes the mainline features}.
 
 \begin{itemize}[leftmargin=*]
-\item ``\emph{The ``bones'' were good, but I wanted to add some aesthetics [...]%. Given the original prided itself on minimalism, it didn't feel right to contribute it into mainline.
+\item ``\emph{The ``bones'' were good, but I wanted to add some aesthetics [...] %. Given the original prided itself on minimalism, it didn't feel right to contribute it into mainline.
 so, I forked it to make it pretty and my own}'' [R10].
 %\ad{Check the above quote. I removed an interesting part (``it didn't feel right to contribute it into mainline''). If you decide to keep it, then I suggest to move this quote to the ``different goals'' category.}
 \item ``\emph{The new version is a vectorized, accelerated version of the original.%, but used some common code. It's not so much a fork as ``inspired by'', but we wanted to give due credit
@@ -140,10 +144,10 @@ The maintainer had thought about it very well, but some users (including myself)
 7 of the participants who selected \dashuline{technical}, mentioned phrases related to \emph{variant created to depend on a different technology}.
 
 \begin{itemize}[leftmargin=*]
-\item ``\emph{Added support for OSM (open street maps) as an available map provider.}'' [R8].
+\item ``\emph{Added support for Open Street Maps as an available map provider [\ldots] mainline was not willing to accept this kind of contribution.}'' [R8]. This was also ranked as a \dashuline{governance}. 
 \item ``\emph{The mainline wasn't updated to use .NET Core which I was using in my project, so I updated it}'' [R29].
-\item ``\emph{[...] was to keep the source code compatible with the language/compiler version that we use (Swift / Xcode). [... if] %Sometimes new versions of Swift break source compatibility, if we update (or not update when there is a new one) the compiler but
-the maintainer of the mainline is supporting a different one, then we could not compile our dependency anymore}'' [R54].
+\item ``\emph{[...] to keep the source code compatible with the language/compiler version that we use (Swift / Xcode). [...] %Sometimes new versions of Swift break source compatibility, if we update (or not update when there is a new one) the compiler but
+if the maintainer of the mainline is supporting a different one, then we could not compile our dependency anymore}'' [R54].
 \end{itemize}
 
 \nd \textbf{Governance}. The motivation of \dashuline{governance} is connected to the second most motivation details mentions, with the most prominent being \dashuline{responsiveness}. 18 of the 34 survey participants who selected \dashuline{governance}, mentioned phrases related to \emph{mainline was unresponsive to pull requests or issues for a long time}. Most of the respondents that ranked highly \dashuline{governance} as the motivation, also ranked highly other options of motivations. Only 4 of the 34 ranked only \dashuline{governance}.
@@ -153,7 +157,7 @@ the maintainer of the mainline is supporting a different one, then we could not 
 \begin{itemize}[leftmargin=*]
 \item ``\emph{[They] %The parent repo
 had a series of commits that fixed functionality for newer PHP versions, but never made into a release. %The library was being used in an enterprise app using Composer/Packagist, which requires a new GitHub release to update the published library.
-After waiting for more than a year for a release, a fork was done just to push a newer release into Composer/Packagist (and update the enterprise app to be compatible with a newer PHP version)}'' [R21].
+After waiting for more than a year for a release, a fork was done just to push a newer release into Composer/Packagist}'' [R21].
 
 \item ``\emph{We submitted some bug fixes [...], %to the original repo
 but didn't hear back from the maintainer for a while and needed to progress to meet our own goals so we forked. I followed up over email with the maintainer and he merged the patches about a month later, at which point we closed down and archived our fork and returned to using the mainline}'' [R15].
@@ -161,21 +165,24 @@ Merging back to the original corresponds to one the outcomes of variant forking 
 %\ad{That one suggests we wrongly identified the variant fork (since it has been active for only one month). I suggest to remove this quote.}
 
 \item ``\emph{%\ldots created in order to submit PR into mainline. Its purpose has changed
-[...] due to lack of response from mainline maintainer (more than months) and need of release. This lead to release of a new variant. [...] there is not intention to submit changes to mainline anymore (even when the first PR was merged into mainline after more than year)}'' [R56].
+[...] due to lack of response from mainline maintainer (more than months) and need of release. This lead to release of a new variant. [...] there is no intention to submit changes to mainline anymore (even when the first PR was merged into mainline after more than year)}'' [R56].
 \end{itemize}
 
 \nd The next prominent \dashuline{governance} motivation detail was \dashuline{feature acceptance}.
 15 of the participants who selected \dashuline{governance}, mentioned phrases related to \emph{mainline hesitant to or not willing to accept feature}.
 
 \begin{itemize}[leftmargin=*]
-\item \emph{TECHNICAL: Added support for OSM (open street maps) as an available map provider. GOVERNANCE: not exactly governance, but mainline was not willing to accept this kind of contribution} [R8]. This respondent ranked highly both \dashuline{technical} and \dashuline{governance}. For \dashuline{technical} the theme was coded as \dashuline{technology}. The respondent also provided a \gh pull request link that contains extra motivation details, that we examined. The pull request contained 45 conversations and 15 participants between June 2018 until March 2021 when it was closed.
+\item \emph{``TECHNICAL: Added support for Open Street Maps as an available map provider. GOVERNANCE: not exactly governance, but mainline was not willing to accept this kind of contribution"} [R8]. This was coded as \dashuline{technology} in \dashuline{technical}. The respondent also provided a \gh pull request link that contains extra information, that we examined. The pull request contained 45 conversations and 15 participants between June 2018 until March 2021 when it was closed.
 %\ad{I suggest to remove this quote since it combines two distinct reasons, and we do not explain that a respondent could select more than one reason (and what we did when they did).}
 
 \item ``\emph{Mainline was not ready to accept those changes in part because the maintainers were not responsive. Since that time all of the issues have been dealt with and my variant is no longer needed, though the infrastructure for creating a new release of the variant remains in place in the event that it might be needed in the future}'' [R44].
 
 \item ``\emph{%Yes, there were attempts, but at then end
-[...] even main repo maintainer was saying he is busy and please use your fork for thing X and Y. We don't know the exact reason why he stopped maintaining it and also did not allow us to maintain his repo}'' [R89]. The respondent also provided extra links (two issues on the mainline) relating to the motivation of creating\,/\,maintaining the variant. We also observe that the variant was created through a \dashuline{community decision}.
-In the issues the extra links, three contributors from community were interested in a couple of new features that were missing in mainline, but the mainline maintainer seems indeed busy. In the end two members of the community took over the fork maintenance and introduced the missing features and advertised the additions in the \textsf{readme.md} file of the fork as well as in the issue.
+[...] even main repo maintainer was saying he is busy and please use your fork for thing X and Y. We don't know the exact reason why he stopped maintaining it and also did not allow us to maintain his repo}'' [R89]. An extra link was provided, in which
+%The respondent also provided extra links (two issues on the mainline) relating to the motivation of creating\,/\,maintaining the variant. 
+we found that the variant was created through a \dashuline{community decision}.
+%In the issues the extra links, 
+Three contributors from the community were interested in a couple of new features that were missing in mainline, but the mainline maintainer seemed busy. At the end, two members of the community took over the fork maintenance and introduced the missing features and advertised the additions in the \textsf{readme.md} file of the fork as well as in the issue.
 
 \end{itemize}
 
