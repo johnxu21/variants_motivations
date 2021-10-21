@@ -4,18 +4,22 @@
 %\section{Background and Related Work}
 %no background is discussed
 \label{sec:background}
-We discuss related work on: (A) motivations for creating\,/\,maintaining a variant fork and (B) interaction between variant fork and mainline.%, and (iii) general studies on variant forking.
+Previous research has focused on (A) motivations for creating or maintaining variant forks; and (B) interaction between variant forks and their mainline.%, and (iii) general studies on variant forking.
 
 
 
-\subsection{Motivations for creating\,/\,maintaining a variant fork}
+\subsection{Motivations for creating or maintaining variant forks}
 \label{sec:motivations}
 
-There are several studies that have investigated motivations for creating and maintaining variant forks. However, most of these studies were carried out in the pre-\gh days of \sourceforge, before the advent of social coding platforms~\cite{Linus:2012Perspectives,Gregorio:2012,Viseur:2012Forks,Linus:2013CodeForking,Laurent:2008,Linus:2011ToFork}. Several studies report controversial perceptions\cd{"controversial perceptions" is probably not what you were looking for, but rather something along the lines of "they are perceived as controversial".} around variant forks in the pre-\gh days~\cite{Chua:Forking:2017,Dixion:2009Forks,Ernst:2010,Linus:2011ToFork,Linus:2014Hackers,Raymond:Cathedral:2001,pete}.
-Jiang et al.~\cite{Lo:2017} state that, although forking may have been controversial in the open source software (OSS) community, it is now encouraged and a built-in feature on \gh. They further report that developers fork repositories to submit pull requests, fix bugs, and add new features. These forks are called social forks.
-Zhou et al.~\cite{Zhou:2020} conclude that most variant forks start as social forks
+Several studies have investigated motivations for creating and maintaining variant forks. However, most of these studies were carried out on \sourceforge, pre-dating the advent of social coding platforms like \gh~\cite{Linus:2012Perspectives,Gregorio:2012,Viseur:2012Forks,Linus:2013CodeForking,Laurent:2008,Linus:2011ToFork}. Several of those early studies report 
+perceived controversy 
+%controversial perceptions\cd{"controversial perceptions" is probably not what you were looking for, but rather something along the lines of "they are perceived as controversial".}
+around variant forks~\cite{Chua:Forking:2017,Dixion:2009Forks,Ernst:2010,Linus:2011ToFork,Linus:2014Hackers,Raymond:Cathedral:2001,pete}.
+Jiang et al.~\cite{Lo:2017} state that, although forking may have been controversial in the open source software (OSS) community, it is now encouraged and a built-in feature on \gh. They further report that developers create \emph{social forks} of repositories to submit pull requests, fix bugs, and add new features. Zhou et al.~\cite{Zhou:2020} conclude that most variant forks started of as social forks
 and that perceptions of forks have changed with the advent of \gh.
-Robles and Gonz{\'a}lez-Barahona~\cite{Gregorio:2012} carried out a comprehensive study on a carefully filtered list of 220 potential forks that were referenced on Wikipedia. %The authors assumed that a fork is significant if a reference to it appears in the English Wikipedia.\ad{@John: I missing the point of this last sentence. What are the findings of \cite{Gregorio:2012}?}
+Robles and Gonz{\'a}lez-Barahona~\cite{Gregorio:2012} carried out a comprehensive study on a carefully filtered list of 220 potential forks that were referenced on Wikipedia.
+\tm{So what was this study about?}
+ %The authors assumed that a fork is significant if a reference to it appears in the English Wikipedia.\ad{@John: I missing the point of this last sentence. What are the findings of \cite{Gregorio:2012}?}
 
 The literature has uncovered a number of motivations for creating variants. Below, we present some of the reported reasons, focusing on those where both the mainline and variant co-evolve together.\cd{Did you include all reasons for the mainline and variant to co-evolve? Then you could rephrase to avoid that your selection doesn't need to come across as subjective in ``some of the reported reason''.}
 % \ad{@John: Where do the following reasons come from? Is this from \cite{Gregorio:2012} or from additional references (and in that case, which ones?)}
@@ -29,11 +33,11 @@ The literature has uncovered a number of motivations for creating variants. Belo
 \begin{list}{$\circ$}{}
    \item \textit{Technical (addition of functionality).} Some developers want to include new functionalities into the project, but the main developer(s) do not accept it. An example is \textsf{Poppler}, a fork of \textsf{xpdf} relying on the \textsf{poppler} library~\cite{Gregorio:2012}.
 
-    \item \textit{Governance disputes.} This is when some contributors from the community create a variant project when they feel that their feedback is not heard, or when the maintainers of the original are unresponsive or very slow at accepting their patches. A well-known example is a fork of \textsf{GNU Emacs} (originally \textsf{Lucid}) which was created as a result of the significant delays in bringing out a new version to support the Energize C++ IDE~\cite{Wheeler:2015Forking}.
+    \item \textit{Governance disputes.} Some contributors from the community create a variant project because they feel that their feedback is not heard, or because the maintainers of the original are unresponsive or too slow at accepting their patches. A well-known example is a fork of \textsf{GNU Emacs} (originally \textsf{Lucid}) which was created as a result of the significant delays in bringing out a new version to support the Energize C++ IDE~\cite{Wheeler:2015Forking}.
 
-\item \textit{Legal issues}: Legal aspects such as disagreements on the license and trademarks, or changes to conform to laws (encryption) are included here. An example of such a fork is \textsf{X.Org}, which originated from \textsf{XFree}~\cite{Gregorio:2012,Wheeler:2015Forking}.
+\item \textit{Legal issues.} This includes disagreements on the license and trademarks, and changes to conform to rules and regulations (encryption).\tm{I did not get the "encryption" thingy here...} An example is \textsf{X.Org}, which originated from \textsf{XFree}~\cite{Gregorio:2012,Wheeler:2015Forking}.\tm{So why is this example an example of a legal issue???}
 
-\item \textit{Personal}: The developer team disagrees on fundamental issues (beyond mere technical matters) related to the software development and the project. An example of such a fork is the \textsf{OpenBSD} fork from \textsf{NetBSD}~\cite{Gregorio:2012}.
+\item \textit{Personal reasons.} The developer team may disagree on fundamental issues (beyond mere technical matters) related to the software development process and the project. An example is the \textsf{OpenBSD} fork from \textsf{NetBSD}~\cite{Gregorio:2012}.\tm{So what was the fundamental issue of disagreement?}
 
 %The variant was created because some of the contributors felt that their feedback was not heard or maintainers were accepting patches too slowly in the mainline project.
 
@@ -42,23 +46,28 @@ The literature has uncovered a number of motivations for creating variants. Belo
 
 % \ad{@John: I tried to iterate on this section, but it's very difficult because it's pretty messy currently. Since I don't know the content of each paper, I don't know how to organise these references in a more structured and smooth way. Consider for example \cite{Zhou:2020} being used in 7 different places, with different ``reported findings''.}
 
-Focusing on variant forks in the Android ecosystem, Businge et al.~\cite{businge2018appfamilies} found that re-branding, simple customizations, feature extension, and implementation of different but related features are the main motivations to create a fork of an Android App.
-Zhou et al.~\cite{Zhou:2020} interviewed 18 developers of hard forks on \gh to understand reasons for forking in more modern social coding environments that explicitly support forking. The authors reported that the motivations they observed align with the findings of prior (mentioned above) studies.
+Focusing on variant forks in the Android ecosystem, Businge et al.~\cite{businge2018appfamilies} found that re-branding, simple customizations, feature extension, and implementation of different but related features are the main motivations to create a fork for Android apps.
+Zhou et al.~\cite{Zhou:2020} interviewed 18 developers of hard forks on \gh to understand reasons for forking in modern social coding environments that explicitly support forking. The authors reported that the motivations they observed align with the findings of the aforementioned studies.
 
-Another recent study that has investigated variant forks is that of Sung et al.~\cite{sung:ICSE:2020}. The authors conducted an industrial case study of the implications of frequent merges from mainline and the resulting merge conflicts in a variant fork. They implemented a tool that can automatically resolve up-to 40\% of the list of eight mainline-induced build breaks.
+Sung et al.~\cite{sung:ICSE:2020} recently investigated variant forks in an industrial case study to uncover the implications of frequent merges from mainline and the resulting merge conflicts in the variant forks. They implemented a tool that can automatically resolve up to 40\% of eight types of mainline-induced build breaks.
 
-While the pre-\gh studies reported controversial perceptions\cd{Again, I don't think it is the perceptions that are controversial themselves. Only that the forks are perceived as controversial. See above remark.} around variant forks, Zhou et al.~\cite{Zhou:2020} report that these perceptions have changed with the advent of \gh. Jiang et al.~\cite{Lo:2017} state that, although forking is controversial in traditional open source software (OSS) communities, it is actually encouraged as a built-in feature in \gh.
+While the pre-\gh studies reported
+perceived controversy
+% controversial perceptions\cd{Again, I don't think it is the perceptions that are controversial themselves. Only that the forks are perceived as controversial. See above remark.}
+around variant forks, Zhou et al.~\cite{Zhou:2020} report that this controversy has reduced with the advent of \gh. Jiang et al.~\cite{Lo:2017} report that, while forking is considered controversial in traditional OSS communities, it is actually embraced as a built-in feature in \gh.
 %\cd{This sentence already featured in the beginning of the section.} The authors further report that developers fork repositories to submit pull requests, fix bugs, add new features and keep copies (social forks).
 %Zhou et al.~\cite{Zhou:2020} also report that many variant forks actually start as social forks.
-In this study builds on the previous studies to identify whether those motivations for variant forks are still the same or whether new factors have come into play.  
+Our study builds on these previous studies to identify whether the motivations for variant forks are still the same or whether new factors have come into play.  
 
-\subsection{Interaction between variant fork and mainline}
-We have only come across two studies that have that have investigated interaction between variant forks and mainlines~\cite{Zhou:2020,businge:emse:2021}.
+\subsection{Interaction between variant forks and their mainline}
+We have only encountered two studies that investigated the interaction between variant forks and mainlines~\cite{Zhou:2020,businge:emse:2021}.
 %\az{I think we need to define the mainline here first. Maybe also define the used terms in a subsection "terminology". For example mainline} \jb{The only terminologies we have are variants and mainline. I plan to define them in the introduction section}
-Zhou et al.~\cite{Zhou:2020} conducted 18 semi-structured interviews with developers. They report that many interviewees indicate being interested in coordination across repositories, either for merging some or all changes back mainline eventually or to monitor activity in the mainline repository to incorporate select or all changes. 
-Another study that has investigated interaction between mainline and variants is that of Businge et al.~\cite{businge:emse:2021}.
-The authors quantitatively investigated code propagation among variants and mainline from three software ecosystems. They found that only about 11\% of the 10,979 mainline--variant pairs had integrated code among themselves. 
-Since the mainlines and variants share a common code base and with the facilities of collaborative maintenance of \git and the pull request model, limited interactions is not what one would expect. We think that there could be some impediments to the interactions, yet the two studies do not report anything related to the impediments. To this end, in this study we carry out an exploratory study, by taking to the variant maintainers, to identify possible impediments to the limited interaction.
+Zhou et al.~\cite{Zhou:2020} conducted 18 semi-structured developer interviews. Many respondents indicates being interested in coordination across repositories, either for eventually merging changes back into the mainline, or to monitor activity in the mainline repository to incorporate select or all changes.\tm{"to incorporate select or all changes"? Do not know what that means.}
+Businge et al.~\cite{businge:emse:2021} also  investigated the interaction between mainline and variants. The authors quantitatively investigated code propagation among variants and their mainline in three software ecosystems. They found that only about 11\% of the 10,979 mainline--variant pairs had integrated code among themselves. 
+Since the mainlines and variants share a common code base and with the facilities of collaborative maintenance of \git and the pull-based development model, 
+one would have expected more interactions between the mainline and its variants. We hypothesise that there are some impediments to enable such interactions. 
+Since the two aforementioned studies do not report any such impediments,
+we decided to carry our an exploratory qualitative survey with variant maintainers to identify possible impediments.
 
 %Like Zhou et al.~\cite{Zhou:2020}, in this study we carry out a qualitative study to find out if variant developers integrate code to and from the mainline repositories.
 %\cd{Consider re-arranging so the reader does not read about zhou, followed by businge, followed by zhou.}
