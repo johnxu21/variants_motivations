@@ -9,9 +9,9 @@ Before the advent of social coding platforms, forking was rare and was typically
 
 With the rise of the pull-based development model~\cite{Gousios:2014ICSE}, forking has become more common and the community typically characterises forks by their purpose~\cite{Zhou:2020}.
 \textit{Social forks} are created for isolated development with the goal of contributing back to the mainline.
-\textit{Variant forks} are, in contrast, created by splitting off a new development branch without necessarily intending to contribute back to the mainline.\cd{Are these definitions correct? Does a variant fork become a social fork if it is contributed back? If the real distinguishing factor is the next sentence, it should be incorporated in the definition.}
-They enable steering development into a new direction, while leveraging the mainline project that defines or adheres to some standards~\cite{sung:ICSE:2020}.
-
+\textit{Variant forks} are, in contrast, created by splitting off a new development branch
+to steer development into a new direction, while leveraging the mainline project that defines or adheres to some standards~\cite{sung:ICSE:2020}.
+% without necessarily intending to contribute back to the mainline.\cd{Are these definitions correct? Does a variant fork become a social fork if it is contributed back? If the real distinguishing factor is the next sentence, it should be incorporated in the definition.}
 
 Several studies have investigated the motivations behind variant forks in the context of open source projects~\cite{Linus:2012Perspectives,Gregorio:2012,Viseur:2012Forks,Linus:2013CodeForking,Linus:2011ToFork,Gamalielsson:2014Sustainability}.
 However, most have been conducted before the rise of social coding platforms and it is known that \gh has significantly changed the perception and practices of forking~\cite{Zhou:2020}.
@@ -33,17 +33,20 @@ This suggests that the code sharing facilities in themselves are not enough for 
 
 
 \noindent
-Consequently, we define the following research questions:
-\begin{itemize}
-\item $RQ1$ --- \textit{\RQOne}
-The literature pre-dating \git and social coding platforms identified three categories of motivations for creating variant forks: technical (e.g., diverging features), governance (e.g., diverging interests), legal (e.g., diverging licences), and personal (e.g., diverging principles).
-With this research question, we aim to investigate whether those motivations for variant forks are still the same or whether new factors have come into play. 
+We will therefore study two research questions:
 
-\item $RQ2$ --- \textit{\RQTwo}
-\git and social coding platforms offers advanced code-sharing facilities, yet at least one study reported very limited code integration between the mainline and the variant projects~\cite{businge:emse:2021}
-With this research question we investigate the overlap between the teams maintaining the mainline and variant forks, and how they communicate with one another.
+%\begin{itemize}
+%\item
+ $RQ1$ --- \textit{\RQOne}
+The literature pre-dating \git and social coding platforms identified three categories of motivations for creating variant forks: technical (e.g., diverging features), governance (e.g., diverging interests), legal (e.g., diverging licences), and personal (e.g., diverging principles).
+This research question aims to investigate whether those motivations for variant forks are still the same or whether new factors have come into play. 
+
+%\item
+$RQ2$ --- \textit{\RQTwo}
+\git and social coding platforms offers advanced code-sharing facilities, yet at least one study reported very limited code integration between the mainline and the variant projects~\cite{businge:emse:2021}.
+This research question investigates the overlap between the teams maintaining the mainline and variant forks, and how they communicate with one another.
 As such we hope to identify impediments for co-evolution.
-\end{itemize}
+%\end{itemize}
 
 
 The investigations are based on an online survey which we conducted with 112 maintainers involved in 105 active variant forks hosted on \gh.
