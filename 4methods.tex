@@ -11,9 +11,10 @@ To understand the motivations behind the creation and maintenance of variant for
 
 %Since our aim was to learn from a large number of participants, we opted to use surveys that scales well as compared to interviews.
 %\tm{I do not understand the sentence "we opted to use surveys scale well", something is incorrect in this sentence.}
-Relying on the knowledge gained from literature, especially the motivations presented in Section~\ref{sec:motivations},
-\cd{I would drop the first part of the section, as you already had a stronger motivation for the survey in the beginning} we designed a 12-question survey that would last at most 15 minutes.
-\cd{It might help to state that you followed the best practices of our community in designing the survey, and refer to a book.}
+%Relying on the knowledge gained from literature, especially the motivations presented in Section~\ref{sec:motivations},
+%\cd{I would drop the first part of the section, as you already had a stronger motivation for the survey in the beginning} 
+We designed a 12-question survey that would last at most 15 minutes.
+\cd{It might help to state that you followed the best practices of our community in designing the survey, and refer to a book.} \jb{could someone help and address this comment.}
 The questions were designed so that they cover the two research questions of this paper.
 %We designed the questions in such a way that the participants could choose the  reason from the provided options that best suited their motivations for forking.
 8 of the 12 questions are close-ended and respondents can answer these questions either via multiple choice or Likert scales.
@@ -24,6 +25,7 @@ The 4 remaining questions are open-ended.
 All questions were carefully formulated so as not to lead respondents to opt for a specific answer. We validated these questions (1) by subjecting them to the critical eye of many colleagues; and (2) by conducting informal mini-runs of the survey with a limited group of participants to obtain their feedback on it.
 
 \ad{@John: I believe it would be nice to provide a link to the survey to that readers can see exactly what we asked. If you do so, please remember that SANER follows a double-blind review process, so the survey should be anonymized.}
+\jb{could someone help with this.}
 
 
 \subsection{Identifying variant projects and participants}
@@ -40,10 +42,11 @@ At the end of this process, we have \textit{227 mainline–variant project pairs
 
 In addition to these mainline-variant pairs distributed through package registries, we also collected pairs of projects from \gh.
 We started by looking for mainline projects.
-Using \gh search endpoint, we looked for \emph{popular} (i.e., $>50$ stars and forks), \emph{long-lived} (i.e., created before 2018) and \emph{active} (i.e., still updated in 2020) repositories. Since our interest is on software projects, we focused on repositories whose main language is one of the 17 most popular ones (e.g., \textsf{JavaScript, Java, Go, Python, Ruby, C}, etc.). \ad{@John: how did you select these 17 languages?}
+Using \gh search endpoint, we looked for \emph{popular} (i.e., $>50$ stars and forks), \emph{long-lived} (i.e., created before 2018) and \emph{active} (i.e., still updated in 2020) repositories. Since our interest is on software projects, we focused on repositories whose main language is one of the 17 most popular ones used in \gh repositories (e.g., \textsf{JavaScript, Java, Go, Python, Ruby, C}, etc). 
+%\ad{@John: how did you select these 17 languages?}
 Then, for all the mainline projects we found, we looked at their forks to identify variant forks. Collecting variant forks from \gh is subject to many threats. Previous studies have shown that the majority of forks on \gh are inactive~\cite{Businge:Android:2019,Businge:2017} or are social forks~\cite{businge:2018icsme}.
-To mitigate these threats, we first filtered out forks based on a set of heuristics (e.g., $\geq 10$ stars, $\geq 10$ commits ahead of the mainline, $\geq 5$ closed pull requests, diverging \textsf{README} files, etc.).
-\cd{Here I would list all heuristics used rather than use examples and remain vague.}
+To mitigate these threats, we first filtered out forks based on  the following set of heuristics: $\geq 10$ stars, $\geq 10$ commits ahead of the mainline, $\geq 5$ closed pull requests, diverging \textsf{README} files.
+%\cd{Here I would list all heuristics used rather than use examples and remain vague.}
 Then, we manually verified all the remaining forks to make sure that they correspond to variant forks of the corresponding mainline projects.
 At the end of this process, we obtained \textit{264 additional mainline-variant project pairs}.
 % Furthermore, since we had to manually verify the final dataset as well as reduce the number of false positives, we came up with restrictive magic numbers to achieve our goal.
@@ -87,7 +90,6 @@ All participants were asked to read and accept an informed consent form before t
 \end{figure}
 
 Fig.~\ref{fig:stats} shows the distributions of stars, pull requests, issues and commits for the mainline-variant pairs we selected. Only the 105 projects for which at least one maintainer took part in the survey were considered.
-
 \ad{@John: I could not rewrite the next paragraph because I do not really understand it (and its purpose). I guess we need at least one or two sentences to explain the goal of the figure, and what can be observed from it.}
 Apart from the stars where we consider all in the mainline\cd{For me this subsentence was the only part I did not understand.}
 , we count all (closed + open) PRs, issues, and commits (only main branch) after the fork date. While it is not surprising that the counts for mainline metrics are always higher than those of the variants, it is interesting that most variants are also popular in stars, pull requests and issues counts. This gives us confidence that we are studying real variants as opposed to social forks.
@@ -99,4 +101,4 @@ Apart from the stars where we consider all in the mainline\cd{For me this subsen
 
 \ad{@John: I'm not really used to card sorting, but I couldn't really understand the whole process you followed after having read the following paragraph. Please add some sentences to explain why card sorting is needed and which ``issue(s)'' it solves.}
 
-We used card sorting~\cite{zimmermann2016card}, on the 3 open-ended questions which provides a framework to ascertain the meaning and summarize overarching themes of responses within the context of the research question. In the analysis, we grouped similar responses to the open-ended questions into codes. We did not start with any pre-defined codes in mind, but instead derived the codes from the data, iterating as many times as needed until reaching a saturation point. The first iteration of coding was performed by the first author of the paper, and any responses the first author was unsure of were decided by discussion with another\cd{the second?} author. Once the first two authors agreed on the codes, a virtual meeting was agreed upon where all the other authors joined and discussed the resulting codes and themes and through negotiated agreement~\cite{Garrison:2006}. This approach allowed us to remove duplicates and, in some cases, to generalize or specialize themes, which we will discuss in the later sections of this paper.
+We used card sorting~\cite{zimmermann2016card}, on the 3 open-ended questions which provides a framework to ascertain the meaning and summarize overarching themes of responses within the context of the research question. In the analysis, we grouped similar responses to the open-ended questions into codes. We did not start with any pre-defined codes in mind, but instead derived the codes from the data, iterating as many times as needed until reaching a saturation point. The first iteration of coding was performed by the first author of the paper, and any responses the first author was unsure of were decided by discussion with the second author. Once the first two authors agreed on the codes, a virtual meeting was agreed upon where all the other authors joined and discussed the resulting codes and themes and through negotiated agreement~\cite{Garrison:2006}. This approach allowed us to remove duplicates and, in some cases, to generalize or specialize themes, which we will discuss in the later sections of this paper.

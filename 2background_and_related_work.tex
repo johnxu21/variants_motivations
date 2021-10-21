@@ -11,7 +11,7 @@ We discuss related work on: (A) motivations for creating\,/\,maintaining a varia
 \subsection{Motivations for creating\,/\,maintaining a variant fork}
 \label{sec:motivations}
 
-There are several studies that have investigated motivations for creating and maintaining variant forks. However, most of these studies were carried out in the pre-\gh days of \sourceforge, before the advent of social coding platforms~\cite{Linus:2012Perspectives,Gregorio:2012,Viseur:2012Forks,Linus:2013CodeForking,Laurent:2008,Linus:2011ToFork}. Several  report controversial perceptions\cd{"controversial perceptions" is probably not what you were looking for, but rather something along the lines of "they are perceived as controversial".} around variant forks in the pre-\gh days~\cite{Chua:Forking:2017,Dixion:2009Forks,Ernst:2010,Linus:2011ToFork,Linus:2014Hackers,Raymond:Cathedral:2001,pete}.
+There are several studies that have investigated motivations for creating and maintaining variant forks. However, most of these studies were carried out in the pre-\gh days of \sourceforge, before the advent of social coding platforms~\cite{Linus:2012Perspectives,Gregorio:2012,Viseur:2012Forks,Linus:2013CodeForking,Laurent:2008,Linus:2011ToFork}. Several studies report controversial perceptions\cd{"controversial perceptions" is probably not what you were looking for, but rather something along the lines of "they are perceived as controversial".} around variant forks in the pre-\gh days~\cite{Chua:Forking:2017,Dixion:2009Forks,Ernst:2010,Linus:2011ToFork,Linus:2014Hackers,Raymond:Cathedral:2001,pete}.
 Jiang et al.~\cite{Lo:2017} state that, although forking may have been controversial in the open source software (OSS) community, it is now encouraged and a built-in feature on \gh. They further report that developers fork repositories to submit pull requests, fix bugs, and add new features. These forks are called social forks.
 Zhou et al.~\cite{Zhou:2020} conclude that most variant forks start as social forks
 and that perceptions of forks have changed with the advent of \gh.
@@ -27,7 +27,7 @@ The literature has uncovered a number of motivations for creating variants. Belo
 % Is this what came out of your analysis of the survey responses?}
 
 \begin{list}{$\circ$}{}
-   \item \textit{Technical reasons} refer to adding or focusing content\cd{I don't know what the technical reason ``focusing content'' means. Could you rephrase?}---for instance, when a developer wants to include a new feature in the mainline, but the mainline developers are reluctant to do so. An example is \textsf{Poppler}, a fork of \textsf{xpdf} relying on the \textsf{poppler} library~\cite{Gregorio:2012,Wheeler:2015Forking}.
+   \item \textit{Technical (addition of functionality).} Some developers want to include new functionalities into the project, but the main developer(s) do not accept it. An example is \textsf{Poppler}, a fork of \textsf{xpdf} relying on the \textsf{poppler} library~\cite{Gregorio:2012}.
 
     \item \textit{Governance disputes.} This is when some contributors from the community create a variant project when they feel that their feedback is not heard, or when the maintainers of the original are unresponsive or very slow at accepting their patches. A well-known example is a fork of \textsf{GNU Emacs} (originally \textsf{Lucid}) which was created as a result of the significant delays in bringing out a new version to support the Energize C++ IDE~\cite{Wheeler:2015Forking}.
 
@@ -49,16 +49,19 @@ Another recent study that has investigated variant forks is that of Sung et al.~
 
 While the pre-\gh studies reported controversial perceptions\cd{Again, I don't think it is the perceptions that are controversial themselves. Only that the forks are perceived as controversial. See above remark.} around variant forks, Zhou et al.~\cite{Zhou:2020} report that these perceptions have changed with the advent of \gh. Jiang et al.~\cite{Lo:2017} state that, although forking is controversial in traditional open source software (OSS) communities, it is actually encouraged as a built-in feature in \gh.\cd{This sentence already featured in the beginning of the section.} The authors further report that developers fork repositories to submit pull requests, fix bugs, add new features and keep copies (social forks).
 Zhou et al.~\cite{Zhou:2020} also report that many variant forks actually start as social forks.
+In this study builds on the previous studies to identify whether those motivations for variant forks are still the same or whether new factors have come into play.  
 
 \subsection{Interaction between variant fork and mainline}
-We have only come across the study of Zhou et al.~\cite{Zhou:2020} that has investigated interaction between variant forks and mainline.
+We have only come across two studies that have that have investigated interaction between variant forks and mainlines~\cite{Zhou:2020,businge:emse:2021}.
 %\az{I think we need to define the mainline here first. Maybe also define the used terms in a subsection "terminology". For example mainline} \jb{The only terminologies we have are variants and mainline. I plan to define them in the introduction section}
-The authors conducted 18 semi-structured interviews with developers. They report that many interviewees indicate being interested in coordination across repositories, either for merging some or all changes back mainline eventually or to monitor activity in the mainline repository to incorporate select or all changes. Another study\cd{This paragraph started by stating that there is only 1 study! Should be updated to two.} that has investigated interaction between mainline and variants is that of Businge et al.~\cite{businge:emse:2021}.
+Zhou et al.~\cite{Zhou:2020} conducted 18 semi-structured interviews with developers. They report that many interviewees indicate being interested in coordination across repositories, either for merging some or all changes back mainline eventually or to monitor activity in the mainline repository to incorporate select or all changes. 
+Another study that has investigated interaction between mainline and variants is that of Businge et al.~\cite{businge:emse:2021}.
 The authors quantitatively investigated code propagation among variants and mainline from three software ecosystems. They found that only about 11\% of the 10,979 mainline--variant pairs had integrated code among themselves. 
-Like Zhou et al.~\cite{Zhou:2020}, in this study we carry out a qualitative study to find out if variant developers integrate code to and from the mainline repositories.
-\cd{Consider re-arranging so the reader does not read about zhou, followed by businge, followed by zhou.}
-\cd{I'm missing a conclusion about the related work that spoonfeeds reviewers the need for one more study and highlights the differences to this study.
-You could either summarise the differences at the end of this section, or sprinkle them throughout this section (e.g., "our work, in contrast, studies"). This is particularly important for the interview studies.}
+Since the mainlines and variants share a common code base and with the facilities of collaborative maintenance of \git and the pull request model, limited interactions is not what one would expect. We think that there could be some impediments to the interactions, yet the two studies do not report anything related to the impediments. To this end, in this study we carry out an exploratory study, by taking to the variant maintainers, to identify possible impediments to the limited interaction.
+
+%Like Zhou et al.~\cite{Zhou:2020}, in this study we carry out a qualitative study to find out if variant developers integrate code to and from the mainline repositories.
+%\cd{Consider re-arranging so the reader does not read about zhou, followed by businge, followed by zhou.}
+%\cd{I'm missing a conclusion about the related work that spoonfeeds reviewers the need for one more study and highlights the differences to this study. You could either summarise the differences at the end of this section, or sprinkle them throughout this section (e.g., "our work, in contrast, studies"). This is particularly important for the interview studies.}
 
 %\subsection{General studies on variant forking}
 % Like the between variant fork and mainline, we did not find many studies that relate to general studies on variant forking.

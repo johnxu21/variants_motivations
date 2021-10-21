@@ -30,8 +30,11 @@ Where applicable, we integrate and compare our findings with related research fi
 
 
 
-
-\nd \textbf{\rqOne} With this RQ, we asked the survey participants the following questions:
+\subsection{Results -- $RQ1$}
+Recall that in Section~\ref{sec:intro}, we stated 
+\textbf{\rqOne} With aim of investigating whether motivations for creating variant forks identified before the invention of \git and social coding platforms
+still hold or whether new factors have come into play.
+With this RQ, we asked the survey participants the following questions:
 
 \begin{itemize}
 \item \rqOneOne
@@ -40,8 +43,8 @@ Where applicable, we integrate and compare our findings with related research fi
 \end{itemize}
 
 
-For $SQ1_{a}$ we presented a multiple choice question, $SQ1_{b}$ we presented Likert scale answer options and $SQ_{c}$ was an open ended optional question.
-In Fig.~\ref{fig:decision_motivations} we present the results for responses for $SQ_{a}$ and $SQ_{b}$. In Fig.~\ref{fig:decision} we can see that the majority of the participants selected the option \dashuline{individual}. In Fig.~\ref{fig:motivations} the majority ranked highly the motivation \dashuline{technical}. We also see quite a number of highly ranked motivations of \dashuline{governance} and \dashuline{others}. In Fig.~\ref{fig:sankey_motivation} we can also see the association between the $SQ1_{a}$ and $SQ1_{b}$ on the axes of \dashuline{decision} and \dashuline{motivation}. We can see that the majority of respondents selected \dashuline{individual} and selected \dashuline{technical}.
+For $SQ1_{a}$ we presented a multiple choice question, $SQ1_{b}$ we presented Likert scale answer options and $SQ1_{c}$ was an open ended optional question.
+In Fig.~\ref{fig:decision_motivations} we present the results for responses for $SQ1_{a}$ and $SQ1_{b}$. In Fig.~\ref{fig:decision} we can see that the majority of the participants selected the option \dashuline{individual}. In Fig.~\ref{fig:motivations} the majority ranked highly the motivation \dashuline{technical}. We also see quite a number of highly ranked motivations of \dashuline{governance} and \dashuline{others}. In Fig.~\ref{fig:sankey_motivation} we can also see the association between the $SQ1_{a}$ and $SQ1_{b}$ on the axes of \dashuline{decision} and \dashuline{motivation}. We can see that the majority of respondents selected \dashuline{individual} and selected \dashuline{technical}.
 
 % Like we presented in Section~\ref{sec:protocal}, th
 % is question had Likert scale answer options we identified in the literature. 2) \emph{Was the motivation for creating the variant an individual decision or a community decision?} This survey question had two multiple choice answers of: \emph{individual} or \emph{community} decision.
@@ -50,7 +53,7 @@ In Fig.~\ref{fig:decision_motivations} we present the results for responses for 
 To identify these details, we asked two additional optional open-ended questions to allow the respondents provide us with details on their choice of Likert scale answer on the motivation. The two questions were: \emph{Kindly provide details for your selected answer(s) on the motivation} and 2) \emph{If there are any links that are documented relating to your choice of answers on motivation detail, kindly point us there}. 100 of the 105 respondents that attempted the survey gave us a the details of the motivation of creating the variant and 30 of the 100 provided us with extra links. Luckily, while we were coding the open-ended question using card sorting, as discussed in Section~\ref{sec:card_sorting}, we were able to identify the five missing details of the choice of motivation by looking at selected response as well as comparing contents of the mainline and variant repositories on \gh.
 
 In Fig~\ref{fig:sankey_motivation} we present the details of the choice of motivation by the respondents. We discuss what the coded themes represent in the next paragraphs.
-In Fig~\ref{fig:sankey_motivation} we also present how the distribution of the responses across all the five questions relating to motivation and how they relate to each other. The thickness of the edge represents the frequency of respondents between two entities.
+Fig~\ref{fig:sankey_motivation} we also presents how the distribution of the responses across all the five questions relating to motivation and how they relate to each other. The thickness of the edge represents the frequency of respondents between two entities.
 The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the variants that are attached to- or detached from the mainline repository as discussed in Section~\ref{sec:forks_and_participants}. We can see that in both the \dashuline{attached} and \dashuline{detached} variants the majority of respondents that answered the question \dashuline{\# original developers} selected \dashuline{none} implying that the majority of the variants were started by different developers.
 Since the answers to $SQ1_{c}$ were presented on a Likert scale, participants were allowed to rank the appropriate motivation(s) that suits why they created the variant. While coding the motivations details, we identified respondents who ranked highly more than one motivation category and also provided a response in the open-ended question to support each of the highly ranked motivation category. In this scenario, each of the ranked highly motivation category would have a motivation detail for the same respondent.  
 
@@ -81,6 +84,7 @@ This respondent ranked highly both \dashuline{technical} and \dashuline{governan
 
 \item ``\emph{The original project did not take WCAG accessibility guidelines into account. We first tried to make improvements on it, but they were broken soon after. So we finally decided to fork the project with the explicit aim to focus on accessibility}'' [R88].
 \ad{That one seems more a ``different goal''.}
+\jb{I agree}
 
 \end{itemize}
 
@@ -134,7 +138,7 @@ The maintainer had thought about it very well, but some users (including myself)
 %\ad{@John: I like this kind of ``anecdotal evidences'', but I'm missing how it contributes to the point. Also, there should be something wrong about the dates, since it means the issue was closed before its opening.}
 
 \item ``\textit{Mainline dropped support for a small subset of the code and asked for community support to create a fork to support that subset}'' [R66].
-\ad{If a set of features is dropped, doesn't that mean the projects went into different directions? It's not only ``we do no want to maintain this feature'' but rather ``we removed it, if you need it, do your own project''. If I'm right, this means it better fits in the ``different goals'' or in ``new features'' category.} \jb{a feature ``drop'' also means ``unmaintained''}
+\ad{If a set of features is dropped, doesn't that mean the projects went into different directions? It's not only ``we do no want to maintain this feature'' but rather ``we removed it, if you need it, do your own project''. If I'm right, this means it better fits in the ``different goals'' or in ``new features'' category.}
 \end{itemize}
 
 \nd The next prominent \dashuline{technical} motivation detail was \dashuline{technology}.
@@ -237,10 +241,10 @@ The way the original was architected made this very challenging, so I ended up r
 \item ``\emph{5 years ago the permissions model for GitHub and Travis is not what it is today. I wanted to use Travis for CI/CD but if I granted Travis access to my primary github account, it would have read access to all the github repos [...], which would expose private customer code. I forked the repo [but] the permissions model has evolved [and I] %I have a pending task to switch to github actions for CI/CD on the main repo, and to
 deleted the fork}'' [R24].
 
-\item ``\emph{The founders of the mainline had been absent from the project for several years, but came back and %booted the maintainers off and
+\item ``\emph{The founders of the mainline had been absent from the project for several years, but came back and booted the maintainers off and
 [...] shifted the project to a closed source. %There was an attempt to reconcile differences [...], but the these issues were resolved (at least from the point of view of the maintainers, in reality the founders just pretended to be fine with it and secretly plotted for the next year to remove the maintainers from the project and ban them from every community to minimize a potential fork when they announced their plans to change the license
-}'' [R36]. %The respondent provided a link for extra details that can be found here\footnote{https://wintercms.com/blog/post/october-cms-you-know-it-dead}''.
-%\ad{Can we provide such a link? It seems to contradict the anonymous aspect of the survey...}
+}'' [R36]. The decision to create the fork was initiated by the \dashuline{closed source}.
+The respondent provided a link with extra information stating how the variant was created. In the extra link indicates how the founders decided to abandon the community developers of the project and introduce a number of breaking changes. The variant was created by three of the maintainers that were booted from the original project and a fourth one from the community. The link also shows the current status of the variant, the roadmap for the future as well as a guide on the users of original can migrate to use the variant. The variant currently has over 739 stars, is used by 35 developers, has 101 pull requests and 195 issues.
 \end{itemize}
 
 
@@ -261,7 +265,7 @@ To this end, our study opens up different research directions that can be aimed 
 
 \begin{framed}
 \noindent
-\emph{\textbf{Takeaway--RQ1}:
+\emph{\textbf{Summary--RQ1}:
 We have observed that many variant forks start as social forks. The decision to create\,/\,maintain the forks is either from community (contributing up to 24\%) or as individual (76\%). We have also observed that the majority (82\%) of the developers creating the forks are outside the maintainers of the mainlines. We have presented 18 variant creation\,/\,maintenance motivation details categorized in the motivations of \dashuline{technical} (accounting 58\% of the responses), \dashuline{governance} (24\%), \dashuline{others} (16\%) and \dashuline{legal} (2\%). The detailed motivations in the \dashuline{others} category are newly introduced in the social coding era. We have also discussed some interesting software reuse classifications among variants.
 }
 \end{framed}
@@ -283,8 +287,10 @@ We have observed that many variant forks start as social forks. The decision to 
 \end{figure*}
 
 
-\nd \textbf{\rqTwo}
-In the design of this RQ in the survey was further divided into two sub-questions and  specific questions-- the ``\textit{who}'' and the ``\textit{how}''. The first question was aimed at identifying the developers involved in maintaining these variants--the ``\textit{who}''. And the second question was actually the main $RQ_2$--\textit{How do  variant  projects  evolve  w.r.t  the  mainline?}
+\subsection{Results -- $RQ2$}
+Recall that in Section~\ref{sec:intro}, we stated \textbf{\rqTwo}
+With this RQ our aim is to identify impediments for co-evolution between the mainline and variant projects by investigate the overlap between the teams maintaining projects and how they communicate with one another.
+In the design of this RQ in the survey was further divided into two specific questions-- the ``\textit{who}'' and the ``\textit{how}''. The first question--``\textit{who}'' was aimed at identifying the developers involved in maintaining these variants--the ``\textit{who}''. And the second question was actually the main $RQ_2$--\textit{How do  variant  projects  evolve  w.r.t  the  mainline?}
 
 With the first question, we asked the survey participants the following questions:
 
@@ -310,7 +316,7 @@ The results of $SQ2_{a}$ and $SQ2_{b}$, answers to our question on \textit{who i
 
 %As opposed to our exploratory study surveying maintainers of variants, the study of Businge et al.~\cite{businge:emse:2021} was a large scale empirical study on mainline--variant pairs from three software ecosystems. They reported that over 82\% of the 10,979 mainline--variant are owned by different developers. In our study we have also found 82\% of variants are maintained by developers different from those in the mainline.
 
-In the second question related to understand how the projects co-evolve, we asked the survey participants the following questions:
+In the second question--``\textit{how}'' with the aim understanding how the projects co-evolve, we asked the survey participants the following questions:
 \begin{itemize}
 \item \textbf{\rqTwoThree}
 \item   \textbf{\rqTwoFour}
@@ -390,7 +396,7 @@ Some promising studies in this direction have focused on providing the mainline 
 
 \begin{framed}
 \noindent
-\emph{\textbf{Takeaway--RQ2}: We have observed that there is very little interaction between the mainline and variants during their co-evolution. The lack of interaction could be attributed to a number of reasons that include: (i) technical (i.e., diverging features), where variants and mainlines are offering different goals or implementing different technologies having nothing to share; (ii) governance (i.e., diverging interests), where mainlines are unresponsive to the requests from community and also uninterested in some features suggested by the community; (iii) legal (e.g., diverging licences), where the mainline variant has changed the licence and integration is no longer possible.
+\emph{\textbf{Summary--RQ2}: We have observed that there is very little interaction between the mainline and variants during their co-evolution. The lack of interaction could be attributed to a number of reasons that include: (i) technical (i.e., diverging features), where variants and mainlines are offering different goals or implementing different technologies having nothing to share; (ii) governance (i.e., diverging interests), where mainlines are unresponsive to the requests from community and also uninterested in some features suggested by the community; (iii) legal (e.g., diverging licences), where the mainline variant has changed the licence and integration is no longer possible.
 (iv) As a result of the divergence and since the majority of the variants are maintained by developers outside the core developers of the mainline, we report that its possible that some important updates (like patches) could be missed or are duplicated.
 We also report interesting interactions that include: integration of only patches, integration of only specific changes, integration that exclude some specific changes and integration only changes that pass CI.
 }
