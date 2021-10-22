@@ -15,15 +15,19 @@ to steer development into a new direction, while leveraging the mainline project
 
 Several studies have investigated the motivations behind variant forks in the context of open source projects~\cite{Linus:2012Perspectives,Gregorio:2012,Viseur:2012Forks,Linus:2013CodeForking,Linus:2011ToFork,Gamalielsson:2014Sustainability}.
 However, most have been conducted before the rise of social coding platforms and it is known that \gh has significantly changed the perception and practices of forking~\cite{Zhou:2020}.
-Developers tend to perceive social forks as alternatives to the original mainline project\cd{Is this supported by the literature? \jb{yes, ~\cite{Zhou:2020}}}, and variant forks often evolve out of them rather than being planned deliberately.
-\cd{Is this supported by the literature?}
-Variant forks in the \gh era enable projects to peacefully co-exist rather than compete\cd{From what I've read so far, I cannot conclude that variant forks are not competing for the attention of the same developers/end users. Perhaps you need to stress the reason why more. It will be important for the motivation of this work.}, so in that sense it is worthwhile\cd{understatement} to revisit the motivation for creating variant forks (\textit{why?}).
+%Developers tend to perceive social forks as alternatives to the original mainline project~\cite{Zhou:2020}
+%\cd{Is this supported by the literature? \jb{yes, ~\cite{Zhou:2020}}}, and variant forks
+In the social coding platforms era, variant projects often evolve out of social forks rather than being planned deliberately~\cite{Zhou:2020}.
+To this end, the social coding platforms often enable mainlines and variants projects to peacefully co-exist rather than compete.
+%\cd{From what I've read so far, I cannot conclude that variant forks are not competing for the attention of the same developers/end users. Perhaps you need to stress the reason why more. It will be important for the motivation of this work.}, 
+Little is know on the motivations of creating variants in the \gh era, in this sense, it is worthwhile
+%\cd{understatement} 
+to revisit the motivation for creating variant forks (\textit{why?}).
 
-Social coding platforms in the \gh era offer many facilities for code sharing (i.e., pull requests, cherry-picking, etc).
-So if projects co-exist, one would expect that variant forks take advantage of this common ancestry, and frequently exchange code snippets with one another.
-Despite advanced code-sharing facilities, Businge et al. observed very limited code integration between the mainline and the variant projects~\cite{businge:emse:2021}.
-\cd{From the above sentence it is not clear whether the study included ad-hoc reuse, i.e., the sharing of code snippets in the second sentence of the paragraph. It reads as if only the structured tool-supported code sharing facilities were used. 
-It that interpretation is not correct, you might want to consider rephrasing the description, as you use it as a motivation in the next sentence.}
+Social coding platforms like \gh offer many facilities for code sharing (i.e., pull requests, cherry-picking, etc).
+So if projects co-exist, one would expect that variant forks take advantage of this common ancestry, and frequently exchange interesting updates, for example, patches on the common artifacts.
+Despite advanced code-sharing facilities, Businge et al. observed very limited code integration, using the \git and \gh based facilities, between the mainline and the variant projects~\cite{businge:emse:2021}.
+%\cd{From the above sentence it is not clear whether the study included ad-hoc reuse, i.e., the sharing of code snippets in the second sentence of the paragraph. It reads as if only the structured tool-supported code sharing facilities were used.  It that interpretation is not correct, you might want to consider rephrasing the description, as you use it as a motivation in the next sentence.}
 This suggests that the code sharing facilities in themselves are not enough for graceful co-evolution, so in that sense it is worthwhile to investigate impediments for co-evolution (\textit{how?}).
 
 %\sd{Be careful: I massaged the RQ slightly. If you copy them in the experimental set-up use the commands I created for them.}

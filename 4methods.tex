@@ -14,15 +14,16 @@ To understand the motivations behind the creation and maintenance of variant for
 %Relying on the knowledge gained from literature, especially the motivations presented in Section~\ref{sec:motivations},
 %\cd{I would drop the first part of the section, as you already had a stronger motivation for the survey in the beginning} 
 We designed a 12-question survey that would last at most 15 minutes.
-\cd{It might help to state that you followed the best practices of our community in designing the survey, and refer to a book.} \jb{could someone help and address this comment.}
-The used survey can be found at \url{https://doi.org/10.5281/zenodo.5590013}.
+Since our aim was to learn from a large number of projects, we used an online survey as it is a data collection approach that scales well~\cite{Flick:2014}.
+%\cd{It might help to state that you followed the best practices of our community in designing the survey, and refer to a book.} \jb{could someone help and address this comment.}
+The used survey can be found at here~\footnote{\url{https://doi.org/10.5281/zenodo.5590013}}.
 The questions were designed so that they cover our two main research questions.
 %We designed the questions in such a way that the participants could choose the  reason from the provided options that best suited their motivations for forking.
 8 of the 12 questions were close-ended and respondents could answer them either via multiple choice or Likert scales.
 The set of possible answers originated from our literature review.
 We provided an optional free-text form for 3 of the 8 close-ended questions to allow respondents to share additional thoughts and feedback.
 The 4 remaining questions are open-ended.
-All questions were carefully formulated so as not to bias respondents towards a specific answer. We validated the formulation (1) by subjecting them to the critical eye of many colleagues; and (2) by conducting informal mini-runs of the survey with a limited group of participants to obtain their feedback on it.\tm{Can you be more precise than say "a limited group of"? Just provide the number.}
+All questions were carefully formulated so as not to bias respondents towards a specific answer. We validated the formulation (1) by subjecting them to the critical eye of many colleagues; and (2) by conducting informal mini-runs of the survey with a limited group of 7 participants to obtain their feedback on it.%\tm{Can you be more precise than say "a limited group of"? Just provide the number.}
 
 %\ad{@John: I believe it would be nice to provide a link to the survey to that readers can see exactly what we asked. If you do so, please remember that SANER follows a double-blind review process, so the survey should be anonymized.}\jb{could someone help with this.}
 
@@ -85,10 +86,12 @@ All participants were asked to read and accept an informed consent form before t
 \vspace{-.3cm}
 \end{figure}
 
+We wanted to compare the popularity of the 105 mainlines--variant pairs since the fork date. To this end, we collected metrics of stars, pull requests, issues and commits from the projects. For the variant projects, all the considered metrics are calculated from the fork date. For the mainline projects, we calculate the metrics  of pull requests, issues and commits from the fork date. The number of stars in the mainline are calculated throughout the lifetime of the project.
 The boxplots in Fig.~\ref{fig:stats} show the distributions of stars, pull requests, issues and commits for the selected mainline-variant pairs. Only the 105 projects for which at least one maintainer took part in the survey were considered.
-\ad{@John: I could not rewrite the next paragraph because I do not really understand it (and its purpose). I guess we need at least one or two sentences to explain the goal of the figure, and what can be observed from it.}
-Apart from the stars where we consider all in the mainline\cd{For me this subsentence was the only part I did not understand.}
-, we count all (closed + open) PRs, issues, and commits (only main branch) after the fork date. While it is not surprising that the counts for mainline metrics are always higher than those of the variants, it is interesting that most variants are also popular in stars, pull requests and issues counts. This gives us confidence that we are studying real variants as opposed to social forks.
+%We wanted to compare the mainline and variants since the
+%\ad{@John: I could not rewrite the next paragraph because I do not really understand it (and its purpose). I guess we need at least one or two sentences to explain the goal of the figure, and what can be observed from it.}
+%Apart from the stars where we consider all in the mainline, we count all (closed + open) PRs, issues, and commits (only main branch) after the fork date. 
+While it is not surprising that the counts for mainline metrics are always higher than those of the variants, it is interesting that most variants are also popular in stars, pull requests and issues counts. This gives us confidence that we are studying real variants as opposed to social forks.
 %\ad{I propose to move Fig.~\ref{fig:stats} and the corresponding text to previous section.}
 
 
@@ -97,7 +100,6 @@ Apart from the stars where we consider all in the mainline\cd{For me this subsen
 
 %\ad{@John: I'm not really used to card sorting, but I couldn't really understand the whole process you followed after having read the following paragraph. Please add some sentences to explain why card sorting is needed and which ``issue(s)'' it solves.}\tm{People that know card sorting know what it is used for. Others can look at the cited reference.}
 
-We used open card sorting~\cite{zimmermann2016card}, on the 3 open-ended questions to ascertain the meaning and summarise the overarching themes of responses within the context of the research questions. 
-
+We used open card sorting~\cite{zimmermann2016card}, on the 3 open-ended questions to identify common responses reported by the participants. 
 In the analysis, we grouped similar responses from the open-ended questions into themes. 
 We did not start with any pre-defined themes in mind, but instead derived the themes from the open-ended answers, iterating as many times as needed until reaching a saturation point. The first iteration of coding themes was performed by the first author of the paper, and any responses the first author was unsure of were decided by discussion with the second author. Once the first two authors agreed on the themes, a virtual meeting was agreed upon where all the other authors joined and discussed the resulting themes to come to a negotiated agreement~\cite{Garrison:2006}. This approach allowed us to remove duplicates and, in some cases, to generalize or specialize themes.%, which we will discuss in the later sections of this paper.
