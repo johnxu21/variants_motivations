@@ -1,3 +1,4 @@
+% !TEX root = 0main.tex
 \section{Study Design}
 \label{sec:study_design}
 
@@ -21,9 +22,10 @@ The questions were designed so that they cover our two main research questions.
 %We designed the questions in such a way that the participants could choose the  reason from the provided options that best suited their motivations for forking.
 8 of the 12 questions were close-ended and respondents could answer them either via multiple choice or Likert scales.
 The set of possible answers originated from our literature review.
+\sd{The paper refers to times to "our literature review". Either add a sentence or a paragraph explaining what this literature entailed. Or otherwise drop completely}
 We provided an optional free-text form for 3 of the 8 close-ended questions to allow respondents to share additional thoughts and feedback.
 The 4 remaining questions are open-ended.
-All questions were carefully formulated so as not to bias respondents towards a specific answer. We validated the formulation (1) by subjecting them to the critical eye of many colleagues; and (2) by conducting informal mini-runs of the survey with a limited group of 7 participants to obtain their feedback on it.%\tm{Can you be more precise than say "a limited group of"? Just provide the number.}
+All questions were carefully formulated so as not to bias respondents towards a specific answer. We validated the formulation (1) by subjecting them to the critical eye of many \sd{how many is "many"? just say the exact number} colleagues; and (2) by conducting informal mini-runs of the survey with a limited group of 7 participants to obtain their feedback on.%\tm{Can you be more precise than say "a limited group of"? Just provide the number.}
 
 %\ad{@John: I believe it would be nice to provide a link to the survey to that readers can see exactly what we asked. If you do so, please remember that SANER follows a double-blind review process, so the survey should be anonymized.}\jb{could someone help with this.}
 
@@ -44,8 +46,8 @@ We also collected additional mainline-variant pairs from \gh directly.
 To do so, we started by looking for mainline projects using the \gh search endpoint. We looked for \emph{popular} ($>50$ stars and forks), \emph{long-lived} (created before 2018) and \emph{active} (still updated in 2020) repositories. 
 We focused on software development repositories whose main language is among the top 17 of most popular languages used in \gh (e.g., \textsf{JavaScript, Java, Go, Python, Ruby, C}, etc). 
 %\ad{@John: how did you select these 17 languages?}
-Then, for all the mainline projects we found, we tried to  identify and collect variant forks. This process is subject to many threats since previous studies revealed that the majority of forks on \gh are inactive~\cite{Businge:Android:2019,Businge:2017} or are social forks~\cite{businge:2018icsme}.
-To reduce these threats, we filtered forks based on  the following heuristics: $\geq 10$ stars, $\geq 10$ commits ahead of the mainline, $\geq 5$ closed pull requests, diverging \textsf{README} files.
+Then, for all the mainline projects we found, we tried to  identify and collect variant forks. This process is subject to a known threat to validity since previous studies revealed that the majority of forks on \gh are inactive~\cite{Businge:Android:2019,Businge:2017} or are social forks~\cite{businge:2018icsme}.
+To reduce this threat, we filtered forks based on  the following heuristics: $\geq 10$ stars, $\geq 10$ commits ahead of the mainline, $\geq 5$ closed pull requests, diverging \textsf{README} files.
 %\cd{Here I would list all heuristics used rather than use examples and remain vague.}
 We manually verified these remaining forks to ensure they corresponded to variants  of the corresponding mainline.
 This process yielded \textit{264 additional mainline-variant project pairs},
