@@ -1,3 +1,4 @@
+% !TEX root = 0main.tex
 %\section{Results -- $RQ1$}
 %\label{sec:results-RQ1}
 %Recall that in Section~\ref{sec:intro} we stated 
@@ -42,6 +43,7 @@ RQ1 aims to investigate whether the motivations for creating variant forks ident
 
 For $SQ^1_{a}$, we presented a multiple choice question. In $SQ^1_{b}$ we presented Likert scale answer options, while $SQ^1_{c}$ was an open ended optional question. For the latter, we coded the respondent's answers into themes and categorised common responses.
 When quoting the survey respondents, we refer to them using [R$N$] notation, where $N$ is the respondent's ID.
+\sd{this is kind of redundant with what came earlier}
 The respondents' answers that include the selection on the multiple choice answers as well as the themes resulting from coding open-ended answers are \dashuline{underlined}. The
 open-ended responses from the participants are presented in \emph{italics}. 
 Where applicable, we integrate and compare our findings with related research findings.
@@ -135,6 +137,7 @@ so, I forked it to make it pretty and my own}'' [R10].
 \end{itemize}
 
 \nd The next prominent \dashuline{technical} motivation detail was \dashuline{unmaintained feature}.
+\sd{Every paragraph starts with ``The next prominent \ldots". This quickly gets repetitive. I am also not sure whether you should include them all. If you need to cut space, here is one place where you may do it.}
 8 of the participants who selected \dashuline{technical}, mentioned phrases related to \emph{one of the mainline feature used by the variant is no longer maintained}.
 %\ad{I don't get the link between ``feature frozen'' and ``feature no longer maintained''. You can freeze a feature while maintaining it (e.g. by providing patches or improvements to it). I suggest to rephrase it to ``unmaintained feature''.}
 
@@ -267,11 +270,11 @@ The respondent provided a link with extra information showing that three of the 
 \subsection{Discussion and Implications}
 In this study we were mainly interested in finding out the motivations for creating and maintaining variants especially those that actively being maintained in parallel with their mainline counterparts.
 We have identified that the decision to create the variants is mostly initiated by individuals and less by community.
-Our findings in this RQ confirm the findings in the literature.
+Our findings here confirm the findings in the literature.
 % The survey participants revealed that they created variants for technical, governance, legal reasons that are reported in literature.
 Our study also extends the findings in literature by providing fine-grained reasons for creating and maintaining variants relating to the previously reported reasons.
-Furthermore, our study has also revealed other reasons not listed in literature that respondents categorised as \dashuline{others}, that include: 1) supporting the mainline, 2) variant supporting other personal projects, 3) localization purposes and 4) variants developers not trusting the code quality of the mainline.
-The findings of this RQ will be very useful in follow-up studies in investigating the co-evolution of mainline and variants.
+Furthermore, our study has also revealed other reasons not listed in literature that respondents categorised as \dashuline{others}, which include: 1) supporting the mainline, 2) variant supporting other personal projects, 3) localization purposes and 4) variants developers not trusting the code quality of the mainline.
+The findings reported here will be very useful in follow-up studies in investigating the co-evolution of mainline and variants.
 
 In Fig.~\ref{fig:sankey_motivation} we also present an overview of how the detailed motivations relate to who is involved in creating and maintaining the variants. We can see that the motivations majorly relate to developers outside (82\%) the core contributors of the mainlines. We also observe quite a significant (24\%) number of respondents indicating that the decision to create the variant was initiated by the community. We have also observed from the open-ended responses, that before the transition from social to variant fork, some variant maintainers engage with the mainline maintainers through discussions in issues and pull requests. This is inline with the findings of Zhou et al. who reported that many variant forks start as social forks~\cite{Zhou:2020}
 
@@ -310,7 +313,7 @@ Many variant forks start as social forks. The decision to create\,/\,maintain th
 \label{sec:results-RQ2}
 %Recall that in Section~\ref{sec:intro} we stated 
 $RQ2$ aims  to identify the impediments for co-evolution between the mainline and variant projects.
-This RQ lead to two specific survey reflecting the \textit{who} and the \textit{how}, respectively. The \textit{who} aimed at identifying the developers involved in maintaining these variants. The \textit{how} aimed to understand how variant  projects evolve  w.r.t. the  mainline.
+This question lead to two specific survey reflecting the \textit{who} and the \textit{how}, respectively. The \textit{who} aimed at identifying the developers involved in maintaining these variants. The \textit{how} aimed to understand how variant  projects evolve  w.r.t. the  mainline.
 Like in Section~\ref{sec:results-RQ1}, in this section we refer to the responses using the \dashuline{underlined}, \emph{italics} and [R$N$].
 
 
@@ -406,10 +409,10 @@ In Fig.~\ref{fig:to_mainline-coded} there were two most prominent answers: \dash
 
 \subsection{Discussion and Implications}
 
-The results of $RQ2$ revealed variants are created and maintained my developers outside the core developers of the mainlines.
+The results of $RQ2$ revealed that variants are created and maintained my developers outside the core developers of the mainlines.
 We have also observed that there is limited interaction between the mainline and variant.
 Although we find there is little code integration, the integration from mainline\ra variant is more than that from variant\ra mainline.
-Our study confirms the findings of Businge et al.~\cite{businge:emse:2021} who carried out a large scale empirical study of code integration among mainline and variants from three ecosystem. Our study also extends the work of Businge et al.~\cite{businge:emse:2021} by providing some concrete reasons relating to little integration between the mainline and variants that include: 1) \textit{technical divergency}: where variants and mainlines are offering different goals, implementing different technologies, variant is maintaining a part of the mainline that is frozen. 2) \textit{Governance disputes}: mainlines are unresponsive to pull requests and issues from the variants and  mainlines not willing or hesitant to accept some features from the variants. One respondent also reported that mainline is actively very hostile to variant as a result of mainline changing license to proprietary.
+Our study confirms and extends the findings of Businge et al.~\cite{businge:emse:2021}: we provide concrete reasons relating to little integration between the mainline and variants that include: 1) \textit{technical divergency}: where variants and mainlines are offering different goals, implementing different technologies, variant is maintaining a part of the mainline that is frozen. 2) \textit{governance disputes}: mainlines are unresponsive to pull requests and issues from the variants and  mainlines not willing or hesitant to accept some features from the variants. One respondent also reported that mainline is actively very hostile to variant as a result of mainline changing license to proprietary.
 Another possible reason why there is little code integration is because most of the variants are created and maintained by developers outside the core developers of the mainline.
 Furthermore, we have observed that a few mainline--variant pairs that integrate code between themselves are mostly interested in patch sets (security fixes and bug fixes).
 
@@ -426,7 +429,8 @@ Some promising studies in this direction have focused on providing the mainline 
 
 \begin{framed}
 \noindent
-\emph{\textbf{Summary--RQ2}: Mainline and variants do not usually interact during their co-evolution. The lack of interaction could be attributed to a number of reasons that include: (i) technical (i.e., diverging features), where variants and mainlines are offering different goals or implementing different technologies having nothing to share; (ii) governance (i.e., diverging interests), where mainlines are unresponsive to the requests from community and also uninterested in some features suggested by the community; (iii) legal (e.g., diverging licenses), where the mainline variant has changed the license and integration is no longer possible. As a result of the divergence and since the majority of the variants are maintained by developers outside the core developers of the mainline, we report that it is possible that some important updates (like patches) could be missed or are duplicated.
+\emph{\textbf{Summary--RQ2}: Mainline and variants do not usually interact during their co-evolution. The lack of interaction could be attributed to a number of reasons that include: (i) technical (i.e., diverging features), where variants and mainlines are offering different goals or implementing different technologies having nothing to share; (ii) governance (i.e., diverging interests), where mainlines are unresponsive to the requests from community and also uninterested in some features suggested by the community; (iii) legal (e.g., diverging licenses), where the mainline variant has changed the license and integration is no longer possible.
+As a result of the divergence, it is likely that important updates (like security patches or bug fixes) could be missed or are duplicated.
 %Ahmed: text below should placed somewhere else
 %We also report interesting interactions that include: integration of only patches, integration of only specific changes, integration that exclude some specific changes and integration only changes that pass CI.
 }
