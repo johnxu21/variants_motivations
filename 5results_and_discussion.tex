@@ -183,11 +183,12 @@ Merging back to the original corresponds to one the outcomes of variant forking 
 \item ``\emph{Mainline was not ready to accept those changes in part because the maintainers were not responsive. Since that time all of the issues have been dealt with and my variant is no longer needed, though the infrastructure for creating a new release of the variant remains in place in the event that it might be needed in the future}'' [R44].
 
 \item ``\emph{%Yes, there were attempts, but at then end
-[...] even main repo maintainer was saying he is busy and please use your fork for thing X and Y. We don't know the exact reason why he stopped maintaining it and also did not allow us to maintain his repo}'' [R89]. An extra link was provided, in which
+[...] even main repo maintainer was saying he is busy and please use your fork for thing X and Y. We don't know the exact reason why he stopped maintaining it and also did not allow us to maintain his repo}'' [R89]. In one of the multiple choice answers, the respondent indicated that the variant was created through a  \dashuline{community decision}.
+The respondent also provided an extra link, in which we discovered that
 %The respondent also provided extra links (two issues on the mainline) relating to the motivation of creating\,/\,maintaining the variant. 
-we found that the variant was created through a \dashuline{community decision}.
+% we found that the variant was created through a \dashuline{community decision}.
 %In the issues the extra links, 
-Three contributors from the community were interested in a couple of new features that were missing in mainline, but the mainline maintainer seemed busy. At the end, two members of the community took over the fork maintenance and introduced the missing features and advertised the additions in the \textsf{readme.md} file of the fork as well as in the issue.
+three contributors from the community were interested in a couple of new features that were missing in mainline, but the mainline maintainer seemed busy. At the end, two members of the community took over the fork maintenance and introduced the missing features and advertised the additions in the \textsf{readme.md} file of the fork as well as in the issue.
 
 \end{itemize}
 
@@ -206,7 +207,7 @@ was not interested in a PR that added functionality needed by a project I'm deve
 \item ``\emph{In Oct 2017 Twitch.TV has changed its API and these changes broke the mainline project. I used this project daily and needed to fix it ASAP. After quick fix I started to add my own features. [...] the mainline project has been fixed and refactored, but my other projects were already depending on my own fork}'' [R56].
 
 \item ``\emph{%The main reason for forking (OTHER) is
-[...] to make sure that no matter what happen to the mainline repository, we can maintain source access to this library, which is an essential dependency of our project. \ldots}'' [R54].
+[...] to make sure that no matter what happen to the mainline repository, we can maintain source access to this library, which is an essential dependency of our project. \ldots}'' [R54]. This response is inline with the findings of Nyman et al.~\cite{Linus:2012Perspectives} who reported that forking provides a mechanism for safeguarding against despotic decisions by the project lead, who is thus guided in their actions to consider the best interest of the community.
 
 \end{itemize}
 
@@ -251,9 +252,9 @@ deleted the fork}'' [R24].
 
 \item ``\emph{The founders of the mainline had been absent from the project for several years, but came back and booted the maintainers off and
 [...] shifted the project to a closed source. %There was an attempt to reconcile differences [...], but the these issues were resolved (at least from the point of view of the maintainers, in reality the founders just pretended to be fine with it and secretly plotted for the next year to remove the maintainers from the project and ban them from every community to minimize a potential fork when they announced their plans to change the license
-}'' [R36]. The decision to create the fork was initiated by the \dashuline{closed source}.
+}'' [R36]. %The decision to create the fork was initiated by the \dashuline{closed source}.
 %Ahmed: I commented the text below because I don't see its added value.
-%The respondent provided a link with extra information stating how the variant was created. In the extra link indicates how the founders decided to abandon the community developers of the project and introduce a number of breaking changes. The variant was created by three of the maintainers that were booted from the original project and a fourth one from the community. The link also shows the current status of the variant, the roadmap for the future as well as a guide on the users of original can migrate to use the variant. The variant currently has over 739 stars, is used by 35 developers, has 101 pull requests and 195 issues.
+The respondent provided a link with extra information showing that three of the maintainers that were booted from the original project and a fourth one from the community joined forces and are now maintaining the variant. The variant currently has over 739 stars, is used by 35 developers, has 101 pull requests and 195 issues.
 \end{itemize}
 
 
@@ -266,7 +267,7 @@ Our study also extends the findings in literature by providing fine-grained reas
 Furthermore, our study has also revealed other reasons not listed in literature that respondents categorised as \dashuline{others}, that include: 1) supporting the mainline, 2) variant supporting other personal projects, 3) localization purposes and 4) variants developers not trusting the code quality of the mainline.
 The findings of this RQ will be very useful in follow-up studies in investigating the co-evolution of mainline and variants.
 
-In Fig.~\ref{fig:sankey_motivation} we also presented a detailed overview of how the detailed motivations relate to who is involved in creating and maintaining the variants. We can see that the motivations majorly relate to developers outside (82\%) the core contributors of the mainlines. We also observe quite a significant (24\%) number of respondents indicating that the decision to create the variant was initiated by the community. We have also observed from the open-ended responses, that before the transition from social to variant fork, some variant maintainers engage with the mainline maintainers through discussions in issues and pull requests. This is inline with the findings of Zhou et al. who reported that many variant forks start as social forks~\cite{Zhou:2020}
+In Fig.~\ref{fig:sankey_motivation} we also present an overview of how the detailed motivations relate to who is involved in creating and maintaining the variants. We can see that the motivations majorly relate to developers outside (82\%) the core contributors of the mainlines. We also observe quite a significant (24\%) number of respondents indicating that the decision to create the variant was initiated by the community. We have also observed from the open-ended responses, that before the transition from social to variant fork, some variant maintainers engage with the mainline maintainers through discussions in issues and pull requests. This is inline with the findings of Zhou et al. who reported that many variant forks start as social forks~\cite{Zhou:2020}
 
 Besides the motivations for creating and maintaining of variants, the respondents have reported some interesting software reuse practices by the variants, like those categorized in the themes of: \dashuline{different goals}, \dashuline{new features}, \dashuline{customization}, \dashuline{technology}, \dashuline{supporting personal projects}, \dashuline{supporting upstream}, \dashuline{localization}. A specific example of [R70] categorized in the \dashuline{different goals} theme, stated that in the cryptocurrency world, all applications inherit code from the mother project \texttt{bitcoin/bitcoin}. Downstream applications also monitor their immediate upstream and other in the hierarchy for important updates like bug and security fixes as well as other specific updates. These cryptocurrency applications can be considered as a \textit{software family}~\cite{businge:2018icsme,businge:emse:2021}), that are part of dedicated project ecosystem~\cite{tommens:2020}, continuously reuse code among themselves.
 There are other dedicated software ecosystems that exist like, \textsf{Eclipse}, \textsf{Atom}, and \textsf{Emacs}, programming language ecosystems like:  \java, \cp, \cpp, \py, \go, \rb, operating system ecosystems like: \textsf{macOS}, \textsf{Linux}, \textsf{Windows}, and \textsf{iOS}~\cite{tommens:2020} can contain variants.
