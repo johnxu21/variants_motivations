@@ -38,7 +38,7 @@ Therefore, we first need to identify such variants.
 To this end, we relied on two data sources: \librariesio and \gh.
 
 \librariesio contains metadata about projects distributed through various package registries. We collected the metadata for all projects of some of the largest package registries (\textsf{npm, Go, Maven, PyPI} and \textsf{Packagist}). We relied on this metadata to identify those projects that are variants of another one, following the variant identification method proposed by  Businge et al.~\cite{businge:emse:2021,businge:benevol:2020}. %The authors argue that, if a fork has distributed its package releases on a package registries, then one can be certain that it is a variant fork and very unlikely to be social fork.
-We only considered those variants that are actively maintained in parallel to their mainline counterparts. We extracted variants for which the mainline--variant pairs created before 2019-04-01 and updated after 2020-04-01. We wanted variants that have existed for at least one year and were updated at least once during the last year (i.e., active projects).
+We only considered those variants that are actively maintained in parallel to their mainline counterparts. We extracted variants for which the mainline--variant pair was created before 2019-04-01 and updated at least once after 2020-04-01 (i.e., active projects).
 %\tm{The choice of this start and end date is not motivated.}
 This process yielded \textit{227 mainline–variant project pairs}.
 
