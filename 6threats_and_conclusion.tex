@@ -1,28 +1,24 @@
 % !TEX root = 0main.tex
-\section{Limitations and Threats}
-\sd{I am not happy with using "Threats" alone, it should be "Threats to Validity". "Threats" is common jargon in Security Research.}
+\section{Threats to Validity}
+%\sd{I am not happy with using "Threats" alone, it should be "Threats to Validity". "Threats" is common jargon in Security Research.}
 This study is based on a survey with the stated aim of gaining insights
 in the motivations for creating and maintaining variants on a social coding platform like \gh.
 For closed questions in the survey, the response categories originated from our review of the literature.
 The questions were phrased to avoid leading the respondent to a specific answer and were validated through: (1) consultation colleagues from three different universities and (2) several mini-runs of the survey. Despite our best efforts, there could be several reasons why our study is limited.
-\sd{Is it a section on ``Limitations" or a section on ``Threats to Validity"?
-You call it limitations below but you report them like threats to validity.}
+%\sd{Is it a section on ``Limitations" or a section on ``Threats to Validity"? You call it limitations below but you report them like threats to validity.}
 
-\noindent \textbf{Internal validity -- Credibility}. We used coding to classify the participants responses in open-ended questions. The coding process is known to lead to increased processing and categorization capacity at the loss of accuracy of the original response. To alleviate this issue while coding, we allowed more than one code to be assigned to the same answer. 
-Social desirability bias may have influenced the answers~\cite{Furnham:1986}. To mitigate this issue, we informed participants that the responses would be anonymous and evaluated in a statistical form.
+\noindent \textbf{Internal validity}. We used coding to classify the participants responses in open-ended questions. The coding process is known to lead to increased processing and categorization capacity at the loss of accuracy of the original response. To alleviate this issue while coding, we allowed more than one code to be assigned to the same answer. 
+Social desirability bias may have influenced the answers~\cite{Furnham:1986}. To mitigate this issue, we informed participants that the responses would be anonymous and evaluated in a statistical form. %While collecting the dataset, in Section~\ref{sec:forks_and_participants} we indicated that we used some restrictive heuristics that could have eliminated some interesting 
 
-\noindent \textbf{Generalizability – Transferability.} Our study is limited to variants of mainline repositories that are hosted on GitHub. While GitHub is by far the most dominant hosting service for open source, we can not ascertain that the same results would be gotten on similar hosting platforms like BitBucket and GitLab.
+\noindent \textbf{Generalizability.} Our study is limited to variants of mainline repositories that are hosted on GitHub. While GitHub is by far the most dominant hosting service for open source, we can not ascertain that the same results would be gotten on similar hosting platforms like \textsf{BitBucket} and \textsf{GitLab}.
 In addition, our participants, as typical for all survey studies in our field, is biased toward answers from developers who chose to make their email public and chose to answer to our interview request, which underrepresented maintainers of variant repositories in our sample.
 
 \section{Conclusions}
-\sd{The conclusion feels disconnected from the rest of the paper.
-We should hint back at the ``Why" and ``How" more explicitly.
-Also use the summaries at the end of the RQ1 to emphasize the findings better.
-For the moment this reads to much like "We confirmed previous research and made some small but interesting observation". The ``so what'' is still missing here}
+%\sd{The conclusion feels disconnected from the rest of the paper. We should hint back at the ``Why" and ``How" more explicitly. Also use the summaries at the end of the RQ1 to emphasize the findings better. For the moment this reads to much like "We confirmed previous research and made some small but interesting observation". The ``so what'' is still missing here}
+
 Due to the rise of social coding platforms like \gh, software reuse through forking (variants), that aimed at splitting off a new development branch, often to steer the development into another direction is also on the rise. 
 This study has extended the findings of these previous studies by providing more fine-grained common motivations for creating variants relating to: different goals\,/content\,/communities, customization, supporting personal projects, supporting the upstream, localization, up-taking a unmaintained feature.
-%. The study has also identified other motivations for creating and maintaining variants not listed in literature.
-%\tm{So WHAT are the new or more fine-grained motivations that we found?}
+
 The study also extends the previous studies by providing common concrete reasons relating to the little code integration observed that include: technically diverged code bases and diverged licenses.
 %\tm{So WHAT were these concrete reasons?}
 We have discovered interesting software reuse practices common to variants that target specific commits that include: those that pass CI, bug\,/security fixes, updates in specific features, and all updates excluding specific features. We
