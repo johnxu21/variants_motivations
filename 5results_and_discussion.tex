@@ -1,7 +1,7 @@
 % !TEX root = 0main.tex
 %\section{Results -- $RQ1$}
 %\label{sec:results-RQ1}
-%Recall that in Section~\ref{sec:intro} we stated 
+%Recall that in Section~\ref{sec:intro} we stated
 %This section presents and analyses the results of the survey.
 %In some cases we quote the survey respondents using [R$N$] to refer to a quote coming from respondent numbered $N$.
 %\ad{Do we really need to make this distinction in the notation? I mean: I only see one example of R2-X, and if it matters, we can still make it explicit in the text. If we decide to ignore the difference between attached and detached variants, I even suggest to remove it from the Method section.}
@@ -17,7 +17,7 @@
     \subfigure[What was the motivation of creating the variant of the mainline project?]{\includegraphics[width=1\columnwidth]{pdfs/likert_motivations_1.pdf}
     \label{fig:motivations}}
     \hfill
-    \caption{\RQTwo}
+    \caption{\RQOne}
      \label{fig:decision_motivations}
      \vspace{-.3cm}
 \end{figure*}
@@ -29,11 +29,11 @@ RQ1 aims to investigate whether the motivations for creating variant forks ident
 %\begin{itemize}
 %\item
  \rqOneOne
- 
+
 %\item
  \rqOneTwo
- 
-%\item 
+
+%\item
 \rqOneThree
 %\end{itemize}
 
@@ -44,8 +44,8 @@ RQ1 aims to investigate whether the motivations for creating variant forks ident
 For $SQ^1_{a}$, we presented a multiple choice question. In $SQ^1_{b}$ we presented Likert scale answer options, while $SQ^1_{c}$ was an open ended optional question. For the latter, we coded the respondent's answers into themes and categorised common responses.
 When quoting the survey respondents, we refer to them using [R$N$] notation, where $N$ is the respondent's ID.
 %\sd{this is kind of redundant with what came earlier}
-The respondents' answers that include the selection on the multiple choice answers as well as the themes resulting from coding open-ended answers are \dashuline{underlined}. The
-open-ended responses from the participants are presented in \emph{italics}. 
+The respondents' answers that include the selection on the multiple choice answers as well as the themes resulting from coding open-ended answers are \dashuline{underlined}.
+The open-ended responses are presented in \emph{italics}.
 Where applicable, we integrate and compare our findings with related research findings.
 
 \subsection{Results}
@@ -55,23 +55,21 @@ Fig.~\ref{fig:decision_motivations} presents the results of the responses for $S
 % is question had Likert scale answer options we identified in the literature. 2) \emph{Was the motivation for creating the variant an individual decision or a community decision?} This survey question had two multiple choice answers of: \emph{individual} or \emph{community} decision.
 
 While previous studies have investigated the motivations for creating variants, no study has investigated the details of those motivations ($SQ^1_{c}$) .
-To identify these details, we asked two additional optional open-ended questions to allow the respondents provide us with details on their choice of Likert scale answer on the motivation. The two questions were: 
-\begin{enumerate}
-	\item \emph{Kindly provide details for your selected answer(s) on the motivation; }
-	\item \emph{If there are any links that are documented relating to your choice of answers on motivation detail, kindly point us there}
-\end{enumerate}
+To identify these details, we asked two additional optional open-ended questions to allow the respondents provide us with details on their choice of Likert scale answer on the motivation. The two questions were
+(1) \emph{Kindly provide details for your selected answer(s) on the motivation;}
+and (2) \emph{If there are any links that are documented relating to your choice of answers on motivation detail, kindly point us there}.
 
 100 of the 105 respondents that attempted the survey gave us a the details of the motivation of creating the variant and 30 of the 100 provided us with extra links. Luckily, while we were coding the open-ended question (Cf. Section~\ref{sec:card_sorting}), we were able to identify the five missing details of the choice of motivation by looking at selected response as well as comparing contents of the mainline and variant repositories on \gh.
 
 In Fig~\ref{fig:sankey_motivation} we present the details of the choice of motivation by the respondents. We discuss what the coded themes represent in the next paragraphs.
 Fig~\ref{fig:sankey_motivation} also presents how the distribution of the responses across all the five questions relating to motivation and how they relate to each other. The thickness of the edge represents the frequency of respondents between two entities.
-%The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the variants that are attached to- or detached from the mainline repository as discussed in Section~\ref{sec:forks_and_participants}. 
+%The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the variants that are attached to- or detached from the mainline repository as discussed in Section~\ref{sec:forks_and_participants}.
 We observe that
-% in both the \dashuline{attached} and \dashuline{detached} variants 
+% in both the \dashuline{attached} and \dashuline{detached} variants
 the majority of respondents that answered the question \dashuline{\# original developers} selected \dashuline{none} implying that the majority of the variants were started by different developers.
 Since the answers to $SQ^1_{c}$ were presented on a Likert scale, participants were allowed to rank the appropriate motivation(s) that suits why they created the variant. While coding the motivations details, we identified respondents who ranked highly more than one motivation category and also provided a response in the open-ended question to support each of the highly ranked motivation category. In this scenario, each of the ranked highly motivation category would have a motivation detail for the same respondent. %\az{I added the following information and modified the text introducing each motivation (detail)}
-At the end we found that 105 of the survey participants chose 145 motivation categories, i.e., 84 \dashuline{technical}, 34 \dashuline{governance}, 3 \dashuline{legal} and 24 chose \dashuline{others}. In the text below we present the common motivation details (themes) and some of the specific responses we found very 
-interesting. 
+At the end we found that 105 of the survey participants chose 145 motivation categories, i.e., 84 \dashuline{technical}, 34 \dashuline{governance}, 3 \dashuline{legal} and 24 chose \dashuline{others}. In the text below we present the common motivation details (themes) and some of the specific responses we found very
+interesting.
 
 \begin{figure*}[ht]
 \begin{center}
@@ -84,7 +82,7 @@ interesting.
 \vspace{-.3cm}
 \end{figure*}
 
-\nd \textbf{Technical.} The motivation of \dashuline{technical} is connected to the most of the motivation details with the most prominent being \dashuline{maintenance}. 19 of the 84 survey participants who selected \dashuline{technical}, mentioned phrases related to \emph{performing bug/security fixes}.
+\nd \textbf{Technical.} \dashuline{maintenance} is the most frequent motivation detail for the \dashuline{technical} motivation. 19 of the 84 survey participants who selected \dashuline{technical}, mentioned phrases related to \emph{performing bug/security fixes}.
 
 \begin{itemize}[leftmargin=*]
 
@@ -159,7 +157,7 @@ The maintainer had thought about it very well, but some users (including myself)
 7 of the participants who selected \dashuline{technical}, mentioned phrases related to \emph{variant created to depend on a different technology}.
 
 \begin{itemize}[leftmargin=*]
-\item ``\emph{Added support for Open Street Maps as an available map provider [\ldots] mainline was not willing to accept this kind of contribution.}'' [R8]. This was also ranked as a \dashuline{governance}. 
+\item ``\emph{Added support for Open Street Maps as an available map provider [\ldots] mainline was not willing to accept this kind of contribution.}'' [R8]. This was also ranked as a \dashuline{governance}.
 \item ``\emph{The mainline wasn't updated to use .NET Core which I was using in my project, so I updated it}'' [R29].
 \item ``\emph{[...] to keep the source code compatible with the language/compiler version that we use (Swift / Xcode). [...] %Sometimes new versions of Swift break source compatibility, if we update (or not update when there is a new one) the compiler but
 if the maintainer of the mainline is supporting a different one, then we could not compile our dependency anymore}'' [R54].
@@ -195,15 +193,15 @@ Merging back to the original corresponds to one the outcomes of variant forking 
 \item ``\emph{%Yes, there were attempts, but at then end
 [...] even main repo maintainer was saying he is busy and please use your fork for thing X and Y. We don't know the exact reason why he stopped maintaining it and also did not allow us to maintain his repo}'' [R89]. In one of the multiple choice answers, the respondent indicated that the variant was created through a  \dashuline{community decision}.
 The respondent also provided an extra link, in which we discovered that
-%The respondent also provided extra links (two issues on the mainline) relating to the motivation of creating\,/\,maintaining the variant. 
+%The respondent also provided extra links (two issues on the mainline) relating to the motivation of creating\,/\,maintaining the variant.
 % we found that the variant was created through a \dashuline{community decision}.
-%In the issues the extra links, 
+%In the issues the extra links,
 three contributors from the community were interested in a couple of new features that were missing in mainline, but the mainline maintainer seemed busy. At the end, two members of the community took over the fork maintenance and introduced the missing features and advertised the additions in the \textsf{readme.md} file of the fork as well as in the issue.
 
 \end{itemize}
 
 
-\nd \textbf{Others}. %The motivation of \dashuline{others} is connected to the second\az{I don't understand this. I will modify the text} most motivation details mentions, with the most prominent being \dashuline{supporting personal projects}. 
+\nd \textbf{Others}. %The motivation of \dashuline{others} is connected to the second\az{I don't understand this. I will modify the text} most motivation details mentions, with the most prominent being \dashuline{supporting personal projects}.
 The most prominent motivation detail for \dashuline{others} motivation is  \dashuline{supporting personal projects}. 8 of the 24 survey participants who selected \dashuline{others}, mentioned phrases related to \emph{variant was created to support personal projects}.
 
 
@@ -257,7 +255,7 @@ The way the original was architected made this very challenging, so I ended up r
 \item ``\emph{[The] main reason is creating [an] open source and commercial product which has much more features% and we just collect open source components and use them. Red5 server is one of the component of the product
 }'' [R7]. This motivation detail was also categorised as: \dashuline{(new features, technical)} and \dashuline{(supporting personal projects, others)}.
 
-\item ``\emph{5 years ago the permissions model for GitHub and Travis is not what it is today. I wanted to use Travis for CI/CD but if I granted Travis access to my primary github account, it would have read access to all the github repos [...], which would expose private customer code. I forked the repo [but] the permissions model has evolved [and I] %I have a pending task to switch to github actions for CI/CD on the main repo, and to
+\item ``\emph{5 years ago the permissions model for GitHub and Travis is not what it is today. I wanted to use Travis but if I granted Travis access to my primary github account, it would have read access to all the github repos [...], which would expose private customer code. I forked the repo [but] the permissions model has evolved [and I] %I have a pending task to switch to github actions for CI/CD on the main repo, and to
 deleted the fork}'' [R24].
 
 \item ``\emph{The founders of the mainline had been absent from the project for several years, but came back and booted the maintainers off and
@@ -283,14 +281,13 @@ Besides the motivations for creating and maintaining of variants, the respondent
 There are other dedicated software ecosystems that exist like, \textsf{Eclipse}, \textsf{Atom}, and \textsf{Emacs}, programming language ecosystems like:  \java, \cp, \cpp, \py, \go, \rb, operating system ecosystems like: \textsf{macOS}, \textsf{Linux}, \textsf{Windows}, and \textsf{iOS}~\cite{tommens:2020} can contain variants.
 To this end, our study opens up different research directions that can be aimed at deeply investigating these different reuse practices in \textit{software family} and software variants in general. A deeper understanding of these reuse practices can aid the development of tools that can support more efficient software reuse.
 
-\begin{framed}
-\noindent
+\begin{custombox}
 \emph{\textbf{Summary -- RQ1}:
-Many variant forks start as social forks. The decision to create\,/\,maintain the forks is either community-driven (contributing up to 24\%) or individual (76\%). The majority  of the developers (82\%) creating the forks are not maintainers of the mainlines. We have presented 18 variant creation\,/\,maintenance motivation details categorized in the motivations of \dashuline{technical} (accounting 58\% of the responses), \dashuline{governance} (24\%), \dashuline{others} (16\%) and \dashuline{legal} (2\%). The detailed motivations in the \dashuline{others} category are newly introduced in the social coding era. 
-% Ahmed: text below could be added to introduction/conclusion/abstract 
+Many variant forks start as social forks. The decision to create\,/\,maintain the forks is either community-driven (contributing up to 24\%) or individual (76\%). The majority  of the developers (82\%) creating the forks are not maintainers of the mainlines. We have presented 18 variant creation\,/\,maintenance motivation details categorized in the motivations of \dashuline{technical} (accounting 58\% of the responses), \dashuline{governance} (24\%), \dashuline{others} (16\%) and \dashuline{legal} (2\%). The detailed motivations in the \dashuline{others} category are newly introduced in the social coding era.
+% Ahmed: text below could be added to introduction/conclusion/abstract
 %We have also discussed some interesting software reuse classifications among variants.
 }
-\end{framed}
+\end{custombox}
 
 
 \begin{figure*}[ht]
@@ -312,20 +309,20 @@ Many variant forks start as social forks. The decision to create\,/\,maintain th
 
 \section{\RQTwo}
 \label{sec:results-RQ2}
-%Recall that in Section~\ref{sec:intro} we stated 
+%Recall that in Section~\ref{sec:intro} we stated
 $RQ2$ aims  to identify the impediments for co-evolution between the mainline and variant projects.
 This question lead to two specific survey reflecting the \textit{who} and the \textit{how}, respectively. The \textit{who} aimed at identifying the developers involved in maintaining these variants. The \textit{how} aimed to understand how variant  projects evolve  w.r.t. the  mainline.
 Like in Section~\ref{sec:results-RQ1}, in this section we refer to the responses using the \dashuline{underlined}, \emph{italics} and [R$N$].
 
 
 
-\subsection{Results for the \textit{who}}
-For the \textit{who} question, we asked the respondents 2 questions:
+\subsection{Results for the ``\emph{who}'' question}
+To answer the ``\emph{who}'', we asked the following 2 questions:
 
 %\begin{itemize}
-%\item 
+%\item
  \noindent \rqTwoOne
- 
+
 %\item
 \noindent \rqTwoTwo
 %\end{itemize}
@@ -343,15 +340,15 @@ The results of $SQ^2_{a}$ and $SQ^2_{b}$, answer our question on \textit{who is 
 
 %As opposed to our exploratory study surveying maintainers of variants, the study of Businge et al.~\cite{businge:emse:2021} was a large scale empirical study on mainline--variant pairs from three software ecosystems. They reported that over 82\% of the 10,979 mainline--variant are owned by different developers. In our study we have also found 82\% of variants are maintained by developers different from those in the mainline.
 
-\subsection{Results for the \textit{how}}
+\subsection{Results for the ``\emph{how}'' question}
 
-For the \textit{how} question we asked the respondents 2 questions:
+To answer the ``\emph{how}'', we asked the following 2 questions:
 
 %\begin{itemize}
-%\item 
+%\item
 \noindent \rqTwoThree
 
-%\item   
+%\item
 \noindent \rqTwoFour
 %\end{itemize}
 
@@ -367,7 +364,7 @@ For the \textit{how} question we asked the respondents 2 questions:
 \end{figure}
 
 \nd For $SQ^2_{c}$ we presented four multiple choice answer options. From Fig.~\ref{fig:discussions}, the four answer options we provided for $SQ^2_{c}$ are those with the highest number of responses. We also provided an option of an open-ended answer for participants who felt that their choice is not among the options. The open-ended answers were coded into themes (in Fig.~\ref{fig:discussions} the coded themes are \dashuline{variant follows mainline}\ra to \dashuline{variant is a mirror of the mainline}).
-The results in Fig.~\ref{fig:discussions} show that more than 51\% of the responses chose the option of \dashuline{never}--\textit{no, there has never been any discussion since the creation of the variant}. In addition to the participants who selected \dashuline{never}, there are other variants that do not discuss the directions of the project, like \dashuline{mainline hostile} to variant,  \dashuline{mainline not very active},  \dashuline{in contact but rarely discuss}, \dashuline{only once}, and \dashuline{technically diverged}--``\emph{They used to discuss but not anymore since the projects have technically diverged from each other}''.%\az{which [RN]?}
+The results in Fig.~\ref{fig:discussions} show that more than 51\% of the responses chose the option of \dashuline{never}--\textit{no, there has never been any discussion since the creation of the variant}. In addition to the participants who selected \dashuline{never}, there are other variants that do not discuss the directions of the project, like \dashuline{mainline hostile} to variant,  \dashuline{not very active},  \dashuline{in contact but rarely discuss}, \dashuline{only once}, and \dashuline{technically diverged}--``\emph{They used to discuss but not anymore since the projects have technically diverged from each other}''.%\az{which [RN]?}
 
 \begin{figure*}[t!]
 \centering
@@ -391,16 +388,16 @@ The results in Fig.~\ref{fig:discussions} show that more than 51\% of the respon
 \end{figure*}
 
 An explanation for the high number of variants that do not discuss with the mainline the direction of the projects can be derived from the findings of $SQ^2_{a}$ and $SQ^2_{b}$. The majority of the variants are created and maintained by developers outside the code developers of the mainline. Also, most of the \emph{motivation details} in $RQ1$ could explain the high numbers of \dashuline{never}. For example we have observed that the majority of the variants in the \emph{motivation details} category of \dashuline{different goals}, \dashuline{unmaintained features} in the mainline, those having issues with the mainline \dashuline{responsiveness}, those whose features will not be accepted by the mainline (\dashuline{feature acceptance}), selected  \dashuline{never} in $SQ^2_{c}$. \textbf{To this end, we can conclude that the reasons for the majority of the variants not discussing the directions of the project with the mainlines could be attributed to the range of motivation details for creating the variant as well as the creators of the variants not being part of the core developers of the mainline.}
+
 We found that 5 of the responses indicated phrases related to \dashuline{variant follows mainline}. For example respondent [R77] indicated that ``\emph{in the crypto world, the mainline inherits changes from BITCOIN, for example, security commits, and the variant merges those changes in. So the variant is very interested in every change in the Mainline. However, the variant must maintain the specific new features that we added separately, and the Mainline is not interested in helping the Variant do this.}''
 We also observed two interesting cases where the variants merged back to the mainline. This is inline with the findings of Robles and Gonz{\'a}lez-Barahona~\cite{Gregorio:2012} who reported that one of the outcomes of forking is the fork merging back.
 
 In $SQ^2_{d}$, we asked respondents two closed-ended questions:
-\begin{enumerate}
-	\item \textit{How often do the maintainers of the variant integrate the following types of changes from the mainline?}
-	\item \textit{How often do the maintainers of the variant integrate the following types of changes into the mainline?}
-\end{enumerate} 
+(1) \textit{How often do the maintainers of the variant integrate the following types of changes from the mainline?}; and (2) \textit{How often do the maintainers of the variant integrate the following types of changes into the mainline?}.
+%
 We provided Likert scale answers options for the two questions. We also asked the respondents optional follow-up questions with open-ended answers, for each of the two questions, to provide us with extra information.
 %In Fig.~\ref{fig:interactions} we present the results of $RQ_{3.2}$.
+
 In Fig.~\ref{fig:from_mainline} we present the results from the respondent answers on what they value most when integrating changes from the mainline. We can see that the highly scored changes are the \dashuline{bug fixes} and the \dashuline{security fixes}. In Fig.~\ref{fig:from_mainline} we can see that most of the respondents were leaning towards the negative side compared to the positive side of the plot.
 This implies that most variants are not interested in integrating changes from the mainline.
 In Fig.~\ref{fig:to_mainline} we see a similar trend observed in Fig.~\ref{fig:from_mainline}, however, the lean towards the negative side is much more pronounced in Fig.~\ref{fig:to_mainline}.
@@ -420,19 +417,20 @@ Furthermore, we have observed that a few mainline--variant pairs that integrate 
 Although maintenance and collaboration on social coding platforms like \gh have improved through the tooling, especially distributed version
 control systems like Git~\cite{Christian:MSR:2012} and transparency mechanisms on social coding platforms~\cite{Laura:2012:CSCW}, these tools are only ideal for social forks which aim to sync all the changes between repositories.
 For example, code integration using pull requests and \textsf{git} tools like  \textsf{merge\,/\,rebase} may not be the best when integrating changes in between mainline and variant forks since they involve syncing upstream\,/\,downstream with all changes missing in the current branch.
+
 In this study, we have observed that some variant maintainers are only interested in integrating commits with specific changes.
 A suitable integration mechanism would be commit cherry picking since the developers can choose the exact commits they want to integrate.
 However, \gh's current setup does not make it easy to identify commits to cherry-pick without digging through the branch's history to identify relevant changes since the last code integration.
 Additionally, even though the variants have diverged from their mainlines, we do believe that since they share common code, some of the common code may go through maintenance to perform some bug and security fixing. These mainline--variant repository pairs being maintained by uncommon developers, chances are that these fixes could be missed or they could be fixed at different times by different developers and hence effort duplication.
+
 Our findings can be very useful to code integration tool builders between mainline and variants to prioritise certain categories of mainline--variant pairs by targeting specific changes.
 Ideally, a tooling would help identify possibly important fixes in commits and recommend these commits to mainline or variant developers to support a more efficient reuse.
 Some promising studies in this direction have focused on providing the mainline with facilities to explore non-integrated changes in forks to find opportunities for reuse~\cite{Ren:2018} and cross-fork change migration~\cite{Ren:2019}. Also more experimental ideas about virtual product-line platforms for unified development of multiple variants of a project~\cite{Antkiewicz:icse:2014,Fischer:saner:2014,Montalvillo:spl:2015,rubin:icse:2013,Stefan:2016:icsme}.
 
-\begin{framed}
-\noindent
+\begin{custombox}
 \emph{\textbf{Summary--RQ2}: Mainline and variants do not usually interact during their co-evolution. The lack of interaction could be attributed to a number of reasons that include: (i) technical (i.e., diverging features), where variants and mainlines are offering different goals or implementing different technologies having nothing to share; (ii) governance (i.e., diverging interests), where mainlines are unresponsive to the requests from community and also uninterested in some features suggested by the community; (iii) legal (e.g., diverging licenses), where the mainline variant has changed the license and integration is no longer possible.
 As a result of the divergence, it is likely that important updates (like security patches or bug fixes) could be missed or are duplicated.
 %Ahmed: text below should placed somewhere else
 %We also report interesting interactions that include: integration of only patches, integration of only specific changes, integration that exclude some specific changes and integration only changes that pass CI.
 }
-\end{framed}
+\end{custombox}
