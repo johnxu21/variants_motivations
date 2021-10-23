@@ -14,7 +14,7 @@
         \subfigure[Was the motivation for creating the variant an individual decision or a community decision?]{\includegraphics[width=1\columnwidth]{pdfs/decision.pdf}
         \label{fig:decision}}
     \hfill
-    \subfigure[What was the motivation of creating the variant of the mainline project?]{\includegraphics[width=1\columnwidth]{pdfs/likert_motivations_1.pdf}
+    \subfigure[What was the motivation for creating the variant of the mainline project?]{\includegraphics[width=1\columnwidth]{pdfs/likert_motivations_1.pdf}
     \label{fig:motivations}}
     \hfill
     \caption{\RQOne}
@@ -24,7 +24,7 @@
 
 \section{\RQOne}
 \label{sec:results-RQ1}
-RQ1 aims to investigate whether the motivations for creating variant forks identified before the advent of social coding platforms still hold or whether new factors have come into play since then. To do so, we asked the survey participants the following questions:
+RQ1 aims to investigate whether new motivations for creating variant forks have changed since the advent of social coding platforms. To do so, we asked the survey participants the following questions:
 
 %\begin{itemize}
 %\item
@@ -41,7 +41,7 @@ RQ1 aims to investigate whether the motivations for creating variant forks ident
 % We now presents and analyses the results of the survey.
 % In some cases we quote the survey respondents using [R$N$] to refer to a quote coming from respondent numbered $N$.
 
-For $SQ^1_{a}$, we presented a multiple choice question. In $SQ^1_{b}$ we presented Likert scale answer options, while $SQ^1_{c}$ was an open ended optional question. For the latter, we coded the respondent's answers into themes and categorised common responses.
+For $SQ^1_{a}$, we presented a multiple choice question. In $SQ^1_{b}$ we presented Likert scale answer options, while $SQ^1_{c}$ was an optional open-ended question. For the latter, we coded the respondent's answers into themes and categorised common responses.
 When quoting the survey respondents, we refer to them using [R$N$] notation, where $N$ is the respondent's ID.
 %\sd{this is kind of redundant with what came earlier}
 The respondents' answers that include the selection on the multiple choice answers as well as the themes resulting from coding open-ended answers are \dashuline{underlined}.
@@ -49,33 +49,33 @@ The open-ended responses are presented in \emph{italics}.
 Where applicable, we integrate and compare our findings with related research findings.
 
 \subsection{Results}
-Fig.~\ref{fig:decision_motivations} presents the results of the responses for $SQ^1_{a}$ and $SQ^1_{b}$. Fig.~\ref{fig:decision} shows that the majority of the participants selected the option \dashuline{individual}. Fig.~\ref{fig:motivations} shows that the majority ranked highly the motivation \dashuline{technical}. We also see quite a number of highly ranked motivations of \dashuline{governance} and \dashuline{others}. In Fig.~\ref{fig:sankey_motivation} we can also see the association between the $SQ^1_{a}$ and $SQ^1_{b}$ on the axes of \dashuline{decision} and \dashuline{motivation}. We can see that the majority of respondents selected \dashuline{individual} and selected \dashuline{technical}.
-
+Fig.~\ref{fig:decision_motivations} summarises the responses for $SQ^1_{a}$ and $SQ^1_{b}$. Fig.~\ref{fig:decision} shows that the majority of the participants responded that the decision was \dashuline{individual}. Fig.~\ref{fig:motivations} shows that the majority ranked highly the \dashuline{technical} motivation for creating variants. We also see quite a number of highly ranked motivations of \dashuline{governance} and \dashuline{others}.
 % Like we presented in Section~\ref{sec:protocal}, th
 % is question had Likert scale answer options we identified in the literature. 2) \emph{Was the motivation for creating the variant an individual decision or a community decision?} This survey question had two multiple choice answers of: \emph{individual} or \emph{community} decision.
 
 While previous studies have investigated the motivations for creating variants, no study has investigated the details of those motivations ($SQ^1_{c}$) .
-To identify these details, we asked two additional optional open-ended questions to allow the respondents provide us with details on their choice of Likert scale answer on the motivation. The two questions were
+To identify these details, we proposed two optional open-ended questions to allow the respondents to provide details on their Likert scale answer to $SQ^1_{b}$. The two questions were
 (1) \emph{Kindly provide details for your selected answer(s) on the motivation;}
 and (2) \emph{If there are any links that are documented relating to your choice of answers on motivation detail, kindly point us there}.
 
-100 of the 105 respondents that attempted the survey gave us a the details of the motivation of creating the variant and 30 of the 100 provided us with extra links. Luckily, while we were coding the open-ended question (Cf. Section~\ref{sec:card_sorting}), we were able to identify the five missing details of the choice of motivation by looking at selected response as well as comparing contents of the mainline and variant repositories on \gh.
+100 of the 105 survey respondents\tm{Incorrect, there were 112 respondents according to section II.C!}  provided details of their motivation for creating a variant fork, and 30 of the 100 provided with extra pointers.
+The coding process for the open-ended question (see Section~\ref{sec:card_sorting}), allowed us to identify the five missing details of the choice of motivation\tm{I do not understand what you mean by the "five missing details". Why five and what are you referring to exactly?} by looking at selected response as well as comparing contents of the mainline and variant repositories on \gh.
 
-In Fig~\ref{fig:sankey_motivation} we present the details of the choice of motivation by the respondents. We discuss what the coded themes represent in the next paragraphs.
-Fig~\ref{fig:sankey_motivation} also presents how the distribution of the responses across all the five questions relating to motivation and how they relate to each other. The thickness of the edge represents the frequency of respondents between two entities.
+Fig~\ref{fig:sankey_motivation} presents a Sankey diagram summarising the details of the respondents' choice of motivation based on the coded themes. 
+The figure  presents the distribution of the responses to all questions relating to $RQ1$ and how these responses relate to each other. The thickness of the edge represents the frequency of respondents between two entities.
 %The axis--\texttt{variant status} in Fig~\ref{fig:sankey_motivation} shows the variants that are attached to- or detached from the mainline repository as discussed in Section~\ref{sec:forks_and_participants}.
-We observe that
-% in both the \dashuline{attached} and \dashuline{detached} variants
-the majority of respondents that answered the question \dashuline{\# original developers} selected \dashuline{none} implying that the majority of the variants were started by different developers.
-Since the answers to $SQ^1_{c}$ were presented on a Likert scale, participants were allowed to rank the appropriate motivation(s) that suits why they created the variant. While coding the motivations details, we identified respondents who ranked highly more than one motivation category and also provided a response in the open-ended question to support each of the highly ranked motivation category. In this scenario, each of the ranked highly motivation category would have a motivation detail for the same respondent. %\az{I added the following information and modified the text introducing each motivation (detail)}
-At the end we found that 105 of the survey participants chose 145 motivation categories, i.e., 84 \dashuline{technical}, 34 \dashuline{governance}, 3 \dashuline{legal} and 24 chose \dashuline{others}. In the text below we present the common motivation details (themes) and some of the specific responses we found very
+
+Focusing on the axes of \dashuline{decision} and \dashuline{motivation}, we can confirm the observations from Fig.~\ref{fig:motivations} that the majority of respondents had an \dashuline{individual} and \dashuline{technical} motivation.
+The majority of respondents that answered the question \dashuline{original developers?} selected \dashuline{none} implying that the majority of the variants were started by different developers.
+Since the answers to $SQ^1_{c}$ were presented on a Likert scale,\tm{This seems incorrect,since SQ1c is open ended. Do you mean SQ1b perhaps?} participants were asked to rank the appropriate motivation(s) to why they created the variant. While coding the motivations details, we identified respondents who ranked highly more than one motivation category and also provided a response in the open-ended question to support each highly ranked motivation category. In this scenario, eachhighly ranked motivation category would have a motivation detail for the same respondent. %\az{I added the following information and modified the text introducing each motivation (detail)}
+At the end we found that 105 of the survey participants chose 145 motivation categories, of which 84 \dashuline{technical}, 34 \dashuline{governance}, 3 \dashuline{legal} and 24 \dashuline{others}. Below we present the common motivation themes and some  specific responses we found very
 interesting.
 
 \begin{figure*}[ht]
 \begin{center}
     \centering
     \includegraphics[width=\textwidth]{pdfs/sankey_motivations_2.pdf}
-    \caption{Detailed motivations behind creating variant forks.
+    \caption{Sankey diagram summarising the detailed motivations behind creating variant forks.
     }
     \label{fig:sankey_motivation}
 \end{center}
@@ -312,7 +312,7 @@ Many variant forks start as social forks. The decision to create\,/\,maintain th
 %Recall that in Section~\ref{sec:intro} we stated
 $RQ2$ aims  to identify the impediments for co-evolution between the mainline and variant projects.
 This question lead to two specific survey reflecting the \textit{who} and the \textit{how}, respectively. The \textit{who} aimed at identifying the developers involved in maintaining these variants. The \textit{how} aimed to understand how variant  projects evolve  w.r.t. the  mainline.
-Like in Section~\ref{sec:results-RQ1}, in this section we refer to the responses using the \dashuline{underlined}, \emph{italics} and [R$N$].
+As for $RQ1$ we refer to the responses using \dashuline{underlined}, \emph{italics} and [R$N$].
 
 
 
