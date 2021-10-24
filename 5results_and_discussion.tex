@@ -24,7 +24,7 @@
 
 \section{\RQOne}
 \label{sec:results-RQ1}
-RQ1 aims to investigate whether new motivations for creating variant forks have changed since the advent of social coding platforms. To do so, we asked the survey participants the following questions:
+RQ1 aims to investigate whether motivations for creating variant forks have changed since the advent of social coding platforms. To do so, we asked the survey participants the following questions:
 
 %\begin{itemize}
 %\item
@@ -424,13 +424,13 @@ In Fig.~\ref{fig:to_mainline-coded} there were two prominent answers: \dashuline
 
 \subsection{Discussion and Implications}
 
-The results of $RQ2$ revealed that variants are created and maintained my developers that are not core developers of the mainline.
+The results of $RQ2$ revealed that variants are created and maintained by developers that are not core developers of the mainline.
 We also observed that there is limited interaction between the mainline and its variant(s).
 Although we found there is little code integration, the integration from mainline to variant is more frequent than from variant to  mainline.
 Our study confirms and extends the findings of Businge et al.~\cite{businge:emse:2021}: we provide concrete reasons relating to little integration between the mainline and variants that include:\\
-1) \textit{technical divergency}: where variants and mainlines are offering different goals, implementing different technologies, variant is maintaining a part of the mainline that is frozen;\\
-2) \textit{governance disputes}: mainlines are unresponsive to pull requests and issues from the variants and  mainlines not willing or hesitant to accept some features from the variants. One respondent also reported that mainline is actively very hostile to variants as a result of mainline's license changing to proprietary;\\
-3) \textit{distinct developers}: Another reason for the lack of code integration is because most of the variants are maintained by developers that are not part of the core team of the mainline.
+1) \textit{technical divergency}: where variants and mainlines are offering different goals, implementing different technologies, the variant is maintaining a part of the mainline that is frozen;\\
+2) \textit{governance disputes}: the mainlines are unresponsive to pull requests and issues from the variants and the mainlines not willing to or hesitant to accept features from the variants. One respondent also reported that the mainline is actively hostile to variants as a result of mainline's license changing to proprietary;\\
+3) \textit{distinct developers}: most of the variants are maintained by developers that are not part of the core team of the mainline.
 Furthermore, we have observed that a few mainline--variant pairs that integrate code between themselves are mostly interested in patch sets (security fixes and bug fixes).
 
 Although maintenance and collaboration have improved through dedicated tooling, especially through distributed version
@@ -441,15 +441,15 @@ In this study, we have observed that some variant maintainers are only intereste
 A suitable integration mechanism would be commit cherry picking since the developers can choose the exact commits they want to integrate.
 However, \gh's current setup does not make it easy to identify commits to cherry-pick without digging through the branch's history to identify relevant changes since the last code integration.
 Additionally, even though the variants have diverged from their mainlines, we do believe that since they share common code, some of the common code may go through maintenance to perform some bug and security fixing.
-Since these mainline--variant repository pairs are being maintained by uncommon developers, chances are that these fixes could be missed or they could be fixed at different times by different developers, resulting in duplicated effort.
+Since these mainline--variant repository pairs are being maintained by uncommon developers, chances are that these fixes are missed or they fixed at different times by different developers, resulting in duplicated effort.
 
-Our findings are very relevant to code integration tool builders between mainline and variants to prioritise certain categories of mainline--variant pairs by targeting specific changes.
-Ideally, a tooling would help identify possibly important fixes in commits and recommend these commits to mainline or variant developers to support a more efficient reuse.
+Our findings are relevant to code integration tool builders between mainline and variants to prioritise certain categories of mainline--variant pairs by targeting specific changes.
+Ideally, a tool would help identify possibly important fixes in commits and recommend these commits to mainline or variant developers to support a more efficient reuse.
 Some promising studies in this direction have focused on providing the mainline with facilities to explore non-integrated changes in forks to find opportunities for reuse~\cite{Ren:2018} and cross-fork change migration~\cite{Ren:2019}. More experimental ideas have focused on virtual product-line platforms for unified development of multiple variants of a project~\cite{Antkiewicz:icse:2014,Fischer:saner:2014,Montalvillo:spl:2015,rubin:icse:2013,Stefan:2016:icsme}.
 
 \begin{custombox}
-\emph{\textbf{Summary--RQ2}: Variant forks do not usually interact with the mainline during their co-evolution. The lack of interaction could be attributed to a variety of reasons including: (i) technical divergence, where variants and mainlines are offering different features or implementing different technologies having nothing to share; (ii) governance disputes, where mainlines are unresponsive to the requests from community and also uninterested in some features suggested by the community; (iii) distinct development teams that no longer interact; (iv) diverging licenses, where the mainline variant has changed the license and integration is no longer possible.
-As a result of these divergences, it is likely that important security or patch updates could be missed or are duplicated.
+\emph{\textbf{Summary--RQ2}: Variant forks do not usually interact with the mainline during their co-evolution. The lack of interaction could be attributed to a variety of reasons including: (i) technical divergence, where variants and mainlines are offering different features or implementing different technologies having nothing to share; (ii) governance disputes, where mainlines are unresponsive to the requests from community and also uninterested in features suggested by the community; (iii) distinct development teams that no longer interact; (iv) diverging licenses, where the mainline variant has changed the license and integration is no longer possible.
+As a result of these divergences, it is likely that important security or patch updates are be missed or are duplicated.
 %Ahmed: text below should placed somewhere else
 %We also report interesting interactions that include: integration of only patches, integration of only specific changes, integration that exclude some specific changes and integration only changes that pass CI.
 }
