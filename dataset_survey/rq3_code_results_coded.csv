@@ -1,0 +1,104 @@
+variant_status;respondent;mainline;variant;details;codes
+R1_1;Attached;2factorauth/twofactorauth;acceptbitcoincash/acceptbitcoincash;I do not discuss, but I am not sure if other maintainers do;not sure
+R1_2;Attached;aspnet/EntityFramework6;ErikEJ/EntityFramework6PowerTools;No, there has never been any discussion since the creation of the variant;never
+R1_3;Attached;prism/Prism-Bukkit;AddstarMC/Prism-Bukkit;They used to discuss but not anymore since the projects have technically diverged from each other;technically diverged
+R1_4;Attached;JACoders/OpenJK;JKGDevs/JediKnightGalaxies;They used to discuss but not anymore since the projects have technically diverged from each other;technically diverged
+R1_7;Attached;Red5/red5-server;ant-media/Ant-Media-Server;No, there has never been any discussion since the creation of the variant;never
+R1_8;Attached;airbnb/react-native-maps;fqborges/react-native-maps;I do not discuss, but I am not sure if other maintainers do;not sure
+R1_9;Attached;don/cordova-plugin-ble-central;fxe-gear/cordova-plugin-ble-central;They used to discuss but not anymore since the projects have technically diverged from each other;technically diverged
+R1_10;Attached;yihui/hugo-xmin;goodroot/hugo-classic;No, there has never been any discussion since the creation of the variant;never
+R1_11;Attached;esbenp/prettier-vscode;numso/prettier-standard-vscode;No, there has never been any discussion since the creation of the variant;never
+R1_12;Attached;PromyLOPh/pianobar;thedmd/pianobar-windows;Project follow original one in terms of functionality, but does not aim to expand it. It just make it work on Windows platform.;variant follows mainline
+R1_13;Attached;unclebob/fitnesse;tcnh/fitnesse;No longer relevant, as the fork is now only used as a means to create PR's;never
+R1_14;Attached;liip/LiipFunctionalTestBundle;facile-it/symfony-functional-testcase;No, there has never been any discussion since the creation of the variant;never
+R1_15;Attached;bbmokhtari/django-translations;thread/django-translations;No, the variant has merged back into mainline. There was never any discussion while the variant existed, it was just interim to satisfy Thread's (my company's) immediate needs and we always intended to return to mainline.;variant merged back
+R1_16;Attached;puppetlabs/puppetlabs-rsync;TheMeier/themeier-rsync;No, there has never been any discussion since the creation of the variant;never
+R1_17;Attached;fgrosse/PHPASN1;Adapik/PHPASN1;No, there has never been any discussion since the creation of the variant;never
+R1_18;Attached;alexbrainman/printer;jazzy-crane/printer;No, there has never been any discussion since the creation of the variant;never
+R1_19;Attached;yiisoft/yii;b1rdex/yii;Yes, they still discuss the direction of the projects;yes
+R1_20;Attached;sizeg/yii2-jwt;bizley/yii2-jwt;No, there has never been any discussion since the creation of the variant;never
+R1_21;Attached;mdmsoft/yii2-admin;mishamosher/yii2-admin;No, there has never been any discussion since the creation of the variant;never
+R1_23;Attached;jazzband/pip-tools;jgonggrijp/pip-review;They used to discuss but not anymore since the projects have technically diverged from each other;technically diverged
+R1_24;Attached;Bjorn248/BjornBot;BjornTwitchBot/BjornBot;They are effectively the same repository;conntrolled by same developers
+R1_25;Attached;tadas-s/isbnjs;inventaire/isbn3;There as been a single interaction, which was to mostly giving the idea that the project wasn't maintained anymore https://github.com/tadas-s/isbnjs/issues/17;only once
+R1_26;Attached;highsolutions/laravel-lang-import-export;AidasK/laravel-lang-import-export;Mainline project is not very active, so it's hard to discuss;mainnline not very active
+R1_27;Attached;skrusty/AsterNET.ARI;seiggy/AsterNET.ARI;Yes, they still discuss the direction of the projects;yes
+R1_28;Attached;KnpLabs/DictionaryBundle;biig-io/DictionaryBundle;They used to discuss but not anymore since the projects have technically diverged from each other;technically diverged
+R1_29;Attached;goshippo/shippo-csharp-client;HakanL/shippo-csharp-client;I do not discuss, but I am not sure if other maintainers do;not sure
+R1_30;Attached;bosnadev/database;emiliopedrollo/laravel-postgres-extended-schema;No, there has never been any discussion since the creation of the variant;never
+R1_31;Attached;j-guyon/CommandSchedulerBundle;carlossosa/CommandSchedulerBundle;I do not discuss, but I am not sure if other maintainers do;not sure
+R1_32;Attached;macopedia/magmi-m2;lsv/magmi-m2;No, there has never been any discussion since the creation of the variant;never
+R1_34;Attached;materialx/MaterialX;autodesk-forks/MaterialX;Yes, they still discuss the direction of the projects;yes
+R1_35;Attached;Auburn/FastNoiseSIMD;caseymcc/HastyNoise;Yes, they still discuss the direction of the projects;yes
+R1_36;Detached;octobercms/library;wintercms/winter;The mainline is actively hostile to the variant;mainline hostile
+R1_37;Attached;jcrobak/parquet-python;dask/fastparquet;No, there has never been any discussion since the creation of the variant;never
+R1_38;Attached;afitz/golua;aarzilli/golua;mainline disappeared;never
+R1_39;Attached;cakephp/cakephp;littleant/cakephp-1.3.21;No, there has never been any discussion since the creation of the variant;never
+R1_40;Attached;qmonnet/rbpf;solana-labs/rbpf;They used to discuss but not anymore since the projects have technically diverged from each other;technically diverged
+R1_41;Attached;mmcgrana/gobyexample;butuzov/gobyexample;I do not discuss, but I am not sure if other maintainers do;not sure
+R1_42;Attached;joshmarshall/jsonrpclib;tcalmant/jsonrpclib;No, there has never been any discussion since the creation of the variant;never
+R1_43;Attached;publiux/laravelcdn;juhasev/LaravelCdn;No, there has never been any discussion since the creation of the variant;never
+R1_44;Attached;RDFLib/rdflib;tgbugs/rdflib;Since the variant has merged back into mainline I don't think this is relevant. I still participate in discussions on mainline and am working to get some of my external code incorported into mainline. Specifically re: https://github.com/tgbugs/pyontutils/issues/92;variant merged back
+R1_45;Attached;facebook/react-native;microsoft/react-native-macos;Yes, they still discuss the direction of the projects;yes
+R1_46;Attached;wgltony/react-native-braintree-dropin-ui;BradyShober/react-native-braintree-dropin-ui;No, there has never been any discussion since the creation of the variant;never
+R1_47;Attached;jstasiak/python-zeroconf;frawau/aiozeroconf;No, there has never been any discussion since the creation of the variant;never
+R1_48;Attached;dlang/druntime;ldc-developers/druntime;Yes, they still discuss the direction of the projects;yes
+R1_49;Attached;jeroenzwart/laravel-csv-seeder;bfinlay/laravel-excel-seeder;No, there has never been any discussion since the creation of the variant;never
+R1_50;Attached;dogenzaka/go-iap;evalphobia/go-iap;No, there has never been any discussion since the creation of the variant;never
+R1_51;Detached;Azure/autorest.csharp;agoda-com/autorest.csharp;No, there has never been any discussion since the creation of the variant;never
+R1_52;Attached;ezsystems/ezpublish-legacy;mugoweb/ezpublish-legacy;They used to discuss but not anymore since the projects have technically diverged from each other;technically diverged
+R1_53;Attached;chasegiunta/craft-vue-tailwind;madebykind/craft-vue-tailwind-nanobox;No, there has never been any discussion since the creation of the variant;never
+R1_54;Attached;pinterest/PINCache;wireapp/PINCache;No, there has never been any discussion since the creation of the variant;never
+R1_55;Attached;silascutler/LnkParse;Matmaus/LnkParse3;No, there has never been any discussion since the creation of the variant;never
+R1_56;Attached;PetterKraabol/Twitch-Chat-Downloader;TheDrHax/Twitch-Chat-Downloader;No, there has never been any discussion since the creation of the variant;never
+R1_57;Attached;kyuupichan/electrumx;spesmilo/electrumx;Yes, they still discuss the direction of the projects;yes
+R1_58;Attached;glyptodon/guacamole-client;padarom/guacamole-common-js;No, there has never been any discussion since the creation of the variant;never
+R1_59;Attached;swig/swig;swig-fortran/swig;They used to discuss but not anymore since the projects have technically diverged from each other;technically diverged
+R1_60;Attached;curl/curl;Unity-Technologies/curl;We still use the mainline, just port our custom modifications to newer releases.;variant follows mainline
+R1_61;Attached;eclipse/winery;OpenTOSCA/winery;Yes, they still discuss the direction of the projects;yes
+R1_62;Attached;rogerclarkmelbourne/Arduino_STM32;stevstrong/Arduino_STM32;They used to discuss but not anymore since the projects have technically diverged from each other;technically diverged
+R1_63;Attached;NickWaterton/Roomba980-Python;pschmitt/roombapy;No, there has never been any discussion since the creation of the variant;never
+R1_64;Attached;apex-enterprise-patterns/fflib-apex-common;wimvelzeboer/fflib-apex-common;Yes, they still discuss the direction of the projects;yes
+R1_65;Attached;golang/exp;oakmound/shiny;Very rarely common issues arise and are discussed.;common issues are discussed
+R1_66;Attached;golang/crypto;ProtonMail/go-crypto;I do not discuss, but I am not sure if other maintainers do;not sure
+R1_67;Attached;JamesNK/Newtonsoft.Json;jilleJr/Newtonsoft.Json-for-Unity;No, there has never been any discussion since the creation of the variant;never
+R1_68;Attached;apple/swift;swiftwasm/swift;Yes, they still discuss the direction of the projects;yes
+R1_69;Attached;austencm/youtube-auto-like;Taknok/youtube-auto-like;Yes, they still discuss the direction of the projects;yes
+R1_70;Attached;dashpay/dash;PIVX-Project/PIVX;They used to discuss but not anymore since the projects have technically diverged from each other;technically diverged
+R1_71;Attached;getsentry/sentry-auth-google;siemens/sentry-auth-oidc;No, there has never been any discussion since the creation of the variant;never
+R1_72;Attached;javacc/javacc;phax/ParserGeneratorCC;No, there has never been any discussion since the creation of the variant;never
+R1_73;Attached;eclipse/winery;OpenTOSCA/winery;No, there has never been any discussion since the creation of the variant;never
+R1_74;Attached;goldsmith/Wikipedia;lehinevych/MediaWikiAPI;No, there has never been any discussion since the creation of the variant;never
+R1_75;Attached;MediaBrowser/plugin.video.emby;croneter/PlexKodiConnect;No, there has never been any discussion since the creation of the variant;never
+R1_76;Attached;microsoft/azure-tools-for-java;JetBrains/azure-tools-for-intellij;No, there has never been any discussion since the creation of the variant;never
+R1_77;Attached;dashpay/dash;biblepay/biblepay;In the crypto world, the mainline inherits changes from BITCOIN, for example, security commits, and the variant merges those changes in. So the variant is very interested in every change in the Mainline. However, the variant must maintain the specific new features that we added separately, and the Mainline is not interested in helping the Variant do this.;variant follows mainline
+R1_78;Attached;bcdev/beam;senbox-org/snap-engine;No, there has never been any discussion since the creation of the variant;never
+R1_79;Attached;jdsteinbach/eleventy-plugin-toc;JordanShurmer/eleventy-plugin-toc;No, there has never been any discussion since the creation of the variant;never
+R1_80;Attached;openssl/openssl;open-quantum-safe/openssl;Yes, they still discuss the direction of the projects;yes
+R1_81;Attached;jnovack/homebridge-better-http-rgb;QuickSander/homebridge-http-rgb-push;Yes, they still discuss the direction of the projects;yes
+R1_82;Attached;FirebaseExtended/firebase-queue;kaliberjs/firebase-queue;No, there has never been any discussion since the creation of the variant;never
+R2_1;Detached;PaperMC/Paper;pl3xgaming/Purpur;Yes, they still discuss the direction of the projects;yes
+R2_2;Detached;fogleman/Minecraft;traverseda/pycraft;No, there has never been any discussion since the creation of the variant;never
+R2_3;Detached;PaperMC/Waterfall;yesdog/Waterdog;I do not discuss, but I am not sure if other maintainers do;not sure
+R2_3_1;Detached;SpigotMC/BungeeCord;PaperMC/Waterfall;I do not discuss, but I am not sure if other maintainers do;not sure
+R2_4;Detached;obsproject/obs-studio;CoSMoSoftware/OBS-studio-webrtc;Mainline defines main directions of the project, variant follows mainline updates;variant follows mainline
+R2_5;Detached;bsnes-emu/bsnes;libretro/bsnes-mercury;No, there has never been any discussion since the creation of the variant;never
+R2_6;Detached;redis/redis;JohnSully/KeyDB;We’re in contact but rarely discuss;in contact but rarely discuss
+R2_7;Detached;lzzy12/python-aria-mirror-bot;magneto261290/magneto-python-aria;Yes, they still discuss the direction of the projects;yes
+R2_8;Detached;Baystation12/Baystation12;Aurorastation/Aurora.3;Technical solutions get swapped in both directions as osmosis. Creative decisions (since we're both games) are kept very separate, though.;swap techical details
+R2_9;Detached;CloudburstMC/Nukkit;CloudburstMC/Server;No, there has never been any discussion since the creation of the variant;never
+R11_1;Attached;JabRef/jabref;koppor/jabref;Yes, they still discuss the direction of the projects;yes
+R11_2;Attached;mmcgrana/gobyexample;golangit/gobyexample-it;No, there has never been any discussion since the creation of the variant;never
+R11_3;Attached;desktop/desktop;shiftkey/desktop;Not really. I’m no longer contributing to the main project but I still keep in touch with the current contributors and support them however I can;never
+R11_4;Attached;thinkle/gourmet;kirienko/gourmet;They used to discuss but not anymore since the projects have technically diverged from each other;technically diverged
+R11_5;Attached;GiulioRossetti/ndlib;KDDComplexNetworkAnalysis/ndlib;The variant is only a mirror of the mainline;variant is a mirror of mainline
+R11_6;Attached;kiprotect/klaro;empreinte-digitale/orejime;No, there has never been any discussion since the creation of the variant;never
+R11_7;Attached;shurcooL/markdownfmt;Kunde21/markdownfmt;No, there has never been any discussion since the creation of the variant;never
+R11_8;Attached;shimmerproject/Numix;Ferdi265/numix-solarized-gtk-theme;No, there has never been any discussion since the creation of the variant;never
+R11_9;Attached;monero-project/monero;oxen-io/oxen-core;No, there has never been any discussion since the creation of the variant;never
+R11_10;Attached;raylee/tldr-sh-client;pepa65/tldr-bash-client;No, there has never been any discussion since the creation of the variant;never
+R11_11;Attached;arachnys/cabot;Affirm/cabot;No, there has never been any discussion since the creation of the variant;never
+R11_12;Attached;erikrose/blessings;jquast/blessed;No, there has never been any discussion since the creation of the variant;never
+R11_13;Attached;rust-rocksdb/rust-rocksdb;tikv/rust-rocksdb;No, there has never been any discussion since the creation of the variant;never
+R11_14;Attached;opentk/opentk;ppy/osuTK;The variant was only created to meed additional technical needs. Other than that, it was kept more-or-less up to date with mainline.;variant follows mainline
+R11_15;Attached;ncase/trust;dccxi/trust-zh-CN;The project was almost finished at the time, so I don't consider there are new features added other than the new translations.;never

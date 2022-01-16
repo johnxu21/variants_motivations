@@ -1,0 +1,11 @@
+No;mainline;variant;stars_ml;stars_vr;pr_ml;pr_vr;issues_ml;issues_vr;commits_ml;commits_vr
+1;materialx/MaterialX;autodesk-forks/MaterialX;791;91;640;1108;710;1313;711;1830
+2;Auburn/FastNoiseSIMD;caseymcc/HastyNoise;558;16;11;13;44;15;17;41
+3;octobercms/library;wintercms/winter;145;723;526;101;526;195;141;253
+4;jcrobak/parquet-python;dask/fastparquet;275;517;48;295;82;696;82;684
+5;afitz/golua;aarzilli/golua;91;558;5;38;8;101;5;99
+6;cakephp/cakephp;littleant/cakephp-1.3.21;8427;33;9826;8;15943;20;7830;89
+7;qmonnet/rbpf;solana-labs/rbpf;373;31;27;203;55;218;30;270
+8;mmcgrana/gobyexample;butuzov/gobyexample;5101;14;260;25;396;34;259;414
+9;joshmarshall/jsonrpclib;tcalmant/jsonrpclib;419;40;28;20;64;52;69;267
+10;publiux/laravelcdn;juhasev/LaravelCdn;111;5;46;2;69;4;9;35

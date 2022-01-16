@@ -1,0 +1,26 @@
+﻿interaction;code
+I do not discuss, but I am not sure if other maintainers do;not sure
+No, there has never been any discussion since the creation of the variant;never
+They used to discuss but not anymore since the projects have technically diverged from each other;technically diverged
+We will discuss things if we have common issues that need to be solved (eg a security issue that both projects have to fix), but otherwise discussion is unneeded.;common issues are discussed
+Project follow original one in terms of functionality, but does not aim to expand it. It just make it work on Windows platform.;variant follows mainline
+No longer relevant, as the fork is now only used as a means to create PR's;never
+No, the variant has merged back into mainline. There was never any discussion while the variant existed, it was just interim to satisfy Thread's (my company's) immediate needs and we always intended to return to mainline.;variant merged back
+Yes, they still discuss the direction of the projects;yes
+They are effectively the same repository;conntrolled by same developers
+There as been a single interaction, which was to mostly giving the idea that the project wasn't maintained anymore https://github.com/tadas-s/isbnjs/issues/17;only once
+Mainline project is not very active, so it's hard to discuss;mainnline not very active
+The mainline is actively hostile to the variant;mainline hostile
+mainline disappeared;never
+Since the variant has merged back into mainline I don't think this is relevant. I still participate in discussions on mainline and am working to get some of my external code incorported into mainline. Specifically re: https://github.com/tgbugs/pyontutils/issues/92;variant merged back
+We still use the mainline, just port our custom modifications to newer releases.;variant follows mainline
+Very rarely common issues arise and are discussed.;common issues are discussed
+In the crypto world, the mainline inherits changes from BITCOIN, for example, security commits, and the variant merges those changes in. So the variant is very interested in every change in the Mainline. However, the variant must maintain the specific new features that we added separately, and the Mainline is not interested in helping the Variant do this.;variant follows mainline
+Mainline defines main directions of the project, variant follows mainline updates;variant follows mainline
+We’re in contact but rarely discuss;in contact but rarely discuss
+Technical solutions get swapped in both directions as osmosis. Creative decisions (since we're both games) are kept very separate, though.;swap techical details
+Not really. I’m no longer contributing to the main project but I still keep in touch with the current contributors and support them however I can;never
+The variant is only a mirror of the mainline;variant is a mirror of mainline
+The variant was only created to meed additional technical needs. Other than that, it was kept more-or-less up to date with mainline.;variant follows mainline
+The project was almost finished at the time, so I don't consider there are new features added other than the new translations.;never
+Both of them are controlled by myself, just wanted to change the project path actually, but in the future I would keep to update it on the variant.;conntrolled by same developers

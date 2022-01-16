@@ -1,0 +1,146 @@
+variant_status;original_developers;common_active_maintainers;decision;motivation;motivation_detail
+Detached;2 -- 5;yes & no;community;legal;closed source
+Attached;none;no;individual;others;code quality
+Attached;none;no;individual;others;code quality
+Detached;none;no;community;others;code quality
+Attached;6 -- 10;yes;individual;others;community related
+Attached;6 -- 10;no;individual;legal;commercial variant
+Attached;none;no;individual;others;community related
+Attached;none;no;individual;technical;customization
+Attached;one;no;individual;technical;customization
+Attached;none;no;community;technical;customization
+Attached;none;no;individual;technical;customization
+Attached;none;no;individual;technical;customization
+Attached;none;no;community;technical;customization
+Attached;one;yes;individual;technical;customization
+Detached;one;no;community;technical;customization
+Detached;2 -- 5;yes & no;community;governance;differences
+Attached;cannot remember;no;community;technical;different goals
+Attached;none;no;individual;technical;different goals
+Attached;one;yes;community;technical;different goals
+Attached;none;no;individual;technical;different goals
+Attached;none;yes;individual;technical;different goals
+Attached;cannot remember;yes;community;technical;different goals
+Attached;one;no;individual;technical;different goals
+Attached;none;no;individual;technical;different goals
+Attached;none;no;individual;technical;different goals
+Attached;none;yes;community;technical;different goals
+Attached;2 -- 5;no;individual;technical;different goals
+Attached;one;no;individual;technical;different goals
+Attached;one;no;individual;technical;different goals
+Attached;one;yes & no;individual;technical;different goals
+Detached;none;no;community;technical;different goals
+Detached;none;no;community;technical;different goals
+Detached;none;no;community;technical;different goals
+Attached;none;no;individual;technical;enhancement
+Attached;none;no;individual;technical;enhancement
+Attached;none;no;individual;technical;enhancement
+Attached;none;no;community;technical;enhancement
+Attached;none;no;individual;governance;feature acceptance
+Attached;none;no;individual;governance;feature acceptance
+Attached;cannot remember;not sure;individual;governance;feature acceptance
+Attached;6 -- 10;no;individual;governance;feature acceptance
+Attached;none;no;individual;governance;feature acceptance
+Attached;none;no;individual;governance;feature acceptance
+Attached;none;no;individual;governance;feature acceptance
+Attached;none;no;individual;governance;feature acceptance
+Attached;none;no;community;governance;feature acceptance
+Attached;none;no;individual;governance;feature acceptance
+Attached;none;no;community;governance;feature acceptance
+Attached;none;no;individual;governance;feature acceptance
+Attached;none;no;community;governance;feature acceptance
+Detached;none;no;community;governance;feature acceptance
+Detached;one;no;community;governance;feature acceptance
+Attached;none;no;individual;technical;feature frozen
+Attached;none;no;individual;technical;feature frozen
+Attached;none;no;community;technical;feature frozen
+Attached;none;no;individual;technical;feature frozen
+Attached;2 -- 5;no;individual;technical;feature frozen
+Attached;none;no;community;technical;feature frozen
+Attached;none;no;individual;technical;feature frozen
+Attached;none;no;individual;others;localization
+Attached;none;no;individual;others;localization
+Attached;none;no;individual;others;localization
+Attached;one;no;individual;others;upstream lacks the resources
+Attached;none;no;individual;technical;maintenance
+Attached;none;no;individual;technical;maintenance
+Attached;none;no;individual;technical;maintenance
+Attached;none;no;individual;technical;maintenance
+Attached;none;no;individual;technical;maintenance
+Attached;none;yes & no;community;technical;maintenance
+Attached;none;no;individual;technical;maintenance
+Attached;one;no;individual;technical;maintenance
+Attached;none;yes;individual;technical;maintenance
+Attached;none;no;individual;technical;maintenance
+Attached;none;no;individual;technical;maintenance
+Attached;none;no;individual;technical;maintenance
+Attached;one;yes;individual;technical;maintenance
+Attached;none;no;individual;technical;maintenance
+Attached;none;no;individual;technical;maintenance
+Attached;none;no;individual;technical;maintenance
+Attached;none;no;community;technical;maintenance
+Attached;none;no;community;technical;maintenance
+Attached;none;no;individual;technical;maintenance
+Attached;none;no;individual;technical;new features
+Attached;none;yes;individual;technical;new features
+Attached;cannot remember;not sure;individual;technical;new features
+Detached;2 -- 5;yes & no;community;technical;new features
+Attached;none;no;community;technical;new features
+Attached;none;no;individual;technical;new features
+Attached;none;no;individual;technical;new features
+Attached;6 -- 10;no;individual;technical;new features
+Attached;none;no;individual;technical;new features
+Attached;none;no;individual;technical;new features
+Attached;6 -- 10;no;individual;technical;new features
+Attached;none;no;individual;technical;new features
+Attached;none;no;individual;technical;new features
+Attached;none;no;individual;technical;new features
+Attached;none;no;individual;technical;new features
+Detached;none;no;individual;technical;new features
+Detached;none;no;individual;technical;new features
+Attached;none;no;individual;technical;new release
+Attached;none;no;individual;technical;new release
+Attached;one;yes;individual;legal;privacy
+Attached;none;no;individual;governance;responsiveness
+Attached;one;no;individual;governance;responsiveness
+Attached;none;no;individual;governance;responsiveness
+Attached;none;no;individual;governance;responsiveness
+Attached;none;no;individual;governance;responsiveness
+Attached;none;no;individual;governance;responsiveness
+Attached;none;no;community;governance;responsiveness
+Attached;none;no;individual;governance;responsiveness
+Attached;none;no;individual;governance;responsiveness
+Attached;none;no;individual;governance;responsiveness
+Attached;one;yes;individual;governance;responsiveness
+Attached;none;no;individual;governance;responsiveness
+Attached;none;no;individual;governance;responsiveness
+Attached;none;no;community;governance;responsiveness
+Attached;none;no;community;governance;responsiveness
+Detached;none;no;community;governance;responsiveness
+Detached;none;no;individual;governance;responsiveness
+Detached;none;no;community;governance;responsiveness
+Attached;none;no;individual;others;community related
+Attached;none;no;individual;technical;stripped version
+Attached;none;no;individual;technical;stripped version
+Attached;none;no;individual;others;supporting personal projects
+Attached;none;no;individual;others;supporting personal projects
+Attached;none;no;individual;others;supporting personal projects
+Attached;none;no;individual;others;supporting personal projects
+Attached;none;no;individual;others;supporting personal projects
+Attached;none;no;community;others;supporting personal projects
+Attached;6 -- 10;no;individual;others;supporting personal projects
+Attached;2 -- 5;yes;individual;others;supporting upstream
+Attached;6 -- 10;yes;individual;others;supporting upstream
+Attached;one;yes;individual;others;supporting upstream
+Attached;2 -- 5;yes;individual;others;supporting upstream
+Attached;2 -- 5;yes;community;others;supporting upstream
+Attached;one;yes;individual;others;supporting upstream
+Attached;one;yes;individual;others;supporting upstream
+Attached;none;no;individual;technical;technology
+Attached;none;no;individual;technical;technology
+Attached;none;no;community;technical;technology
+Attached;none;no;individual;technical;technology
+Attached;none;yes;individual;technical;technology
+Attached;none;no;individual;technical;technology
+Attached;none;no;individual;technical;technology
+Detached;none;no;individual;technical;technology

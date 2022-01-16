@@ -1,0 +1,7 @@
+No;mainline;variant;stars_ml;stars_vr;pr_ml;pr_vr;issues_ml;issues_vr;commits_ml;commits_vr
+1;fogleman/Minecraft;traverseda/pycraft;4694;1091;75;52;128;93;10;188
+2;PaperMC/Waterfall;yesdog/Waterdog;542;198;146;22;679;185;160;354
+3;SpigotMC/BungeeCord;PaperMC/Waterfall;1133;542;757;146;3184;679;421;428
+4;obsproject/obs-studio;CoSMoSoftware/OBS-studio-webrtc;31449;403;3563;45;5232;336;5371;4920
+5;bsnes-emu/bsnes;libretro/bsnes-mercury;972;33;88;57;226;90;2556;333
+6;redis/redis;JohnSully/KeyDB;51257;4882;4472;98;9508;371;2721;4177

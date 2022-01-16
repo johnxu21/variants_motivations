@@ -1,0 +1,6 @@
+No;mainline;variant;stars_ml;stars_vr;pr_ml;pr_vr;issues_ml;issues_vr;commits_ml;commits_vr
+1;arachnys/cabot;Affirm/cabot;5162;10;265;206;710;206;498;444
+2;erikrose/blessings;jquast/blessed;1250;712;79;101;163;220;44;637
+3;rust-rocksdb/rust-rocksdb;tikv/rust-rocksdb;959;217;343;605;556;665;515;471
+4;opentk/opentk;ppy/osuTK;2206;26;710;70;1331;70;2355;1143
+5;ncase/trust;dccxi/trust-zh-CN;4688;602;34;7;117;7;86;181

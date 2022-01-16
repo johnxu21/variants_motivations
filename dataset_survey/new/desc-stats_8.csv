@@ -1,0 +1,11 @@
+No;mainline;variant;stars_ml;stars_vr;pr_ml;pr_vr;issues_ml;issues_vr;commits_ml;commits_vr
+1;goldsmith/Wikipedia;lehinevych/MediaWikiAPI;2324;22;90;38;293;52;4;213
+2;MediaBrowser/plugin.video.emby;croneter/PlexKodiConnect;210;788;239;695;388;1605;1940;4574
+3;microsoft/azure-tools-for-java;JetBrains/azure-tools-for-intellij;176;28;2819;285;5904;528;4293;3063
+4;dashpay/dash;biblepay/biblepay;1408;26;3878;6;4474;40;3445;257
+5;bcdev/beam;senbox-org/snap-engine;58;141;54;274;54;274;343;4591
+6;jdsteinbach/eleventy-plugin-toc;JordanShurmer/eleventy-plugin-toc;26;14;19;4;32;6;41;17
+7;openssl/openssl;open-quantum-safe/openssl;16596;172;10261;198;16700;326;12577;6388
+8;jnovack/homebridge-better-http-rgb;QuickSander/homebridge-http-rgb-push;33;14;7;3;7;3;2;91
+9;FirebaseExtended/firebase-queue;kaliberjs/firebase-queue;788;18;49;18;121;56;3;171
+10;PaperMC/Paper;pl3xgaming/Purpur;4616;686;2183;206;6482;550;2281;1773

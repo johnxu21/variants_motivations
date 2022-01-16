@@ -1,0 +1,11 @@
+No;mainline;variant;stars_ml;stars_vr;pr_ml;pr_vr;issues_ml;issues_vr;commits_ml;commits_vr
+1;unclebob/fitnesse;tcnh/fitnesse;1706;2;627;3;1329;3;467;433
+2;liip/LiipFunctionalTestBundle;facile-it/symfony-functional-testcase;608;0;377;8;581;11;135;132
+3;bbmokhtari/django-translations;thread/django-translations;115;0;58;1;78;1;22;6
+4;puppetlabs/puppetlabs-rsync;TheMeier/themeier-rsync;47;0;139;6;139;7;66;80
+5;fgrosse/PHPASN1;Adapik/PHPASN1;150;4;42;4;85;7;64;60
+6;alexbrainman/printer;jazzy-crane/printer;171;0;6;10;22;10;3;11
+7;yiisoft/yii;b1rdex/yii;4844;0;1726;147;4370;148;257;409
+8;sizeg/yii2-jwt;bizley/yii2-jwt;167;27;9;15;36;17;11;69
+9;mdmsoft/yii2-admin;mishamosher/yii2-admin;1135;0;105;1;453;1;32;31
+10;jazzband/pip-tools;jgonggrijp/pip-review;5246;390;711;25;1462;87;1160;162

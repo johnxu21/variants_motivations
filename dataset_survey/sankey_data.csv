@@ -1,0 +1,183 @@
+respondent;variant_status;mainline;variant;original_developers;common_active_maintainers;technical;governance;legal;others;motivation;decision
+R1_1;Attached;2factorauth/twofactorauth;acceptbitcoincash;cannot remember;no;different goals;;;;technical;community
+R1_10;Attached;yihui/hugo-xmin;goodroot/hugo-classic;none;no;customization;;;;technical;individual
+R1_11;Attached;esbenp/prettier-vscode;numso/prettier-standard-vscode;none;no;different goals;;;;technical;individual
+R1_12;Attached;PromyLOPh/pianobar;michcic@gmail.com;none;no;feature frozen;;;;technical;individual
+R1_13;Attached;unclebob/fitnesse;tcnh/fitnesse;none;no;maintenance;;;supporting personal projects;technical/others;individual
+R1_14;Attached;liip/LiipFunctionalTestBundle;facile-it/symfony-functional-testcase;none;no;stripped version;;;;technical;individual
+R1_15;Attached;bbmokhtari/django-translations;thread/django-translations;none;no;maintenance;responsiveness;;;technical/governance;individual
+R1_16;Attached;puppetlabs/puppetlabs-rsync;TheMeier/themeier-rsync;one;no;;responsiveness;;;governance;individual
+R1_17;Attached;fgrosse/PHPASN1;Adapik/PHPASN1;one;no;customization;;;;technical;individual
+R1_18;Attached;alexbrainman/printer;jazzy-crane/printer;none;no;new features;feature acceptance;;supporting personal projects;technical/governance;individual
+R1_19;Attached;yiisoft/yii;b1rdex/yii;none;no;feature frozen;feature acceptance;;;technical/governance;individual
+R1_2;Attached;aspnet/EntityFramework6;ErikEJ/EntityFramework6PowerTools;none;no;feature frozen;;;;technical;community
+R1_20;Attached;sizeg/yii2-jwt;bizley/yii2-jwt;none;no;maintenance;responsiveness;;;technical/governance;individual
+R1_21;Attached;mdmsoft/yii2-admin;mishamosher/yii2-admin;none;no;new release;responsiveness;;;technical/governance;individual
+R1_23;Attached;jazzband/pip-tools;jgonggrijp/pip-review;none;no;feature frozen;;;;technical;individual
+R1_24;Attached;Bjorn248/BjornBot;BjornTwitchBot/BjornBot;one;yes;;;privacy;;legal;individual
+R1_25;Attached;tadas-s/isbnjs;inventaire/isbn3;none;no;enhancement;;;;technical;individual
+R1_26;Attached;highsolutions/laravel-lang-import-export;AidasK/laravel-lang-import-export;one;no;;;;;technical;individual
+R1_27;Attached;skrusty/AsterNET.ARI;seiggy/AsterNET.ARI;none;yes;new features;;;;technical;individual
+R1_28;Attached;KnpLabs/DictionaryBundle;biig-io/DictionaryBundle;none;no;maintenance;responsiveness;;;technical/governance;individual
+R1_29;Attached;goshippo/shippo-csharp-client;HakanL/shippo-csharp-client;none;no;technology;;;supporting personal projects;technical/others;individual
+R1_30;Attached;bosnadev/database;emiliopedrollo/laravel-postgres-extended-schema;none;no;enhancement;;;;technical;individual
+R1_31;Attached;j-guyon/CommandSchedulerBundle;carlossosa/CommandSchedulerBundle;cannot remember;not sure;new features;feature acceptance;;;technical/governance;individual
+R1_32;Attached;macopedia/magmi-m2;macopedia/magmi-m2;none;no;maintenance;responsiveness;;;technical/governance;individual
+R1_33;Attached;arendst/Sonoff-Tasmota;ascillato/Tasmota_KNX;none;yes & no;maintenance;;;;technical;community
+R1_34;Attached;materialx/MaterialX;Ashwin Bhat;6 -- 10;yes;;;;collaboration;others;individual
+R1_35;Attached;Auburn/FastNoiseSIMD;caseymcc/HastyNoise;none;no;customization;;;;technical;community
+R1_36;Detached;octobercms/library;wintercms/winter;2 -- 5;yes & no;new features;differences;closed source;;technical/governance/legal;community
+R1_37;Attached;jcrobak/parquet-python;dask/dastparquet;none;no;customization;;;;technical;individual
+R1_38;Attached;afitz/golua;aarzilli@golua;none;no;maintenance;;;;technical;individual
+R1_39;Attached;cakephp/cakephp;littleant/cakephp-1.3.21;none;no;technology;;;;technical;individual
+R1_4;Attached;JACoders/OpenJK;JKGDevs/JediKnightGalaxies;one;yes;different goals;;;;technical;community
+R1_40;Attached;qmonnet/rbpf;solana-labs/rbpf;none;no;different goals;;;;technical;individual
+R1_41;Attached;mmcgrana/gobyexample;Butuzov/gobyexample;none;no;;;;localization;technical/others;individual
+R1_42;Attached;joshmarshall/jsonrpclib;tcalmant/jsonrpclib;none;no;customization;;;;technical;individual
+R1_43;Attached;publiux/laravelcdn;juhasev/laravelCdn;one;no;maintenance;;;;technical;individual
+R1_44;Attached;RDFLib/rdflib;tgbugs/rdflib;none;no;new features;responsiveness;;;technical/governance;community
+R1_45;Attached;facebook/react-native;react-native-macos;none;yes;different goals;;;;technical;individual
+R1_46;Attached;wgltony/react-native-braintree-dropin-ui;BradyShober/react-native-braintree-dropin-ui;none;no;new features;responsiveness;;;technical/governance;individual
+R1_47;Attached;jstasiak/python-zeroconf;aiozeroconf;none;no;technology;;;;technical;community
+R1_48;Attached;dlang/druntime;ldc-developers/druntime;2 -- 5;yes;;;;supporting upstream;others;individual
+R1_49;Attached;jeroenzwart/laravel-csv-seeder;bfinlay/laravel-excel-seeder;none;no;new features;;;;technical;individual
+R1_50;Attached;dogenzaka/go-iap;evalphobia/go-iap;none;no;;;;supporting personal projects;others;individual
+R1_51;Attached;Azure/autorest.csharp;Azure/autorest.csharp;6 -- 10;no;new features;feature acceptance;;;technical/governance;individual
+R1_52;Attached;ezsystems/ezpublish-legacy;Philipp Kamps;none;yes;maintenance;;;;technical;individual
+R1_53;Attached;chasegiunta/craft-vue-tailwind;madebykind/craft-vue-tailwind-nanobox;none;no;new features;feature acceptance;;;technical/governance;individual
+R1_54;Attached;pinterest/PINCache;wireapp/PINCache;none;no;technology;;;supporting personal projects;technical/others;individual
+R1_55;Attached;silascutler/LnkParse;Matmaus/LnkParse3;none;no;maintenance;responsiveness;;;technical/governance;individual
+R1_56;Attached;PetterKraabol/Twitch-Chat-Downloader;TheDrHax/Twitch-Chat-Downloader;none;no;maintenance;;;supporting personal projects;technical;individual
+R1_57;Attached;kyuupichan/electrumx;spesmilo/electrumx;2 -- 5;no;feature frozen;;;;technical;individual
+R1_58;Attached;glyptodon/guacamole-client;padarom/guacamole-common-js;none;no;stripped version;;;;technical;individual
+R1_59;Attached;swig/swig;swig-fortran;none;no;maintenance;responsiveness;;;technical/governance;individual
+R1_60;Attached;curl/curl;Unity-Technologies/curl;none;no;;;;supporting personal projects;others;community
+R1_61;Attached;eclipse/winery;OpenTOSCA/winery;6 -- 10;yes;;;;supporting upstream;others;individual
+R1_62;Attached;rogerclarkmelbourne/Arduino_STM32;stevstrong/Arduino_STM32;one;yes;maintenance;;;;technical;individual
+R1_63;Attached;NickWaterton/Roomba980-Python;pschmitt/roombapy;none;no;maintenance;;;code quality;technical/others;individual
+R1_64;Attached;apex-enterprise-patterns/fflib-apex-common;wimvelzeboer/fflib-apex-common;one;yes;;responsiveness;;;governance;individual
+R1_65;Attached;golang/exp;oakmound/shiny;none;no;feature frozen;;;;technical;community
+R1_66;Attached;golang/crypto;ProtonMail/go-crypto;none;no;feature frozen;;;seeked community help;technical/others;individual
+R1_67;Attached;JamesNK/Newtonsoft.Json;jilleJr/Newtonsoft.Json-for-Unity;none;no;new features;responsiveness;;;technical/governance;individual
+R1_68;Attached;apple/swift;swiftwasm/swift;none;yes;technology;;;;technical;individual
+R1_69;Attached;austencm/youtube-auto-like;youtube-auto-like;cannot remember;yes;different goals;;;;technical;community
+R1_7;Attached;Red5/red5-server;ant-media/Ant-Media-Server;6 -- 10;no;new features;;commercial variant;supporting personal projects;technical/others/legal;individual
+R1_70;Attached;dashpay/dash;PIVX-Project/PIVX;one;no;different goals;;;;technical;individual
+R1_71;Attached;getsentry/sentry-auth-google;siemens/sentry-auth-oidc;none;no;different goals;responsiveness;;;governance;individual
+R1_72;Attached;javacc/javacc;phax/ParserGeneratorCC;none;no;;responsiveness;;;governance;community
+R1_73;Attached;eclipse/winery;OpenTOSCA/winery;one;yes;;;;supporting upstream;others;individual
+R1_74;Attached;goldsmith/Wikipedia;lehinevych/MediaWikiAPI;none;no;different goals;;;;technical;individual
+R1_75;Attached;MediaBrowser/plugin.video.emby;croneter/PlexKodiConnect;none;no;technology;;;;technical;individual
+R1_76;Attached;microsoft/azure-tools-for-java;JetBrains/azure-tools-for-intellij;none;yes;different goals;;;;technical;community
+R1_77;Attached;dashpay/dash;biblepay/biblepay;2 -- 5;no;different goals;;;;technical;individual
+R1_78;Attached;bcdev/beam;senbox-org/snap-engine;2 -- 5;yes;;;;supporting upstream;others;individual
+R1_79;Attached;jdsteinbach/eleventy-plugin-toc;JordanShurmer/eleventy-plugin-toc;none;no;maintenance;;;code quality;technical/others;individual
+R1_8;Attached;airbnb/react-native-maps;fqborges/react-native-maps;none;no;technology;feature acceptance;;;technical/governance;individual
+R1_80;Attached;openssl/openssl;open-quantum-safe/openssl;none;no;new features;;;;technical;individual
+R1_81;Attached;jnovack/homebridge-better-http-rgb;QuickSander/homebridge-http-rgb-push;one;no;different goals;;;;technical;individual
+R1_82;Attached;FirebaseExtended/firebase-queue;kaliberjs/firebase-queue;none;no;maintenance;;;;technical;individual
+R1_9;Attached;don/cordova-plugin-ble-central;fxe-gear/cordova-plugin-ble-central;none;no;new features;feature acceptance;;;technical/governance;individual
+R11_1;Attached;JabRef/jabref;koppor/jabref;2 -- 5;yes;;;;supporting upstream;others;community
+R11_10;Attached;raylee/tldr-sh-client;pepa65/tldr-bash-client;none;no;enhancement;;;;technical;individual
+R11_11;Attached;arachnys/cabot;Affirm/cabot;none;no;new features;feature acceptance;;;technical/governance;individual
+R11_12;Attached;erikrose/blessings;jquast/blessed;none;no;maintenance;responsiveness;;;technical/governance;community
+R11_13;Attached;rust-rocksdb/rust-rocksdb;tikv/rust-rocksdb;none;no;enhancement;feature acceptance;;;technical/governance;community
+R11_14;Attached;opentk/opentk;ppy/osuTK;none;no;new features;feature acceptance;;;technical/governance;individual
+R11_15;Attached;ncase/trust;dccxi/trust-zh-CN;none;no;;;;localization;others;individual
+R11_2;Attached;mmcgrana/gobyexample;golangit/gobyexample-it;none;no;;;;localization;others;individual
+R11_3;Attached;desktop/desktop;shiftkey/desktop;one;no;different goals;;;mainline lacks the resources;technical/others;individual
+R11_4;Attached;thinkle/gourmet;kirienko/gourmet;none;no;new release;;;community takeover;technical/others;individual
+R11_5;Attached;GiulioRossetti/ndlib;KDDComplexNetworkAnalysis/ndlib;one;yes;;;;supporting upstream;others;individual
+R11_6;Attached;kiprotect/klaro;empreinte-digitale/orejime;none;no;maintenance;feature acceptance;;;technical/governance;community
+R11_7;Attached;shurcooL/markdownfmt;Kunde21/markdownfmt;none;no;maintenance;feature acceptance;;;technical/governance;individual
+R11_8;Attached;shimmerproject/Numix;Ferdi265/numix-solarized-gtk-theme;none;no;customization;feature acceptance;;;technical/governance;community
+R11_9;Attached;monero-project/monero;oxen-io/oxen-core;one;yes & no;different goals;;;;technical;individual
+R2_1;Detached;PaperMC/Paper;pl3xgaming/Purpur;none;no;new features;;;;technical;individual
+R2_10;Attached;m0ver/tinystruct-examples;tinystruct/tinystruct-examples;one;yes;customization;;;supporting upstream;technical/others;individual
+R2_2;Detached;fogleman/Minecraft;traverseda/pycraft;none;no;different goals;;;;technical;community
+R2_3;Detached;PaperMC/Waterfall;WaterffallMC;none;no;;responsiveness;;;governance;community
+R2_3_1;Detached;SpigotMC/BungeeCord;PaperMC/Waterfall;none;no;;responsiveness;;;governance;individual
+R2_4;Detached;obsproject/obs-studio;CoSMoSoftware/OBS-studio-webrtc;none;no;technology;;;;technical;individual
+R2_5;Detached;bsnes-emu/bsnes;bsnes-mercury;none;no;new features;;;;technical;individual
+R2_6;Detached;redis/redis;KeyDB;none;no;different goals;feature acceptance;;code quality;technical/governance/others;community
+R2_7;Detached;lzzy12/python-aria-mirror-bot;magneto261290/magneto-python-aria;one;no;customization;feature acceptance;;;technical/governance;community
+R2_8;Detached;Baystation12/Baystation12;Aurorastation/Aurora.3;none;no;different goals;;;;technical;community
+R2_9;Detached;CloudburstMC/Nukkit;CloudburstMC/Server;none;no;;responsiveness;;;governance;community
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;

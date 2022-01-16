@@ -1,0 +1,11 @@
+No;mainline;variant;stars_ml;stars_vr;pr_ml;pr_vr;issues_ml;issues_vr;commits_ml;commits_vr
+1;RDFLib/rdflib;tgbugs/rdflib;1541;0;558;4;1427;4;1104;786
+2;facebook/react-native;microsoft/react-native-macos;98570;2034;10245;579;32081;846;9375;8937
+3;wgltony/react-native-braintree-dropin-ui;BradyShober/react-native-braintree-dropin-ui;58;0;17;3;77;3;86;91
+4;jstasiak/python-zeroconf;frawau/aiozeroconf;414;24;679;9;1004;17;705;68
+5;dlang/druntime;ldc-developers/druntime;627;29;3578;201;3578;201;7276;8438
+6;jeroenzwart/laravel-csv-seeder;bfinlay/laravel-excel-seeder;54;20;8;4;23;10;14;83
+7;dogenzaka/go-iap;evalphobia/go-iap;473;7;102;14;147;14;191;29
+8;Azure/autorest.csharp;agoda-com/autorest.csharp;63;1;850;38;1535;38;1309;121
+9;ezsystems/ezpublish-legacy;mugoweb/ezpublish-legacy;249;3;1466;206;1466;207;340;241
+10;chasegiunta/craft-vue-tailwind;madebykind/craft-vue-tailwind-nanobox;77;3;22;9;25;15;55;165
