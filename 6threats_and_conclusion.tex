@@ -9,7 +9,7 @@ The questions were carefully phrased to avoid biasing the respondent towards a s
 %Despite our best efforts, there could be several reasons why our study is limited.
 Social desirability bias may also have influenced the answers~\cite{Furnham:1986}. To mitigate this issue, we informed participants that the responses would be anonymous and evaluated in a statistical form.
 
-\noindent \textbf{Internal validity}. We used an open coding process to classify the participants responses received from open-ended questions. The coding process is known to lead to increased processing and categorization capacity at the loss of accuracy of the original response. To alleviate the lack of accuracy, we allowed more than one code to be assigned to the same answer.
+\noindent \textbf{Internal validity}. We used an open coding process to classify the participants responses received from open-ended questions. The coding process is known to lead to increased processing and categorization capacity at the loss of accuracy of the original response. To alleviate this issue lack of accuracy, we allowed more than one code to be assigned to the same answer.
 %While collecting the dataset, in Section~\ref{sec:forks_and_participants} we indicated that we used some restrictive heuristics that could have eliminated some interesting
 
 \noindent \textbf{Generalizability.} Our study is limited to variants of mainline repositories that are hosted on GitHub. We do not claim that our findings generalize to other social coding platforms.
@@ -22,13 +22,15 @@ In addition, the set of participants we interviewed corresponds to those who dec
 Thanks to social coding platforms like \gh, software reuse through forking to create variant projects is on the rise.
 We carried out an exploratory study with 105 maintainers of variants, focusing on answering two key research questions:\\
 1) \textit{Why do developers create and maintain variants on \gh?}
-We observed that the categories of motivations reported by studies carried out in the the pre-\gh era, still hold, and calculated the relative weight for each of them. We have identified 18 motivation details  for variant creation and maintenance, categorized in the motivations of \emph{technical} (58\% of the responses), \emph{governance} (24\%), \emph{others} (16\%) and \emph{legal} (2\%).
-The ``others'' category is suprising and illustrates that the motivations for forking are indeed more diverse. 
+We observed that the motivations reported by studies carried out in the the pre-\gh era, still hold. We have identified 18 motivation details  for variant creation and maintenance, categorized in the motivations of \emph{technical} (58\% of the responses), \emph{governance} (24\%), \emph{others} (16\%) and \emph{legal} (2\%). Some of these motivations are newly introduced in the social coding era.
 
 \noindent 2) \textit{How do variants projects evolve with respect to the mainlines?}
-We confirmed that there is little interaction between the variants and their mainlines during the co-evolution and reported possible impediments. These include: (i) technical (i.e., diverging features), where variants and mainlines are offering different goals or implementing different technologies; (ii) governance (i.e., diverging interests), where mainlines are unresponsive to the requests from community and uninterested in some features suggested by the community; (iii) legal (e.g., diverging licenses), where the mainline variant has changed the license and integration is no longer possible.
+We have found that there is little interaction between the variants and their mainlines during the co-evolution and reported possible impediments to the lack of interaction. These include: (i) technical (i.e., diverging features), where variants and mainlines are offering different goals or implementing different technologies having nothing to share; (ii) governance (i.e., diverging interests), where mainlines are unresponsive to the requests from community and also uninterested in some features suggested by the community; (iii) legal (e.g., diverging licenses), where the mainline variant has changed the license and integration is no longer possible.
 
-Our findings should inspire follow-up studies to investigate the co-evolution and reuse practices between mainline and variants. A deeper understanding of these practices should aid code integration tool builders in developing tools which effectively allows the mainline and variants to co-exist, while exploiting the common code base
+Our findings are very useful to guide follow-up studies in investigating the co-evolution and reuse practices between mainline and variants. A deeper understanding of these practices can aid code integration tool builders in developing tools to support more effective software reuse between mainline projects and their variant forks.
+
+\section*{Acknowledgment}
+This work is supported by the FWO-Vlaanderen and F.R.S.-FNRS via the EOS project 30446992 SECO-ASSIST.
 
 %has extended the findings of these previous studies by providing more fine-grained common motivations for creating variants relating to: different goals\,/content\,/communities, customization, supporting personal projects, supporting the upstream, localization, up-taking a unmaintained feature.
 
