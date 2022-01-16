@@ -70,8 +70,7 @@ The figure  presents the distribution of the responses to all questions relating
 
 Focusing on the axes of \dashuline{decision} and \dashuline{motivation}, we can confirm the observations from Fig.~\ref{fig:motivations} that the majority of respondents had an \dashuline{individual} and \dashuline{technical} motivation.
 The majority of respondents that answered the question \dashuline{original developers?} selected \dashuline{none} implying that the majority of the variants were started by different developers.
-Since the answers to $SQ^1_{b}$ were presented on a Likert scale,%\tm{This seems incorrect,since SQ1c is open ended. Do you mean SQ1b perhaps?} 
-participants were asked to rank the appropriate motivation(s) to why they created the variant. While coding the motivations details, we identified respondents who ranked highly more than one motivation category and also provided a response in the open-ended question to support each highly ranked motivation category. In this scenario, eachhighly ranked motivation category would have a motivation detail for the same respondent. %\az{I added the following information and modified the text introducing each motivation (detail)}
+Since the answers to $SQ^1_{b}$ were presented on a Likert scale, participants were asked to rank the appropriate motivation(s) to why they created the variant. While coding the motivations details, we identified respondents who ranked highly more than one motivation category and also provided a response in the open-ended question to support each highly ranked motivation category. In this scenario, each highly ranked motivation category would have a motivation detail for the same respondent. %\az{I added the following information and modified the text introducing each motivation (detail)}
 At the end we found that 105 of the survey participants chose 145 motivation categories, of which 84 \dashuline{technical}, 34 \dashuline{governance}, 3 \dashuline{legal} and 24 \dashuline{others}. Below we present the common motivation themes and some  specific responses we found very
 interesting.
 
@@ -189,7 +188,7 @@ Merging back to the original corresponds to one the outcomes of variant forking 
 15 respondents who selected \dashuline{governance}, mentioned phrases related to \emph{mainline hesitant to or not willing to accept feature}.
 
 \begin{itemize}[leftmargin=*]
-\item \emph{``TECHNICAL: Added support for Open Street Maps as an available map provider. GOVERNANCE: not exactly governance, but mainline was not willing to accept this kind of contribution"} [R8]. This was coded as \dashuline{technology} in \dashuline{technical}. The respondent also provided a \gh PR link containing extra information. The PR inclided 45 conversations and 15 participants between June 2018 until March 2021 when it was closed.
+\item \emph{``TECHNICAL: Added support for Open Street Maps as an available map provider. GOVERNANCE: not exactly governance, but mainline was not willing to accept this kind of contribution"} [R8]. This was coded as \dashuline{technology} in \dashuline{technical}. The respondent also provided a \gh PR link containing extra information. The PR included 45 conversations and 15 participants between June 2018 until March 2021 when it was closed.
 %\ad{I suggest to remove this quote since it combines two distinct reasons, and we do not explain that a respondent could select more than one reason (and what we did when they did).}
 
 \item ``\emph{Mainline was not ready to accept those changes in part because the maintainers were not responsive. Since that time all of the issues have been dealt with and my variant is no longer needed, though the infrastructure for creating a new release of the variant remains in place in the event that it might be needed in the future.}'' [R44]
@@ -305,7 +304,9 @@ Many variant forks start as social forks. The decision to create\,/\,maintain th
         \subfigure[$SQ^2_{a}$. How many mainline developers involved in creation of variant?]{\includegraphics[width=1\columnwidth]{pdfs/original_developers.pdf}
         \label{fig:original}}
     \hfill
-    \subfigure[$SQ^2_{b}$. How many common active maintainers are there between mainline and variant?]{\includegraphics[width=1\columnwidth]{pdfs/common_maintainers.pdf}
+    \subfigure[$SQ^2_{b}$. Do the variant and mainline have common active maintainers?
+    %How many common active maintainers are there between mainline and variant?
+    ]{\includegraphics[width=1\columnwidth]{pdfs/common_maintainers.pdf}
     \label{fig:common}}
     \hfill
     \caption{Who are the developers involved in creating and maintaining variants of a mainline project?}
@@ -401,7 +402,7 @@ The open-ended answers also revealed variant responses that do not discuss the d
      \vspace{-.3cm}
 \end{figure*}
 
-An explanation for the high number of variants that do not discuss with the mainline about the project direction can be derived from the findings of $SQ^2_{a}$ and $SQ^2_{b}$. The majority of the variants are created and maintained by developers that do are not core developers of the mainline. Also, most of the \emph{motivation details} in $RQ1$ could explain the high numbers of \dashuline{never}. For example we have observed that the majority of the variants in the \emph{motivation details} category of \dashuline{different goals}, \dashuline{unmaintained features} in the mainline, those having issues with the mainline \dashuline{responsiveness}, those whose features will not be accepted by the mainline (\dashuline{feature acceptance}), selected  \dashuline{never} in $SQ^2_{c}$. To this end, we can conclude that \textbf{the reasons for the majority of variant forks not to discuss the project directions with the mainline could be attributed to a diverging range of motivations for creating the variant as well as to the variant creators not being part of the mainline's core development team.}
+An explanation for the high number of variant developers that do not discuss with the mainline developers about the project direction can be derived from the findings of $SQ^2_{a}$ and $SQ^2_{b}$. The majority of the variants are created and maintained by developers that do are not core developers of the mainline. Also, most of the \emph{motivation details} in $RQ1$ could explain the high numbers of \dashuline{never}. For example we have observed that the majority of the variants in the \emph{motivation details} category of \dashuline{different goals}, \dashuline{unmaintained features} in the mainline, those having issues with the mainline \dashuline{responsiveness}, those whose features will not be accepted by the mainline (\dashuline{feature acceptance}), selected  \dashuline{never} in $SQ^2_{c}$. To this end, we can conclude that \textbf{the reasons for the majority of variant forks not to discuss the project directions with the mainline could be attributed to a diverging range of motivations for creating the variant as well as to the variant creators not being part of the mainline's core development team.}
 
 Anecdotally, 5 respondents indicated phrases related to \dashuline{variant follows mainline}.
 Respondent [R77] indicated that ``\emph{in the crypto world, the mainline inherits changes from BITCOIN, for example, security commits, and the variant merges those changes in. So the variant is very interested in every change in the Mainline. However, the variant must maintain the specific new features that we added separately, and the Mainline is not interested in helping the Variant do this.}''
@@ -424,7 +425,7 @@ In Fig.~\ref{fig:to_mainline-coded} there were two prominent answers: \dashuline
 
 \subsection{Discussion and Implications}
 
-The results of $RQ2$ revealed that variants are created and maintained my developers that are not core developers of the mainline.
+The results of $RQ2$ revealed that variants are created and maintained by developers that are not core developers of the mainline.
 We also observed that there is limited interaction between the mainline and its variant(s).
 Although we found there is little code integration, the integration from mainline to variant is more frequent than from variant to  mainline.
 Our study confirms and extends the findings of Businge et al.~\cite{businge:emse:2021}: we provide concrete reasons relating to little integration between the mainline and variants that include:\\
@@ -440,12 +441,13 @@ For example, code integration using pull requests and \textsf{git} tools like  \
 In this study, we have observed that some variant maintainers are only interested in integrating commits with specific changes.
 A suitable integration mechanism would be commit cherry picking since the developers can choose the exact commits they want to integrate.
 However, \gh's current setup does not make it easy to identify commits to cherry-pick without digging through the branch's history to identify relevant changes since the last code integration.
-Additionally, even though the variants have diverged from their mainlines, we do believe that since they share common code, some of the common code may go through maintenance to perform some bug and security fixing.
+Additionally, even though the variants have diverged from their mainlines, we do believe that since they share common code, some of the common code may go through maintenance to perform some bug and security fixing. 
 Since these mainline--variant repository pairs are being maintained by uncommon developers, chances are that these fixes could be missed or they could be fixed at different times by different developers, resulting in duplicated effort.
 
 Our findings are very relevant to code integration tool builders between mainline and variants to prioritise certain categories of mainline--variant pairs by targeting specific changes.
 Ideally, a tooling would help identify possibly important fixes in commits and recommend these commits to mainline or variant developers to support a more efficient reuse.
 Some promising studies in this direction have focused on providing the mainline with facilities to explore non-integrated changes in forks to find opportunities for reuse~\cite{Ren:2018} and cross-fork change migration~\cite{Ren:2019}. More experimental ideas have focused on virtual product-line platforms for unified development of multiple variants of a project~\cite{Antkiewicz:icse:2014,Fischer:saner:2014,Montalvillo:spl:2015,rubin:icse:2013,Stefan:2016:icsme}.
+
 
 \begin{custombox}
 \emph{\textbf{Summary--RQ2}: Variant forks do not usually interact with the mainline during their co-evolution. The lack of interaction could be attributed to a variety of reasons including: (i) technical divergence, where variants and mainlines are offering different features or implementing different technologies having nothing to share; (ii) governance disputes, where mainlines are unresponsive to the requests from community and also uninterested in some features suggested by the community; (iii) distinct development teams that no longer interact; (iv) diverging licenses, where the mainline variant has changed the license and integration is no longer possible.
