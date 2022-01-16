@@ -15,15 +15,14 @@ To understand the motivations behind the creation and maintenance of variant for
 %Relying on the knowledge gained from literature, especially the motivations presented in Section~\ref{sec:motivations},
 %\cd{I would drop the first part of the section, as you already had a stronger motivation for the survey in the beginning}
 We designed a 12-question survey that would last at most 15 minutes.
-Since our aim was to learn from a large number of projects, we used an online survey as it is a data collection approach that scales well~\cite{Flick:2014}.
-%\cd{It might help to state that you followed the best practices of our community in designing the survey, and refer to a book.} \jb{could someone help and address this comment.}
-The used survey can be found at here~\footnote{\url{https://github.com/johnxu21/variants_motivations}}.
-The questions were designed so that they cover our two main research questions.
+Since we aimed to learn from a large number of projects, we used an online survey as this data collection approach is known to scale well~\cite{Flick:2014}.
+\footnote{The survey can be found here\\ \url{https://github.com/johnxu21/variants_motivations}}.
+The questions were designed to cover our two main research questions.
 %We designed the questions in such a way that the participants could choose the  reason from the provided options that best suited their motivations for forking.
 8 of the 12 questions were close-ended and respondents could answer them either via multiple choice or Likert scales.
 %Some of the possible answers motivations we.
 %\sd{The paper refers to times to "our literature review". Either add a sentence or a paragraph explaining what this literature entailed. Or otherwise drop completely}
-We provided an optional free-text form for 3 of the 8 close-ended questions to allow respondents to share additional thoughts and feedback.
+An optional free-text form was provided for 3 of the 8 close-ended questions to allow respondents to share additional thoughts and feedback.
 The 4 remaining questions are open-ended.
 All questions were carefully formulated so as not to bias respondents towards a specific answer. We validated them by subjecting them to the critical eye of 7 colleagues and by conducting trial runs of the survey with the same 7 participants.%\tm{Can you be more precise than say "a limited group of"? Just provide the number.}
 
@@ -33,20 +32,19 @@ All questions were carefully formulated so as not to bias respondents towards a 
 \subsection{Identifying variant projects and participants}
 \label{sec:forks_and_participants}
 
-Given the scope of the survey, we target respondents who are involved in the creation and maintenance of variant projects.
-Therefore, we first need to identify such variants.
+Given the scope of the survey, we target respondents involved in the creation and maintenance of variant projects.
+Therefore, we first needed to identify such variants.
 To this end, we relied on two data sources: \librariesio and \gh.
 
 \librariesio contains metadata about projects distributed through various package registries. We collected the metadata for all projects of some of the largest package registries (\textsf{npm, Go, Maven, PyPI} and \textsf{Packagist}). We relied on this metadata to identify those projects that are variants of another one, following the variant identification method proposed by  Businge et al.~\cite{businge:emse:2021,businge:benevol:2020}. %The authors argue that, if a fork has distributed its package releases on a package registries, then one can be certain that it is a variant fork and very unlikely to be social fork.
-We only considered those variants that are actively maintained in parallel to their mainline counterparts. We extracted variants for which the mainline--variant pair was created before 2019-04-01 and updated at least once after 2020-04-01 (i.e., active projects).
+We only considered variants that are actively maintained in parallel with their mainline counterparts. We extracted variants for which the mainline--variant pair was created before 2019-04-01 and updated at least once after 2020-04-01 (i.e., active projects).
 %\tm{The choice of this start and end date is not motivated.}
 This process yielded \textit{227 mainline–variant project pairs}.
 
-We also collected additional mainline-variant pairs from \gh directly.
-To do so, we started by looking for mainline projects using the \gh search endpoint. We looked for \emph{popular} ($>50$ stars and forks), \emph{long-lived} (created before 2018) and \emph{active} (still updated in 2020) repositories.
+We collected additional mainline-variant pairs from \gh directly.
+To do so, we searched for mainline projects using the \gh search endpoint. We looked for \emph{popular} ($>50$ stars and forks), \emph{long-lived} (created before 2018) and \emph{active} (still updated in 2020) repositories.
 We focused on software development repositories whose main language is among the top 17 of most popular languages used in \gh (e.g., \textsf{JavaScript, Java, Go, Python, Ruby, C}, etc).
-%\ad{@John: how did you select these 17 languages?}
-Then, for all the mainline projects we found, we tried to  identify and collect variant forks. This process is subject to a known threat to validity since previous studies revealed that the majority of forks on \gh are inactive~\cite{businge:2019Saner,Businge:2017} or are social forks~\cite{businge:2018icsme}.
+For all the mainline projects we found, we tried to  identify and collect variant forks. This process is subject to a known threat to validity since previous studies revealed that the majority of forks on \gh are inactive~\cite{businge:2019Saner,Businge:2017} or are social forks~\cite{businge:2018icsme}.
 To reduce this threat, we filtered forks based on  the following heuristics: $\geq 10$ stars, $\geq 10$ commits ahead of the mainline, $\geq 5$ closed pull requests, diverging \textsf{README} files.
 %\cd{Here I would list all heuristics used rather than use examples and remain vague.}
 We manually verified these remaining forks to ensure they corresponded to variants  of the corresponding mainline.
@@ -73,8 +71,8 @@ leading to \textbf{a total of 491 collected mainline--variant pairs}.
 
 Based on this collection of mainline-variant pairs, we identified contributors that had integrated at least one pull request into the variant. % (i.e., contributors that are maintainers of the project).\tm{I removed the sentence between parenthesis, since it is hard to argue that you are a project maintainer if you only made a single PR!}
 We retrieved their public-facing emails (if available) using the \gh API, while ensuring to respect the \gh Privacy Statement.\footnote{https://docs.github.com/en/github/site-policy/github-privacy-statement}
-We individually contacted a total of 762 variant maintainers from the 491 variant projects, and managed to attract \textbf{a total of 105 respondents (response rate of 14\%), representing a total of 105 variant forks (21\%)}.
-All participants were asked to read and accept an informed consent form before taking part in the survey.
+We individually contacted a total of 762 variant maintainers from the 491 variant projects, and received \textbf{a total of 105 responses (response rate 14\%), representing a total of 105 variant forks (21\%)}.
+All participants were requires to read and accept an informed consent form before taking part in the survey.
 
 %When distributing the survey protocol, we customized each of the \textit{email message content} using the respondents personal information. For example the email title was customized as follows\footnote{Academic Research on motivation of creating forks - \texttt{[fork\_name]}}. The body of the email message was also customized as follows\footnote{[\ldots] we have identified your \gh repository \texttt{[fork\_name]} as a variant fork of the mainline \texttt{[mainline\_name]}}.
 
@@ -88,7 +86,7 @@ All participants were asked to read and accept an informed consent form before t
 \vspace{-.3cm}
 \end{figure}
 
-We wanted to compare the popularity of the 105 mainlines--variant pairs since the fork date. To this end, we collected metrics of stars, pull requests, issues and commits from the projects. For the variant projects, all the considered metrics are calculated from the fork date. For the mainline projects, we calculate the metrics  of pull requests, issues and commits from the fork date. The number of stars in the mainline are calculated throughout the lifetime of the project.
+We wanted to compare the popularity of the 105 mainline--variant pairs since the fork date. To this end, we collected metrics of stars, pull requests, issues and commits from the projects. For the variant projects, all these metrics are calculated from the fork date. For the mainline projects, we calculate the metrics  of pull requests, issues and commits from the fork date. The number of stars in the mainline are calculated throughout the lifetime of the project.
 The boxplots in Fig.~\ref{fig:stats} show the distributions of stars, pull requests, issues and commits for the selected mainline-variant pairs. %Only the 105 projects for which at least one maintainer took part in the survey were considered.
 %We wanted to compare the mainline and variants since the
 %\ad{@John: I could not rewrite the next paragraph because I do not really understand it (and its purpose). I guess we need at least one or two sentences to explain the goal of the figure, and what can be observed from it.}
@@ -104,4 +102,4 @@ While it is not surprising that the counts for mainline metrics are always highe
 
 We used open card sorting~\cite{zimmermann2016card}, on the 3 open-ended questions to identify common responses reported by the participants.
 In the analysis, we grouped similar responses from the open-ended questions into themes.
-We did not start with any pre-defined themes in mind, but instead derived the themes from the open-ended answers, iterating as many times as needed until reaching a saturation point. The first iteration of coding themes was performed by the first author of the paper, and any responses the first author was unsure of were decided by discussion with the second author. Once the first two authors agreed on the themes, a virtual meeting was agreed upon where all the other authors joined and discussed the resulting themes to come to a negotiated agreement~\cite{Garrison:2006}. This approach allowed us to remove duplicates and, in some cases, to generalize or specialize themes.%, which we will discuss in the later sections of this paper.
+We did not start with any pre-defined themes in mind, but instead derived the themes from the open-ended answers, iterating as many times as needed until reaching a saturation point. The first iteration of coding themes was performed by the first author of the paper, and any responses the first author was unsure of were decided by discussion with the second author. Once the first two authors agreed on the themes, a virtual meeting was set with all six authors to discuss the resulting themes and come to a negotiated agreement~\cite{Garrison:2006}. This  allowed us to remove duplicates and, in some cases, to generalize or specialize themes.
