@@ -27,10 +27,7 @@ to revisit the motivation for creating variant forks (\textit{why?}).
 Social coding platforms offer many facilities for code sharing (e.g., pull requests and cherry-picking).
 So if projects co-exist, one would expect variant forks to take advantage of this common ancestry, and frequently exchange interesting updates (e.g., patches) on the common artefacts.
 Despite advanced code-sharing facilities, Businge et al. observed very limited code integration, using the \git and \gh facilities, between the mainline and its variant projects~\cite{businge:emse:2021}.
-%\cd{From the above sentence it is not clear whether the study included ad-hoc reuse, i.e., the sharing of code snippets in the second sentence of the paragraph. It reads as if only the structured tool-supported code sharing facilities were used.  It that interpretation is not correct, you might want to consider rephrasing the description, as you use it as a motivation in the next sentence.}
 This suggests that code sharing facilities in themselves are not enough for graceful co-evolution, making it worthwhile to investigate impediments for co-evolution (\textit{how?}).
-
-%\sd{Be careful: I massaged the RQ slightly. If you copy them in the experimental set-up use the commands I created for them.}
 
 \noindent
 We therefore explore two research questions:
@@ -50,17 +47,11 @@ As such we hope to identify impediments for co-evolution.
 
 
 The investigations are based on an online survey conducted with 105 maintainers involved in different active variant forks hosted on \gh.
-%We performed an exploratory investigation of maintainers of variants hosted on \gh. We conducted an online survey that was answered by 112 maintainers of 105 active variant projects.
-%
+
 Our contributions are manifold:
 we identify new reasons for creating and maintaining variant forks;
 we identify and categorize different code reuse and change propagation practices between a variant and its mainline;
 we confirm that little code integration occurs between a variant and its mainline, and uncover concrete reasons for this phenomenon.
 We discuss the implications of these findings and how tools can help to achieve an efficient code integration and collaboration between mainlines and diverging variant forks.
 
-%\sd{Need to squeeze this so it fits on a single page}
-
-% \nd \textbf{We report a number of findings}: 1) Our study identifies a number of common fine-grained motivations for creating and maintaining variants that include: different goals\,/content\,/communities, customization, supporting personal projects, supporting the upstream, localization, up-taking a frozen feature.
-% 2) Our study has identified a number of categories relating to different reuse practices of variants that include: integrating only bug\,/security fixes, updates only on specific features, all updates excluding specific features, and only updates that pass CI. For example, we have discovered software reuse of a family of applications from the ``cryptocurrency world'', which is dedicated project software ecosystem~\cite{tommens:2020}.
-% 3) Our study extends the previous study by providing concrete reasons relating to reasons the little code integration observed between mainline and variants. For example, technically diverged variants, such as, those targeting different goals, those implementing different technologies, and those maintaining a specific feature of a mainline that was abandoned (a frozen feature). Based on these categories of variants, we have also discussed implications to tool building can help aid efficient code reuse between the mainlines and diverged variants.
 
